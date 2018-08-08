@@ -1,0 +1,32 @@
+<head>
+
+<meta name="description" content="記事説明">
+<title>{{ page.title }}</title>
+<meta property="og:title" content="{{ page.title }}">
+<meta name="twitter:title" content="{{ page.title }}">
+<meta property="og:url" content="{{ page.url }}">
+<meta name="twitter:site" content="{{ page.url }}">
+<meta property="og:image" content="{{ page.thumb }}">
+
+<link rel="icon" href="/assets/img/favicon.png">
+<!--link rel="stylesheet" type="text/css" href="https://koma51.github.io/oekaki-hoho-ron/style.css"-->
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 自動広告 --><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-7336552517082119",enable_page_level_ads: true});</script>
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-30635583-8"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-30635583-8');</script>
+
+<!-- ads-in-articleを自動挿入するJS -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function() {
+		var adsCode = '<ads-in-article-box><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><\/script><ins class="adsbygoogle"style="display:block; text-align:center;"data-ad-layout="in-article"data-ad-format="fluid"data-ad-client="ca-pub-7336552517082119"data-ad-slot="6117821682"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></ads-in-article-box>';
+		$(".entry-content h3").each(function (i) {
+			if(i % 3 == 0 && i > 0 || i == 1){
+				$(this).before(adsCode);
+			}
+		});
+	});
+</script>
+
+</head>

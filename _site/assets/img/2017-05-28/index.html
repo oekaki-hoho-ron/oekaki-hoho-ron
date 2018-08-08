@@ -1,0 +1,79 @@
+<!--#include virtual="/include/meta.html" -->
+<meta name="description" content="以前考案した「対角線分割法」を使えばM点法の原理の証明が簡単にできる。M点法については作図手順の解説はよく目にするが、なぜその手順で正確に作図できるのかには触れられていない。消化不良ならこの記事を読むべし。">
+<title>ありそうでなかったM点法の原理解説　〜地平線に隠された秘密〜 | お絵描きホーホー論</title>
+<meta property="og:title" content="ありそうでなかったM点法の原理解説　〜地平線に隠された秘密〜 | お絵描きホーホー論">
+<meta name="twitter:title" content="ありそうでなかったM点法の原理解説　〜地平線に隠された秘密〜 | お絵描きホーホー論">
+<meta property="og:url" content="http://www.oekaki-hoho-ron.com/principle-decoding-of-measuring-point-method/index.html">
+<meta name="twitter:site" content="http://www.oekaki-hoho-ron.com/principle-decoding-of-measuring-point-method/index.html">
+<meta property="og:image" content="http://www.oekaki-hoho-ron.com/principle-decoding-of-measuring-point-method/00.png">
+<!--#include virtual="/include/header.html" -->
+<!--#include virtual="/include/sidebar.html" -->
+<article>
+
+
+<h2>ありそうでなかったM点法の原理解説　〜地平線に隠された秘密〜</h2>
+<ul class="article-meta">
+<li class="post-date">2017年5月28日</li>
+<li class="category">Category <a href="/category/perspective.html">透視図法</a></li>
+<li class="tag">Tag <a href="/tag/mp.html">M点法</a>・<a href="/tag/rp.html">対角線分割法</a></li>
+</ul> <!-- .article-meta -->
+<img src="00.png"  alt="ありそうでなかったM点法の原理解説　〜地平線に隠された秘密〜" />
+
+
+<ul class="mokuji"><span>目次</span>
+<li><a href="#1">奥行きの長さを作図するD点法・M点法</a></li>
+<li><a href="#2">MPが求まる原理</a></li>
+<li><a href="#3">奥行きが測定できる原理</a></li>
+</ul>
+
+
+<div class="ninja_onebutton"><script type="text/javascript">(function(d){if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896)=='undefined'){document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/52708f535f08e25625d3b79233c81896'><\/sc"+"ript>");}else{window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896.ONETAGButton_Load();}})(document);//]]></script>
+<span class="ninja_onebutton_hidden" style="display:none;">http://www.oekaki-hoho-ron.com/principle-decoding-of-measuring-point-method/index.html</span>
+<span style="display:none;" class="ninja_onebutton_hidden">ありそうでなかったM点法の原理解説　〜地平線に隠された秘密〜</span></div> <!-- .ninja_onebutton" -->
+<!--#include virtual="/include/ads-article-top.html" -->
+
+
+<div class="entry-content">
+<h3 id="1">奥行きの長さを作図するD点法・M点法</h3>
+<p>　D点法とは正方形を作図する手法で、1点透視図法の距離点DP（ディスタンスポイント）、または2点透視図法の対角消失点DVP（ダイアゴナルバニッシュポイント）を使います。ただし、D点法で作図できるのは単に正方形というだけで、決められた奥行きの長さで作図することはできません。</p>
+<img src="01.png" alt="1点透視のD点法"  />
+<img src="02.png" alt="2点透視のD点法"  />
+<p>　そこで奥行きの長さが作図できるM点法です。M点法とは任意の奥行きの長さを作図する手法で、測点MP(メジャーリングポイント）を使います。M点法の作図手順については<a href="/measuring-point-utilization-plan/index.html" target="_blank">お絵描きパース「M点法」実用化計画　〜縮図を使って奥行きの長さを正確に作図する〜</a>の記事か<a href="/anatomical-chart-of-perspective/index.html" target="_blank">パース理論の完全形態「透視図法解剖図」</a>の記事を参照してください。</p>
+<img src="03.png" alt="M点法"  />
+<p>　このM点法は非常に便利な手法なので作図手順の解説は良く見かけるものの、いまだにその原理の詳しい解説を見たことがありません。MPが求まる原理、奥行きが測定できる原理くらいは理解しておきたいものです。これらの原理は透視図法の性質と幾何学的な法則によって成り立っています。</p>
+
+<h3 id="2">MPが求まる原理</h3>
+<p>　まずはM点法のMPの作図手順をおさらいしておきます。円弧と二等辺三角形を使う2通りの方法がありますがどちらも同じ原理のものです。</p>
+<img src="04.png" alt="円弧でMPを作図"  />
+<img src="05.png" alt="二等辺三角形でMPを作図"  />
+<img src="06.png" alt="相似の関係にある二等辺三角形"  />
+<p>　M点法では各VPに対して必ず一つのMPが存在するのですが、各MPを作図する過程で平行線のペアができます。言葉で説明するのもややこしくなるので図説で済ませますが、立体の平面図の部分と、SPからの直線が平行線のペアになります。そしてその平行線は透視図法の性質上、無限遠にあるアイレベル上で同じ一つの点に収束します。幾何学的には平行線はどこまで伸ばしても決して交わることはありませんが、透視図法の場合は遠近法によって奥行きの縮小が生じるため、互いの平行線の距離は無限遠ではほぼ0として扱われ同じ一つの点に収束させることができます。</p>
+<img src="07.png" alt="平行線の間隔は無限遠で0になる"  />
+<p>　この方法でMPが作図できることはわかりましたが、なぜこのMPでパースにのった立体の奥行きが作図できるのか不明のままです。その答えとしては、透視図とは平面図がパースにのったものなので元は同じ図で、平面図上のGP、GPL、VP1、MP1（もしくはGP、GPR、VP2、MP2）は、足線法によって透視図上にも作図できているはずなので各点を繋ぐだけでM点法が成立するということになります。</p>
+<img src="08.png" alt="平面図と透視図の対応"  />
+
+<h3 id="3">奥行きが測定できる原理</h3>
+<p>　この件については<a href="/training/device-of-diagonal-split-graph-technique/index.html" target="_blank">透視図法の基本原理「対角線分割法」誕生の軌跡　〜3次元を2次元に変換する仕組み〜</a>の記事で結論を出しましたが、改めて文章化しておきます。M点法の奥行きを正確に作図できるのは台形の幾何学的な性質をうまく利用しているからです。その性質のことを以前の記事で独自に「対角線分割法」と名付けました。この対角線とはどれを指すかというと、GP、GPL、VP1、MP1を繋いだときの交差線のことです。そしてこの4点は台形を形作っているので幾何学的なアプローチでの作図が可能になります。</p>
+<p>　ではその台形の性質とは何かというと「ある平行な2つの線分が形作る台形の対角線の交点の位置は線分の長さが短い方に近くなり、その位置は線分の長さの比率から算出できる」と言い表すことができます（詳しくは上述の記事参照）。そしてこの2つの線分とは立体の側面の原寸GP-GPLと、アイレベル上のVP1-MP1間距離となります。まずは平面図で確認してみましょう。</p>
+<img src="09.png" alt="平面図の対角線分割法"  />
+<p>　ただ、平面図のままではアイレベル上の距離というのは無限遠にある地平線の長さと同義なので作図することは不可能です。ですがパースにのった透視図であれば地平線も画面内に作図できるサイズに見えるようになります。透視図法では観測者（カメラ）はSPから地平線を眺める位置にあるため、手前のものが大きく見えるのは必然です。故に平面図では「無限：極小」だった比率が、透視図では「大：小」程度の比率に見えるようになります。しかもパースにのって比率が変わったとはいえ、同じ点を結んで作図したものなので寸法に間違いはありません。たとえ画角が変化しても各点の位置が移動するだけなので、同じように繋げば正確な寸法で作図できます。</p>
+<img src="10.png" alt="透視図の対角線分割法（画角90°）"  />
+<img src="11.png" alt="透視図の対角線分割法（画角小）"  />
+<p>　これがM点法の奥行きを測定する仕組みです。ところでなぜこの対角線分割法の交点が奥行きの長さと断言できるのか、いまいち掴めない可能性があるのでもう少し掘り下げておきます。MPが求まる原理の説明で、平面図で正方形の両側面とPPとで二等辺三角形を作図しました。この平面図の正方形の側面の奥側の頂点、これが対角線分割法の交点に対応しています。よって透視図上の対角線分割法の交点は立体の奥行きであると断言できるのです。</p>
+<img src="12.png" alt="対角線分割法の交点は奥行きの長さと一致する"  />
+</div> <!-- .entry-content -->
+
+
+<div class="ninja_onebutton"><script type="text/javascript">(function(d){if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896)=='undefined'){document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/52708f535f08e25625d3b79233c81896'><\/sc"+"ript>");}else{window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896.ONETAGButton_Load();}})(document);//]]></script>
+<span class="ninja_onebutton_hidden" style="display:none;">http://www.oekaki-hoho-ron.com/principle-decoding-of-measuring-point-method/index.html</span>
+<span style="display:none;" class="ninja_onebutton_hidden">ありそうでなかったM点法の原理解説　〜地平線に隠された秘密〜</span></div> <!-- .ninja_onebutton" -->
+
+
+<div id="page-navi">
+<a id="page-navi-new" href="/sketch-of-the-pokemon-with-ambiguous-storage/index.html">次の記事</a>
+<a id="page-navi-old" href="/device-of-diagonal-split-graph-technique/index.html">前の記事</a>
+</div>
+
+
+<!--#include virtual="/include/article-bottom-info.html" -->
+<!--#include virtual="/include/footer.html" -->

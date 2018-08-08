@@ -1,0 +1,81 @@
+<!--#include virtual="/include/meta.html" -->
+<meta name="description" content="デジタルイラストを塗るときに知っておくべき色彩理論の基礎となる表色系について解説しています。">
+<title>デジタルイラストを描くための色彩理論概論 | お絵描きホーホー論</title>
+<meta property="og:title" content="デジタルイラストを描くための色彩理論概論 | お絵描きホーホー論">
+<meta name="twitter:title" content="デジタルイラストを描くための色彩理論概論 | お絵描きホーホー論">
+<meta property="og:url" content="http://www.oekaki-hoho-ron.com/color-scheme-theoretical-outline/index.html">
+<meta name="twitter:site" content="http://www.oekaki-hoho-ron.com/color-scheme-theoretical-outline/index.html">
+<meta property="og:image" content="http://www.oekaki-hoho-ron.com/color-scheme-theoretical-outline/00.png">
+<!--#include virtual="/include/header.html" -->
+<!--#include virtual="/include/sidebar.html" -->
+<article>
+
+
+<h2>デジタルイラストを描くための色彩理論概論</h2>
+<ul class="article-meta">
+<li class="post-date">2013年8月29日</li>
+<li class="category">Category <a href="/category/color-theory.html">色彩理論</a></li>
+<li class="tag">Tag <a href="/tag/color-test.html">色彩検定</a></li>
+</ul> <!-- .article-meta -->
+<img src="00.png"  alt="デジタルイラストを描くための色彩理論概論" />
+
+
+<ul class="mokuji"><span>目次</span>
+<li><a href="#1">色彩理論における表色系</a></li>
+<li><a href="#2">マンセル表色系</a></li>
+<li><a href="#3">PCCS（Practical Color Coordinate System）</a></li>
+<li><a href="#4">色立体と固有明度</a></li>
+</ul>
+
+<div class="ninja_onebutton"><script type="text/javascript">(function(d){if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896)=='undefined'){document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/52708f535f08e25625d3b79233c81896'><\/sc"+"ript>");}else{window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896.ONETAGButton_Load();}})(document);//]]></script>
+<span class="ninja_onebutton_hidden" style="display:none;">http://www.oekaki-hoho-ron.com/color-scheme-theoretical-outline/index.html</span>
+<span style="display:none;" class="ninja_onebutton_hidden">デジタルイラストを描くための色彩理論概論</span></div> <!-- .ninja_onebutton" -->
+<!--#include virtual="/include/ads-article-top.html" -->
+
+
+<div class="entry-content">
+<h3 id="1">色彩理論における表色系</h3>
+<p>　色彩理論を勉強するには、色彩検定協会の公式テキストを見るのが一番確実かと思います。その中からデジタルイラストの着色の際に役立つことをピックアップして、実用的にまとめておくと便利だと思います。このテーマを一回の記事にまとめるのはちっとばかし詰め込み過ぎな気がするので数回に分けます。そんなわけで今回は色彩検定で使われている表色系の話でもしていきますか。</p>
+
+<h3 id="2">マンセル表色系</h3>
+<p>　マンセル表色系は色相・明度・彩度の3つのパラメータで色を規定する方式です。パラメータは何段階というのが決まってますが、イラストを描く上で大して必要ないので今回は考えません。重要なのは3つのパラメータの関係性を把握しておく事です。</p>
+<img src="01.png" alt="マンセル表色系" />
+<span class="centering">出典 <a href="http://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%B3%E3%82%BB%E3%83%AB%E3%83%BB%E3%82%AB%E3%83%A9%E3%83%BC%E3%83%BB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0">Wikipedia</a></span>
+<p>　そしてこのマンセル表色系、CGイラストを描くときに目にしたことがあるかもしれません。ツールの色を選択するウィンドウを色相環表示にすると、下図のように、まんまマンセル表色系になります。レインボーな輪っかが色相環で、中の三角形が明度と彩度です。下図を例にすると、色相環の円周上のグラデーションで色相を、三角形の垂直方向のグラデーションで明度、水平方向のグラデーションで彩度を調整することになります。使ったことある人なら熟知してますね。</p>
+<img src="02.png" alt="GIMPのマンセル表色系" />
+<p>　では重要だといっていた3つのパラメータの関係性について、基礎的なことですが一応説明しておきます。まず色相環上の色相の分布の仕方は、ある色の反対側にその色の補色が位置するということです。補色同士の色は互いに引き立て合う相乗効果があるので、イラストを塗るときにこの原理を利用して深みを出すという手法がよく知られています。詳しい利用方法は後で勉強してまとめようと思います。</p>
+<p>　もう一つおさえておくことは、中の三角形の頂点は色相の位置に合わせて回転するという事。言わなくても知っていると思いますが言葉にしておくと、色相によって三角形の角度が変わっても、明度と彩度のグラデーションの関係は一定です。これは後でトーンの話に関係してきます。</p>
+
+<h3 id="3">PCCS（Practical Color Coordinate System）</h3>
+<p>　PCCSは、色相・トーンの2つのパラメータで色を規定する方式です。トーンとは、さっきのマンセル表色系の明度と彩度がトーンという一つの概念にまとめられたものと考えればいいです。そして下図のような各色相毎に明度と彩度の関係をまとめたものを等色相面といいます。</p>
+<img src="03.png" alt="PCCS（Practical Color Coordinate System）" />
+<span class="centering">出典　<a href="http://www.sikiken.co.jp/pccs/pccs04.html">日本色研事業株式会社</a></span>
+<p>　PCCSが便利なのは、色相の性格と、トーンの性格の2つで配色が決められるようになったことです。マンセル表色系では3つのパラメータの性格を見ながら、色味、明るさ、鮮やかさのバランスをとる必要がありました。</p>
+<p>　この中でも、色味を決める色相なんてものは大抵は描くものによってはじめから決まっているものなのであまり悩まされません。もっと言えば好みで適当に決めても不自然な配色にはならないでしょう。また、明度と彩度について考えるということは二次元座標上で「明度は垂直方向にこれくらいで彩度は水平方向にこれくらい」という思考過程を踏んでいたところを、トーンについて考えることで「トーンはここ」というシンプルな思考過程になります。上図を参考にすると、三角形の中にいくつかの円が配置されていてそれぞれに名前がつけらているため、明度と彩度の組み合わせを名指しで選択できるということです。</p>
+<p>　つまりPCCSで明度と彩度がトーンにまとめられたことで、いちいち色味と明るさと鮮やかさのバランスをとる必要がなくなったのです。すると、トーンのパターンさえ知っておけば自然とバランスのとれた配色ができるわけです。トーンはいくつかパターンがあり、それぞれ言葉で形容できるように理論づけられています。</p>
+
+<h3 id="4">色立体と固有明度</h3>
+<p>　トーンは先ほど言ったとおり明度と彩度を一つにまとめた概念で、それぞれの性格に合った名前が当てられています。さきほどの図では各トーンの周りに色相環があったように、トーンとは別次元にあるだけで色相も一緒に考えることができます。明度（y軸）と彩度（x軸）に色相（z軸）を一つにまとめる、つまりトーンと色相の関係を表している図として「色立体」があります。z軸である色相は環状なので、各色相の等色相面を配置すると回転体を形成します。その球体が少し歪んだ形になっているのは、色相とトーンの関係に「固有明度」の概念を加えて視覚化しているからです。</p>
+<img src="04.png" alt="色立体と固有明度" />
+<span class="centering">via　<a href="http://www.color-charites.com/2-7.html">色彩検定 カラー</a></span>
+<p>　色立体において、黄色の等色相面は上部が、青の等色相面は下部が出っ張っています。このときの垂直方向は明度を表しています。これが何を意味するかというと、等色相面の先端は最も彩度が高い色ですが、色相によって最も彩度が高くなる色の明度が異なるということです。ある色相で最も彩度が高くなる色の明度のことを固有明度といいます。</p>
+<img src="05.png" alt="固有明度と色相の関係" />
+<p>　固有明度は、黄色が最も明るく、青紫が最も暗くなります。色相環で見ると黄色と青紫は対極にあることが分かります。つまり固有明度は色相環上で黄色から青紫に向かって次第に暗くなるということができます。これはイラストを塗るときに知っておくべき知識です。通常は影の部分は暗く塗りますが、そのときの色の作り方は3種類あることになります。一つ目は明度を下げて塗る方法。二つ目は固有明度の低い色相で塗る方法。三つ目は明度を下げつつ固有明度の低い色相にずらして塗る方法。</p>
+<img src="06.png" alt="固有明度と色相を使いこなして球体を表現" />
+<p>　このように色彩理論を理解しておけば色の塗り方にも意味が生まれてきます。いま挙げた例についてもどれが正しいというのではなく、それぞれの塗り方によって得られる効果が違います。詳しい色彩の効果については後日の記事で。今回の記事を要約すると、「色は色相・明度・彩度の3つのパラメータで表され、そのうち明度・彩度をトーンという一つの概念でまとめることができ、トーンを表す等色相面を色相環上に配置すると色立体となり、色立体では各色相の固有明度の相対関係が把握でき、これらの理論はデジタルイラストを塗るときに応用できる」といったところです。</p>
+</div> <!-- .entry-content -->
+
+
+<div class="ninja_onebutton"><script type="text/javascript">(function(d){if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896)=='undefined'){document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/52708f535f08e25625d3b79233c81896'><\/sc"+"ript>");}else{window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896.ONETAGButton_Load();}})(document);//]]></script>
+<span class="ninja_onebutton_hidden" style="display:none;">http://www.oekaki-hoho-ron.com/color-scheme-theoretical-outline/index.html</span>
+<span style="display:none;" class="ninja_onebutton_hidden">デジタルイラストを描くための色彩理論概論</span></div> <!-- .ninja_onebutton" -->
+
+
+<div id="page-navi">
+<a id="page-navi-new" href="/harmony-of-color-scheme/index.html">次の記事</a>
+<a id="page-navi-old" href="/the-human-body-sketch-which-makes-time-lapse-feel/index.html">前の記事</a>
+</div>
+
+
+<!--#include virtual="/include/article-bottom-info.html" -->
+<!--#include virtual="/include/footer.html" -->

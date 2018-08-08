@@ -1,0 +1,55 @@
+<ads-article-bottom-box>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- article-bottom --><ins class="adsbygoogle"style="display:block"data-ad-client="ca-pub-7336552517082119"data-ad-slot="4994234280"data-ad-format="auto"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</ads-article-bottom-box>
+
+
+<div id="article-bottom-info">
+<h4>執筆者</h4>
+<div id="profile">
+<img src="/assets/img/hoho.png" />
+<span>村上豪一</span>
+<p>　理論化家。森羅万象を理屈でしか捉えない理屈人間。絵を描き始めた頃に神絵師への劣等感から、絵は才能ではなく理屈で描くものだということを証明しようと閃いた。以後、誰でも描ける方法論を開発して絵が描けることの優位性を滅すべく研究に勤しむ。独自開発の手法は「透視図法解剖図」「対角線分割法」「お絵描きのメカニズム」など。作曲方面も研究中。</p>
+</div>
+
+<ul class="follow-button-profile">
+<li id="button-twitter"><a href="https://twitter.com/oekaki_hoho_ron" target="_blank"><img src="/assets/img/button-twitter.png" />Twitter</a></li>
+<li id="button-soundcloud"><a href="https://soundcloud.com/oekaki-hoho-ron" target="_blank"><img src="/assets/img/button-soundcloud.png" />Soundcloud</a></li>
+<li id="button-note"><a href="https://note.mu/oekaki_hoho_ron" target="_blank"><img src="/assets/img/button-note.png" />note</a></li>
+<li id="button-pixiv"><a href="https://pixiv.me/oekaki_hoho_ron" target="_blank"><img src="/assets/img/button-pixiv.png" />Pixiv</a></li>
+<li id="button-nico"><a href="http://www.nicovideo.jp/user/6755076" target="_blank"><img src="/assets/img/button-nico.png" />ニコニコ動画</a></li>
+<li id="button-vimeo"><a href="https://vimeo.com/koma51" target="_blank"><img src="/assets/img/button-vimeo.png" />vimeo</a></li>
+</ul>
+
+
+<h4 id="library">アーカイブ</h4>
+<ul class="article-bottom-post-list">
+{% for post in site.posts %}
+{% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
+{% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
+{% if month != nmonth %}
+<li><a href="{{ post.date | date: '%Y' }}-{{ post.date | date: '%m' }}">{{ post.date | date: '%Y' }}年{{ post.date | date: '%m' }}月</a></li>
+{% endif %}{% endfor %}
+</ul>
+
+<h4>カテゴリー</h4>
+{% for category in site.categories %}
+<ul class="article-bottom-post-list">
+{% for posts in category %} {% for post in posts %} {% if post.title != nil %}
+<li><a href="{{ site.baseurl }}{{ category[0] }}">{{ category[0] }}</a></li>
+{% endif %} {% endfor %} {% endfor %}
+</ul>
+{% endfor %}
+
+
+<h4>タグ</h4>
+<ul class="article-bottom-post-list">
+{% for tag in site.tags %}
+<li><a href="">{{ tag | first }}</a><li>
+{% endfor %}
+</ul>
+
+
+  
+
+
+</div><!-- #article-bottom-info -->

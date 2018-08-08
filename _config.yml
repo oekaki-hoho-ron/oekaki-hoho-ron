@@ -1,0 +1,7 @@
+markdown: kramdown
+highlighter: rouge
+
+# category archive
+category_title_prefix: カテゴリー：
+category_title_suffix: ' '
+category_dir: category

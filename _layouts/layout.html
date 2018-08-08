@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="utf-8" >
+
+{% include head.html %}
+
+<body>
+  {% include header.html %}
+  
+  <container>
+    <main>
+      <input type="checkbox" id="sidebar-open-input" />
+      {% include sidebar.html %}
+      {% include top-contents.html %}
+
+      <tab-contents>
+        <input type="radio" id="tab1" name="tab" checked>
+        <label for="tab1" id="tab1-label">新着記事</label>
+        <input type="radio" id="tab2" name="tab">
+        <label for="tab2" id="tab2-label">人気記事</label>
+        <input type="radio" id="tab3" name="tab">
+        <label for="tab3" id="tab3-label">外部コンテンツ</label>
+        <tab-box>
+          {{ content }}
+          {% include tab-box2.html %}
+          {% include tab-box3.html %}
+        </tab-box>
+      </tab-contents>
+
+　　　 <article>
+        {% include article-bottom-info.html %}
+      </article>
+
+      {% include footer.html %}
+    </main>
+  </container>
+
+</body>
+</html>
