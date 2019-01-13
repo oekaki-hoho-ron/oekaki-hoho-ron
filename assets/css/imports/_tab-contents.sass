@@ -1,0 +1,43 @@
+#tab1 + label,
+#tab2 + label,
+#tab3 + label
+ margin: 20px 0 0
+ display: inline
+ float: left
+ text-align: center
+ width: 33.33333333333%
+ height: 30px
+ padding: 10px 0 0
+ border-bottom: 3px solid #000
+ font-size: 16px
+
+#tab1 + label:hover,
+#tab2 + label:hover,
+#tab3 + label:hover
+ background: #666
+ color: #fff
+
+#tab1:checked ~ #tab1-label,
+#tab2:checked ~ #tab2-label,
+#tab3:checked ~ #tab3-label
+ background: #000
+ color: #fff
+
+tab-contents input[type="radio"]
+ display: none
+
+tab-box1,
+tab-box1 ads-box,
+tab-box2,
+tab-box2 ads-box,
+tab-box3,
+tab-box3 ads-box
+ display: none
+
+#tab1:checked ~ tab-box > tab-box1,
+#tab1:checked ~ tab-box > tab-box1 ads-box,
+#tab2:checked ~ tab-box > tab-box2,
+#tab2:checked ~ tab-box > tab-box2 ads-box,
+#tab3:checked ~ tab-box > tab-box3,
+#tab3:checked ~ tab-box > tab-box3 ads-box
+ display: block

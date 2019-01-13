@@ -1,0 +1,1226 @@
+<!DOCTYPE html><html lang="utf-8" >
+
+<head>
+
+  <!-- 基本設定 -->
+  <!--link rel="canonical" href="サイトURL"-->  <!-- コンテンツ内容が重複するページの正規URLを指定する -->
+  <meta charset="utf-8">
+  <title>対角線分割法 概論　〜透視図法の空間を対角線で測るアイデア集〜</title>
+  <meta name="description" content="記事説明">
+  <link rel="icon" href="/assets/img/favicon.png">
+  <link rel="alternate" type="application/rss+xml" title="フィード" href="フィードページのURL" />  <!-- RSSフィード設定 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">  <!-- 使用端末のディスプレイサイズに最適化するレスポンシブ設定 -->
+
+
+  <!-- OGP -->
+  <meta property="og:site_name"  content="サイト名" />
+  <meta property="og:type" content="ページタイプ" />
+  <meta property="og:url" content="/introduction-to-diagonal-division-method/" />
+  <meta property="og:title" content="対角線分割法 概論　〜透視図法の空間を対角線で測るアイデア集〜" />
+  <meta property="og:description" content="ディスクリプション" />
+  <meta property="og:image" content="/assets/img/2018-01-16/00.png" />
+  <meta name="twitter:card" content="Summary with Large Image" />
+  <meta name="twitter:site" content="@oekaki-hoho-ron" />
+  <meta property="fb:app_id" content="App ID" />
+  <meta property="article:publisher" content="FacebookページのURL" />
+
+
+  <!-- 外部ファイル -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+
+  <!-- GoogleAdsence -->
+  <!-- GoogleAdsence自動広告 --><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-7336552517082119",enable_page_level_ads: true});</script>
+  <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-30635583-8"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-30635583-8');</script>
+  <!-- ads-in-article自動挿入 -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+	$(document).ready(function() {
+		var adsCode = '<ads-in-article-box><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><\/script><ins class="adsbygoogle"style="display:block; text-align:center;"data-ad-layout="in-article"data-ad-format="fluid"data-ad-client="ca-pub-7336552517082119"data-ad-slot="6117821682"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></ads-in-article-box>';
+		$(".entry-content h2").each(function (i) {
+			if(i % 3 == 0 && i > 0 || i == 1){
+				$(this).before(adsCode);
+			}
+		});
+	});
+　　</script>
+
+</head>
+
+<header>
+  <label for="header__accordion-checkbox" id="header__accordion-button">
+    <img src="/assets/img/accordion-button.png" />
+  </label>
+  <header__accordion-button-dummy></header__accordion-button-dummy>
+  <h1 class="header__logo">
+    <a href="/index.html">
+      <img class="header__logo-img" src="/assets/img/logo.png" alt="お絵描きホーホー論" />
+    </a>
+  </h1>
+  <span class="header__description">理屈で絵が描ける事を証明する</span>
+</header>
+
+<input type="checkbox" id="header__accordion-checkbox" />
+
+
+<body>
+
+  <container>
+      <sidebar>
+
+  <sidebar__ads-box_mobile>
+    <img src="ads.png">
+  </sidebar__ads-box_mobile>
+
+  <sidebar__ads-box_pc>
+    <img src="ads.png">
+  </sidebar__ads-box_pc>
+
+  <div class="share-buttons">
+  <script type="text/javascript">(function(d){if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896)=='undefined'){document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/52708f535f08e25625d3b79233c81896'><\/sc"+"ript>");}else{window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896.ONETAGButton_Load();}})(document);//]]></script>
+  <span class="ninja_onebutton_hidden" style="display:none;">/introduction-to-diagonal-division-method/</span>
+  <span style="display:none;" class="ninja_onebutton_hidden">対角線分割法 概論　〜透視図法の空間を対角線で測るアイデア集〜</span>
+</div> <!-- .share-buttons -->
+
+  <sidebar-bannar>
+    <a href="https://www.youtube.com/channel/UCe2lNmDXPV1LmIqaFGRnkFg" target="_blank">
+      <img src="/assets/img/banner-youtube-hoho.png" />
+    </a>
+  </sidebar-bannar>
+
+
+  <div id="post-table">
+    
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('日記').checked = true;">
+        日記<span>5</span>
+      </label>
+      <input type="checkbox" id="日記" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/establishing-the-private-studio/" target="_blank"><img src="/assets/img/2014-06-15/00.png" /><span>自主制作アニメ「STUDIO hoho」設立のお知らせ</span></a></li>
+        
+          <li class="post-table__li"><a href="/transition-of-web-server/" target="_blank"><img src="/assets/img/2014-03-16/00.png" /><span>サーバー引っ越して気分爽快！</span></a></li>
+        
+          <li class="post-table__li"><a href="/modification-to-simple-policy/" target="_blank"><img src="/assets/img/2013-05-06/00.png" /><span>お絵描き再始動、シンプルに方針変更</span></a></li>
+        
+          <li class="post-table__li"><a href="/idle-talk/" target="_blank"><img src="/assets/img/2013-03-07/00.png" /><span>人物画のアタリ線の研究に時間を費やす意義について考えた事</span></a></li>
+        
+          <li class="post-table__li"><a href="/failure-of-a-certain-beginner/" target="_blank"><img src="/assets/img/2013-03-04/00.png" /><span>ある初心者の失敗</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('日記').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('お絵描きのメカニズム').checked = true;">
+        お絵描きのメカニズム<span>11</span>
+      </label>
+      <input type="checkbox" id="お絵描きのメカニズム" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/kouzu/" target="_blank"><img src="/assets/img/2019-01-05/00.png" /><span>構図</span></a></li>
+        
+          <li class="post-table__li"><a href="/mechanism-of-drawing-4/" target="_blank"><img src="/assets/img/2018-08-30/00.png" /><span>お絵描きのメカニズム</span></a></li>
+        
+          <li class="post-table__li"><a href="/mechanism-of-drawing-3/" target="_blank"><img src="/assets/img/2018-08-30/00.png" /><span>お絵描きのメカニズム</span></a></li>
+        
+          <li class="post-table__li"><a href="/mechanism-of-drawing-2/" target="_blank"><img src="/assets/img/2018-06-11/00.png" /><span>お絵描きのメカニズム　第2巻 〜感覚で描く絵、理屈で描く絵〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/mechanism-of-drawing-1/" target="_blank"><img src="/assets/img/2018-05-18/00.png" /><span>お絵描きのメカニズム　第1巻　〜絵は才能でなく根気で描ける〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/sketch-of-the-pokemon-with-ambiguous-storage2/" target="_blank"><img src="/assets/img/2017-09-10/00.png" /><span>うろ覚えポケモンかけるかな？　〜第2フェイズ「脳内イメージの再現」〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/sketch-of-the-pokemon-with-ambiguous-storage/" target="_blank"><img src="/assets/img/2017-06-11/00.png" /><span>うろ覚えポケモン描けるかな？　〜第1フェイズ「うろ覚え」〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/not-drawing-draft-human-body-sketch/" target="_blank"><img src="/assets/img/2013-07-04/00.png" /><span>アタリ線を描かないデッサン</span></a></li>
+        
+          <li class="post-table__li"><a href="/right-brain-and-left-brain/" target="_blank"><img src="/assets/img/2013-03-12/00.png" /><span>右脳・左脳で使い分ける人体デッサンのアタリ線の描き方</span></a></li>
+        
+          <li class="post-table__li"><a href="/how-to-draw-makes-sketch-stabilize/" target="_blank"><img src="/assets/img/2013-03-06/00.png" /><span>人体デッサンを安定させるアタリ線の描き方</span></a></li>
+        
+          <li class="post-table__li"><a href="/draft-of-sketch-habit-conversion/" target="_blank"><img src="/assets/img/2013-03-05/00.png" /><span>安定して人体デッサンするためのアタリ線の習慣化</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('お絵描きのメカニズム').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('透視図法').checked = true;">
+        透視図法<span>18</span>
+      </label>
+      <input type="checkbox" id="透視図法" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/m/" target="_blank"><img src="/assets/img/2018-09-20/00.png" /><span>一筆描きパース理論</span></a></li>
+        
+          <li class="post-table__li"><a href="/introduction-to-diagonal-division-method/" target="_blank"><img src="/assets/img/2018-01-16/00.png" /><span>対角線分割法 概論　〜透視図法の空間を対角線で測るアイデア集〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/depth-reduction-and-compression/" target="_blank"><img src="/assets/img/2017-12-25/00.png" /><span>ユアッサーの法則の画角メーターで学ぶ奥行きの「縮小」と「圧縮」</span></a></li>
+        
+          <li class="post-table__li"><a href="/principle-decoding-of-measuring-point-method/" target="_blank"><img src="/assets/img/2017-05-28/00.png" /><span>ありそうでなかったM点法の原理解説　〜地平線に隠された秘密〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/device-of-diagonal-split-graph-technique/" target="_blank"><img src="/assets/img/2017-05-27/00.png" /><span>透視図法の基本原理「対角線分割法」誕生の軌跡　〜3次元を2次元に変換する仕組み〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/anatomical-chart-of-3point-perspective/" target="_blank"><img src="/assets/img/2016-12-06/00.png" /><span>3点透視図法の解剖図　〜なぜ4点ではなく3点なのか〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/anatomical-chart-of-perspective/" target="_blank"><img src="/assets/img/2016-11-18/00.png" /><span>パース理論の完全形態「透視図法解剖図」</span></a></li>
+        
+          <li class="post-table__li"><a href="/measuring-point-utilization-plan/" target="_blank"><img src="/assets/img/2015-11-23/00.png" /><span>「M点法」実用化計画　〜縮図で奥行きの長さを作図〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/prerequisite-of-perspective/" target="_blank"><img src="/assets/img/2014-12-25/00.png" /><span>透視図法の知られざる大前提　〜実は市販のパース理論書の教えは間違っていた〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/law-of-vertical-perspective/" target="_blank"><img src="/assets/img/2014-12-16/00.png" /><span>三点透視図法の縦パース講座（2/3）　〜縦パースの傾きの法則〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/how-to-think-the-vertical-perspective/" target="_blank"><img src="/assets/img/2014-12-11/00.png" /><span>三点透視図法の縦パース講座（1/3） 〜縦パース作図における2つのポイント〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/3point-perspective-which-used-the-viewing-cone/" target="_blank"><img src="/assets/img/2014-07-12/00.png" /><span>2つの視円錐を重ねて三点透視パース作画　〜建築パースとリアルパースの違い〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/supplementary-lessons-of-perspective-theory/" target="_blank"><img src="/assets/img/2014-04-16/00.png" /><span>建築パース理論補講　〜2点透視を2つ重ねると3点透視になる〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/how-to-draw-the-fish-eye-perspective/" target="_blank"><img src="/assets/img/2013-12-09/00.png" /><span>魚でも分かる魚眼パースの描き方講座　〜魚眼レンズのしくみ〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/device-of-perspective-ruler/" target="_blank"><img src="/assets/img/2013-12-08/00.png" /><span>一瞬で背景イラストのアングルと画角を決めるパースの描き方</span></a></li>
+        
+          <li class="post-table__li"><a href="/viewing-cone-and-perspective/" target="_blank"><img src="/assets/img/2013-12-07/00.png" /><span>視円錐を使って考える望遠パース・広角パースの描き方</span></a></li>
+        
+          <li class="post-table__li"><a href="/drawing-procedure-of-construction-perspective/" target="_blank"><img src="/assets/img/2013-03-26/00.png" /><span>建築パースを徹底研究！パース理論の基礎知識と描き方</span></a></li>
+        
+          <li class="post-table__li"><a href="/basic-knowledge-of-perspective-theory/" target="_blank"><img src="/assets/img/2013-03-14/00.png" /><span>パース理論の予備知識</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('透視図法').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('人物画').checked = true;">
+        人物画<span>5</span>
+      </label>
+      <input type="checkbox" id="人物画" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/center-of-gravity-of-human-body-sketch/" target="_blank"><img src="/assets/img/2014-06-29/00.png" /><span>絵描きが言う人体デッサンの「重心」が厳密には間違っている件</span></a></li>
+        
+          <li class="post-table__li"><a href="/memorization-manner-of-anatomy/" target="_blank"><img src="/assets/img/2014-02-18/00.png" /><span>解体新書　〜人体デッサンの解剖学における筋肉の暗記術〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/the-human-body-sketch-which-makes-time-lapse-feel/" target="_blank"><img src="/assets/img/2013-07-07/00.png" /><span>前後の時間を感じさせる人体デッサン</span></a></li>
+        
+          <li class="post-table__li"><a href="/relation-of-beautiful-hair-and-qualia/" target="_blank"><img src="/assets/img/2013-04-07/00.png" /><span>髪の描き方と、美しい髪というクオリアの関連性</span></a></li>
+        
+          <li class="post-table__li"><a href="/how-to-draw-the-hair/" target="_blank"><img src="/assets/img/2013-04-01/00.png" /><span>ヘアカットとデッサンを関連づけて考える髪の描き方</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('人物画').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('演出').checked = true;">
+        演出<span>1</span>
+      </label>
+      <input type="checkbox" id="演出" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/individual-character-design/" target="_blank"><img src="/assets/img/2013-04-18/00.png" /><span>オリジナルキャラの絵柄を獲得することについて</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('演出').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('精神分析').checked = true;">
+        精神分析<span>2</span>
+      </label>
+      <input type="checkbox" id="精神分析" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/evasion-manner-of-preconception/" target="_blank"><img src="/assets/img/2013-05-18/00.png" /><span>正しい記憶の隙間に宿る、誤った先入観の見つけ方</span></a></li>
+        
+          <li class="post-table__li"><a href="/preconception/" target="_blank"><img src="/assets/img/2013-05-15/00.png" /><span>先入観と仲良くしながら絵を描こう</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('精神分析').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('画材').checked = true;">
+        画材<span>1</span>
+      </label>
+      <input type="checkbox" id="画材" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/proper-use-of-thickness-of-drawing-streak/" target="_blank"><img src="/assets/img/2013-06-07/00.png" /><span>描画線の太さによる練習効果の違い</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('画材').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('色彩理論').checked = true;">
+        色彩理論<span>2</span>
+      </label>
+      <input type="checkbox" id="色彩理論" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/harmony-of-color-scheme/" target="_blank"><img src="/assets/img/2013-08-31/00.png" /><span>デジタルイラストの色を調和させる配色パターン</span></a></li>
+        
+          <li class="post-table__li"><a href="/color-scheme-theoretical-outline/" target="_blank"><img src="/assets/img/2013-08-29/00.png" /><span>デジタルイラストを描くための色彩理論概論</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('色彩理論').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('デジタル').checked = true;">
+        デジタル<span>1</span>
+      </label>
+      <input type="checkbox" id="デジタル" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/how-to-use-the-layer-blending-mode/" target="_blank"><img src="/assets/img/2013-09-01/00.png" /><span>デジタルイラストで使うレイヤーの描画モードの効果を画像で検証</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('デジタル').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('カテゴリ1').checked = true;">
+        カテゴリ1<span>1</span>
+      </label>
+      <input type="checkbox" id="カテゴリ1" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/human-body-sketch-theorization-plan-1/" target="_blank"><img src="/assets/img/2014-04-30/00.png" /><span>人体デッサン理論化計画・序　〜シルエットで捉える描き方の意味考える〜</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('カテゴリ1').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('ハードウェア').checked = true;">
+        ハードウェア<span>1</span>
+      </label>
+      <input type="checkbox" id="ハードウェア" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/pen-tablet-introduction/" target="_blank"><img src="/assets/img/2014-06-20/00.png" /><span>wacomペンタブレットのスペック解説　〜この数値どういう意味？編〜</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('ハードウェア').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('シナリオ').checked = true;">
+        シナリオ<span>2</span>
+      </label>
+      <input type="checkbox" id="シナリオ" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/script-of-animation-mole-hitting-suite/" target="_blank"><img src="/assets/img/2014-08-06/00.png" /><span>自主制作アニメ『もぐらたたき組曲』のシナリオの変更点</span></a></li>
+        
+          <li class="post-table__li"><a href="/conception-of-animation-mole-hitting-suite/" target="_blank"><img src="/assets/img/2014-07-23/00.png" /><span>現在制作中の『もぐらたたき組曲』でやりたいこと</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('シナリオ').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+</div> <!-- #post-table -->
+
+
+  <sidebar-bannar>
+  <!-- 風景デッサンの基本 -->		<sidebar__amazon><a target="_blank"  href="https://www.amazon.co.jp/gp/product/481635512X/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=481635512X&linkCode=as2&tag=koma5109-22&linkId=23c74bc6b24ba1fa260dcfc369c374e1"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=481635512X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=koma5109-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=koma5109-22&l=am2&o=9&a=481635512X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></sidebar__amazon>
+    <!-- 風景デッサンの基本 -->		<sidebar__amazon><a target="_blank"  href="https://www.amazon.co.jp/gp/product/481635512X/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=481635512X&linkCode=as2&tag=koma5109-22&linkId=23c74bc6b24ba1fa260dcfc369c374e1"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=481635512X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=koma5109-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=koma5109-22&l=am2&o=9&a=481635512X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></sidebar__amazon>
+    <!-- 風景デッサンの基本 -->		<sidebar__amazon><a target="_blank"  href="https://www.amazon.co.jp/gp/product/481635512X/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=481635512X&linkCode=as2&tag=koma5109-22&linkId=23c74bc6b24ba1fa260dcfc369c374e1"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=481635512X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=koma5109-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=koma5109-22&l=am2&o=9&a=481635512X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></sidebar__amazon>
+    <!-- 風景デッサンの基本 -->		<sidebar__amazon><a target="_blank"  href="https://www.amazon.co.jp/gp/product/481635512X/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=481635512X&linkCode=as2&tag=koma5109-22&linkId=23c74bc6b24ba1fa260dcfc369c374e1"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=481635512X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=koma5109-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=koma5109-22&l=am2&o=9&a=481635512X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></sidebar__amazon>
+  </sidebar-bannar>
+
+  <sidebar__ads-box_mobile>
+    <img src="ads.png">
+  </sidebar__ads-box_mobile>
+
+  <sidebar__ads-box_pc>
+    <img src="ads.png">
+  </sidebar__ads-box_pc>
+
+</sidebar>
+
+      <contents>
+
+      <article>
+        <h1>対角線分割法 概論　〜透視図法の空間を対角線で測るアイデア集〜</h1>
+        <ul class="article__meta">
+          <li class="post-date">2018年01月16日</li>
+          <!--<li class="category">Category <a href="/tags#">透視図法</a></li>
+          <li class="tag">Tag <a href="_posts/tags/対角線分割法">対角線分割法 </a><a href="_posts/tags/M点法">M点法 </a><a href="_posts/tags/D点法">D点法 </a><a href="_posts/tags/足線法">足線法 </a><a href="_posts/tags/ユアッサーの法則">ユアッサーの法則 </a><a href="_posts/tags/4つのV字模型">4つのV字模型 </a></li>-->
+          <li class="category">Category 透視図法</li>
+          <li class="tag">Tag 対角線分割法 M点法 D点法 足線法 ユアッサーの法則 4つのV字模型 </li>
+        </ul> <!-- .article__meta -->
+        <img src="/assets/img/2018-01-16/00.png" alt="" />
+
+        <div class="share-buttons">
+  <script type="text/javascript">(function(d){if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896)=='undefined'){document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/52708f535f08e25625d3b79233c81896'><\/sc"+"ript>");}else{window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896.ONETAGButton_Load();}})(document);//]]></script>
+  <span class="ninja_onebutton_hidden" style="display:none;">/introduction-to-diagonal-division-method/</span>
+  <span style="display:none;" class="ninja_onebutton_hidden">対角線分割法 概論　〜透視図法の空間を対角線で測るアイデア集〜</span>
+</div> <!-- .share-buttons -->
+        <ads-article-top>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- article-top --><ins class="adsbygoogle"style="display:block"data-ad-client="ca-pub-7336552517082119"data-ad-slot="7083082448"data-ad-format="link"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</ads-article-top>
+
+        <div class="entry-content">
+          <mokuji></mokuji> <!-- 目次のcssのセレクタ基準用 -->
+          <ul>
+  <li>
+    <h3 id="目次">目次</h3>
+  </li>
+  <li><a href="#対角線分割法の公式">対角線分割法の公式</a></li>
+  <li><a href="#四角形ならなんでも適用できる">四角形ならなんでも適用できる</a></li>
+  <li><a href="#透視図法の分割目盛り時代の到来">透視図法の分割目盛り時代の到来</a></li>
+  <li><a href="#垂直方向と水平方向の奥行きは比例の関係">垂直方向と水平方向の奥行きは比例の関係</a></li>
+  <li><a href="#対角線分割法で風景画を描くつもりだった">対角線分割法で風景画を描く、つもりだった</a></li>
+  <li><a href="#奇数分割">奇数分割</a></li>
+  <li><a href="#r点法">R点法</a></li>
+  <li><a href="#透視図法の原理は対角線分割法の集積">透視図法の原理は対角線分割法の集積</a></li>
+  <li><a href="#足線法">足線法</a></li>
+  <li><a href="#m点法">M点法</a></li>
+  <li><a href="#d点法">D点法</a></li>
+  <li><a href="#1n点法">にぼし遠近法</a></li>
+  <li><a href="#対角線分割法実用化の兆し">対角線分割法、実用化の兆し</a></li>
+  <li><a href="#真理の扉の向こうにある真対角線分割法">真理の扉の向こうにある「真・対角線分割法」</a></li>
+</ul>
+
+<p>今回の記事は以前から独自開発していた対角線分割法のとりあえずの完全版リリース報告です。半年前に<a href="/device-of-diagonal-split-graph-technique/index.html" target="blank">透視図法の基本原理「対角線分割法」誕生の軌跡　〜3次元を2次元に変換する仕組み〜</a>の記事でキッカケを掴んでから実用性の模索をしていたのがやっと形になりました。</p>
+
+<p>本来の透視図法は、被写体のシルエットを透明板にプロットしていくという原始的な作図方法です。透視図法に目線の高さ（アイレベル）という概念を導入して作図手法として理論化した足線法は、様々な4つの点の組み合わせで対角線の交点を作図することで3次元と2次元を変換する手法です。平面図と透視図はアングルが違うだけで同じ空間を表しているため、平面図で4つの点を選んで平面的に対角線を作図し、透視図上で対応する4つの点で対角線を作図すれば立体的なアングルから見た対角線となり、その交点はパースにのった奥行きということになります。</p>
+
+<p>今回の記事の後半は、この透視図法の原理の根幹を成す対角線分割法を使って透視図法にまつわる様々な手法の中身が対角線分割法で構成されていることを可視化していく遊びです。最後に対角線分割法で独自の作図手法が発明できるかもしれないことにも触れています。とりあえずは対角線分割法の実用性と、透視図法は対角線分割法の集積であることが伝われば満足です。お絵描きにも応用できる便利な手法として布教したいので、対角線分割法の理論を分かりやすくまとめた決定版として読んで頂ければと思います。</p>
+
+<h2 id="対角線分割法の公式">対角線分割法の公式</h2>
+
+<p>対角線分割法とは、面（壁・床など）の奥行きを対角線を利用して任意の数で分割する、台形の対角線の性質に基づく手法です。対角線分割法は、数値計算で求める方法と、作図によって求める方法があります。</p>
+
+<p><img src="/assets/img/2018-01-16/01.png" alt="対角線分割法の基本図と公式" /></p>
+
+<p>数値計算で求める場合は、すでに作図されている面（壁・床など）の各辺の寸法を定規で測定し、その数値を公式に代入して算出します。</p>
+
+<p>作図で求める場合は、nとmを長さではなく分割数の目盛りとして捉え、作図したい奥行きの長さから逆算してnとmの値を決定します。奥行きは、対角線を作図するときの辺の長さが短い方に近くなります。また、分割数目盛りをいくつにすれば奥行きがいくつになる、ということをある程度暗記しておけば手前の辺を何分割するかを考えるだけで思い通りの奥行きが作図できます。</p>
+
+<p><img src="/assets/img/2018-01-16/02.gif" alt="対角線分割法の基本手順" /></p>
+
+<p>上図は平面的な正方形を分割する手順です。平面的なら2/5分割したいときそのまま2/5分割すれば済みます。この正方形がパースにのったとき、目分量では正確な2/5分割ができなくなります。ですが平面的であろうとパースにのっていようと、対角線分割法の手順は上図の通りです。四角形であれば適用できます。</p>
+
+<h2 id="四角形ならなんでも適用できる">四角形ならなんでも適用できる</h2>
+
+<p>手前と奥の辺が平行な図形（正方形・長方形・台形・菱形）であれば対角線分割法が適用できます。とくに1点透視図法、2点透視図法では面（壁・床など）は奥行きが縮小されているため全て台形になりますが、実際の建築物は正方形なり長方形なりで構成されているので、対角線分割法によって奥行きの分割数をコントロールして思い通りの位置に窓や柱を作図できます。要は向かい合う一対の辺が平行でさえあれば、辺の長さがどうであれ、互いの距離がどうであれ、対角線で分割できます。</p>
+
+<p><img src="/assets/img/2018-01-16/03.png" alt="対角線分割法は四角形であれば適用できる" /></p>
+
+<p>ちなみに手前と奥の辺が並行でなくても分割することはできます。3点透視図法では全方向に奥行きの縮小が生じるので台形にはなりません。しかしパースにのる前が正方形もしくは長方形だったのであれば問題なく対角線分割法の管轄です。歪な四角形に対角線を作図し、消失点の方向へ収束する角度の分割線を作図すればいいだけです。</p>
+
+<p><img src="/assets/img/2018-01-16/04.png" alt="3点透視図法の対角線分割法" /></p>
+
+<h2 id="透視図法の分割目盛り時代の到来">透視図法の分割目盛り時代の到来</h2>
+
+<p>透視図法で描く、と言うと寸分の狂いなく高精度な作図をするものだと思われるかも知れませんが、最近では定規を使わず目分量で作図しても影響が少ない方法もあると分かりました。それが「分割目盛り」です。画面上での「1m」を描けと言われても判断に困りますが、画面上の線の「4分割」なら目分量で描けます。それに平面の四角形に対角線や目盛りを作図しておいて、それをパースにのせるという処理も簡単にできるので用途が広いです。お絵描きに活用するならフリーハンドでパース作画できた方が便利なので、今後はなるべく定規で正確に測定したり、数式で正確に算出したり、という方針はとらないようにしたいですね。すでにある線（立体の辺、画面幅など）を大まかに分割し、それを平面図と透視図で対応させながら位置合わせをすることで奥行きを作図する、という手法が望ましいです。</p>
+
+<p><img src="/assets/img/2018-01-16/05.png" alt="分量で作図する目盛り透視図法の例" /></p>
+
+<h2 id="垂直方向と水平方向の奥行きは比例の関係">垂直方向と水平方向の奥行きは比例の関係</h2>
+
+<p>ここの項目は対角線分割法の原理の一つを数学的に証明したいだけのものです。後述のR点法の補足で少し登場しますが、はっきりいって現段階ではお絵描きにほぼ無関係なので読み飛ばしてください。透視図法オタクは必見です。</p>
+
+<p>対角線分割法の分割線は、基本的にはイメージのしやすいよう上で掲載した公式図のように向かい合う辺と平行方向に作図されます。ところが、面白いことに同じ対角線の交点に垂直方向（公式図と直行する方向）の分割線を描いたとしても、それは対角線の基準になっている片方の線の傾きによって一定の比率が維持されるようになっており、この法則は作図に応用できます。これは数学でよく見る比例グラフだと考えれば簡単に説明がつきます。</p>
+
+<p><img src="/assets/img/2018-01-16/06.png" alt="比例グラフで理解する透視図法の奥行き" /></p>
+
+<p>普通の対角線分割法では向かい合う辺と垂直方向（水平面すなわち底面の奥行き）に分割しますが、向かい合う辺と平行方向（垂直面すなわち側面の奥行き）の分割数も同時に求めることができます。このときの透視図上の被写体の面（壁・床など）をグラフの枠に見立て、その面に作図した対角線をグラフ曲線に見立てることで、対角線分割法をパースに乗ったグラフに置き換えて考えることができます。そして対角線分割法の目分量の分割目盛りをグラフのx軸とy軸目盛りに見立て、対角線の角度をグラフの傾き係数aに見立てることで、対角線を片方だけ作図すれば傾き係数aで比率を合わせて同時に側面と底面の分割線も作図できます。</p>
+
+<p>この比例グラフのような性質を活用する場面があるとすれば、例えば建物の壁が見切れていて十分な寸法情報が得られない時、少ない寸法情報から傾きaの直線を描き、その直線上から垂直線（y）と水平線（x）を伸ばして建物の壁の端との交点の寸法がいくつになるかを算出することで寸法情報を連鎖的に増殖させることができる、といったところでしょうか。寸法情報が増えれば対角線分割法で目分量の分割目盛りを利用して任意の分割位置を求めることもできるようになります。ただ、ここまでくると絵を描くという目的を忘れてしまいそうなので、数学に取り憑かれる一種の呪いか何かだと思って取り扱ってください。一応のところ比例グラフの性質は透視図法界のオカルトとして語り継いでおいて、あとで自分自身で怪しい実験をやっていることでしょう。</p>
+
+<p><img src="/assets/img/2018-01-16/07.png" alt="見切れた建物を作図するなら比例曲線分割法" /></p>
+
+<h2 id="対角線分割法で風景画を描くつもりだった">対角線分割法で風景画を描く、つもりだった</h2>
+
+<p>とりあえず何か試し描きしてみようといろいろと構図を考えて見ましたが、やはり元々がただの法則である対角線分割法をメインで使う描き方というのを思いつきませんでした。描こうと思えば色々なことができますが、それは他の手法で代替できることがほとんどです。基本的にはD点法、M点法、ユアッサーの法則あたりでパースを取っておいて、建物や立体の表面のディテールの寸法を測定する目的で対角線分割法を使うというのがオススメです。対角線分割法は3DCGのテクスチャマッピングを人力でやる手法だと認識していただいて構わないと思います。</p>
+
+<p>今の所は上で述べた比例グラフ分割法のように、寸法情報を捻出しなくてはいけないシチュエーションが得意と分かっている程度ですが、しばらく試行錯誤を繰り返せば何かしらの使い道が見えてくると思うので一旦保留です。広く応用できる法則なので覚えておくと有利です。</p>
+
+<h2 id="2分割法">2分割法</h2>
+
+<p>ここからは一般的に知られている手法の原理の中身を可視化していく試みです。透視図法で対角線を使うと言えば、奥行きを2分割するものがよく知られています。しかし、この手法だけではどう組み合わせても3の倍数分割と奇数分割ができないのが難点です。</p>
+
+<p><img src="/assets/img/2018-01-16/08.png" alt="2分割法" /></p>
+
+<h2 id="奇数分割">奇数分割</h2>
+
+<p>複雑な手順を踏めば3の倍数分割や奇数分割（1/3、1/5、1/6、1/7…）もできます。対角線分割法で奇数分割法の中身がどうなっているのかを可視化してみました。</p>
+
+<p><img src="/assets/img/2018-01-16/09.png" alt="奇数分割の基本図と対角線分割法の基本図" /></p>
+
+<p><img src="/assets/img/2018-01-16/10.png" alt="3分割法" /></p>
+
+<p><img src="/assets/img/2018-01-16/11.png" alt="5分割法" /></p>
+
+<p>どれだけ分割数が増えようと作図手順は同じです。違う部分といえば、分割したい奇数マイナス1分割するところだけです。</p>
+
+<p><img src="/assets/img/2018-01-16/12.gif" alt="奇数分割法の基本手順" /></p>
+
+<h2 id="r点法">R点法</h2>
+
+<p>R点法とは比率点（Ratio Point）を使った作図手法です。以前に奇数分割法から着想を得て対角線分割法を開発する<a href="https://twitter.com/i/moments/928194252525379584" target="blank">考察ツイートの過程</a>から生まれたもので、一般では奇数分割法を簡略化する代替案として知られており、それに独自に命名しただけのものです。R点法の奥行きを求める手順はM点法とほぼ同じ原理で作られています。相違点を挙げるなら、M点法が立体の平面的な寸法情報から奥行きの全長と分割点の両方を作図できるのに対し、R点法はすでに奥行きの長さが作図された面の分割しかできないところです。ですがそれはM点とR点の機能の違いというだけの話なのであまり気にすることではありません。</p>
+
+<p><img src="/assets/img/2018-01-16/13.png" alt="R点法の基本図" /></p>
+
+<p>R点法は普通の対角線分割法とは分割する方向が違います。上図の簡略図を見ると公式通りの分割方向、つまり向かい合うオレンジと青の辺と平行方向に分割線を作図しています。ところが作図したかったのは壁の側面の奥行きであって、床の奥行きではありません。ですが、これは上で説明した比例グラフの性質によって側面と底面の奥行きの比率は一定に保たれているため問題ありません。上図のR点法では対角線分割法によって底面の奥行きを求めることで連鎖的に側面（壁）の奥行きを求めているというだけです。</p>
+
+<h2 id="透視図法の原理は対角線分割法の集積">透視図法の原理は対角線分割法の集積</h2>
+
+<p>ここまでは2分割法、奇数分割法、R点法といった、すでに作図された面を分割する手法についての説明でした。以降は足線法、M点法、R点法、1/n点法といった、何もない状態から面そのものを作図する手法についての説明と言えます。ただ、既存の手法を対角線分割法で解析したいというだけの遊びなので実用性はありませんが、既存の手法と対角線分割法への理解は深まると思います。理解が深まれば平面図と透視図の対応も脳内イメージで補完できるようになり、最終的には透視図上のみ、つまり画面内だけで作図を完結させられるようにもなると思います。</p>
+
+<h2 id="足線法">足線法</h2>
+
+<p>足線法は現実空間で見えているものをそのまま再現した手法なので理屈抜きにして間違いなく正しい手法です。これはとても重要なことなので透視図法を学ぶ上で度々原点回帰することをお勧めします。観測者の立ち位置から地平線までの広大な3次元空間を2次元に落とし込むわけですが、その2次元という概念の権化が透明板です。</p>
+
+<p>足線法における「足線」の基本的な機能は被写体の奥行きの縮小量を測定することです。足線で作図した奥行きが縮小された幅と、VPに向かう線との兼ね合いで奥行きの長さを作図する手法ということです。そして足線法の正式な作図手順も解剖すれば全て対角線分割法で構成されているのが面白いところです。</p>
+
+<p><img src="/assets/img/2018-01-16/14.png" alt="足線法の基本図" /></p>
+
+<p><img src="/assets/img/2018-01-16/15.png" alt="足線法の基本図の対角線分割法" /></p>
+
+<h2 id="m点法">M点法</h2>
+
+<p>M点法（Majoring Point）は、奥行き方向の寸法の作図を効率化することに特化した手法です。例えば足線法は透視図法をそのまま作図手法に落とし込んだものなので比率変換や幾何学の法則を用いることはせず、作図手順の一番初めに全ての被写体の頂点に足線を作図して奥行きの縮小を測る作業を律儀に行います。奥行きの縮小は目分量では作図できないのでそこでフリーハンドは手詰まりです。一方、M点法はまず奥行きを知りたい頂点の数だけ対応するMPを幾何学の法則を利用して作図しておき、そして作図する位置のGL上に任意の平面的な辺の寸法を描きさえすれば、あとは線を1本作図するだけで完了できます。このMPの機能はまず平面図である1本の直線を作図することで透視図上にある1点（MP）を設定し、「平行線は無限遠で同じ点に収束する」原理を利用して同じ方向すなわち平行に配置された立方体の奥行きを一括して測定するものです。M点法の詳しい原理解説は<a href="/principle-decoding-of-measuring-point-method/index.html#2" target="blank">ありそうでなかったM点法の原理解説　〜地平線に隠された秘密〜</a>の記事に載せてあります。</p>
+
+<p>平行な辺は同じMPを流用できるので、どれだけ立体が増えても同じMPに線を引くだけです。ただし立体の向きが異なるなら個別にMPを求める必要があります。とても便利な手法ではありますが、足線法もM点法も作図には画面外のVPやSPを利用する必要があるため画面内だけ作図を完結させることは難しく、あくまで透視図法の原理を活用する方法というだけで、作図手法としてはまだ未完成ということは理解しておいてください。</p>
+
+<p><img src="/assets/img/2018-01-16/16.png" alt="M点法の基本図" /></p>
+
+<p><img src="/assets/img/2018-01-16/17.gif" alt="M点法の対角線分割法" /></p>
+
+<h2 id="d点法">D点法</h2>
+
+<p>D点法は、正方形を作図するため手法です。1点透視図法の正方形の対角線方向の消失点のことを距離点DP（Distance Point）といい、正方形の奥行きの長さを測定する機能があります。奥行きの長さは左右のDPーDP間距離によってコントロールできるため、1点透視の画角を設定するためにもDPが使われます。初めにDPの位置を決めておけば効率的に正方形を量産できるためグリッド作図の際に活躍します。</p>
+
+<p>ちなみに1点透視のときの正方形の対角線方向の消失点のことを距離点DPと呼び、2点透視のときのそれは対角消失点DVPと個人的に呼んでいます。呼び分けている理由は、2点透視では正方形に方位角が与えられるとVP1-DVP-VP2間距離が複雑に移動しますが、1点透視の正方形は常に正面を向いているため対角線方向の消失点が動くことがなく、作図の基準として使える常駐する点という意味があると考えて区別しているからです。DPは画角90°のとき作図フレームのちょうど両端に位置するため画角を決める基準点にするには最適なので、ユアッサーの法則の画角メーターなどはD点法と目分量の分割目盛りを活用して画角をコントロールしています。</p>
+
+<p><img src="/assets/img/2018-01-16/18.png" alt="D点法の基本図" /></p>
+
+<p><img src="/assets/img/2018-01-16/19.png" alt="D点法の対角線分割法" /></p>
+
+<h2 id="1n点法">1/n点法</h2>
+
+<p>1/n点法は比率変換によって画面内だけで作図を完結させるためのアイデアです。足線法、D点法、M点法、R点法、全ての作図手法において適用させることができます。1/n点法は、向かい合う2つの辺の長さを変えても、長さの比率が変化しなければ対角線の交点の位置は変わらないという、すなわち台形の対角線の性質に基づく手法といえます。そして<a href="/device-of-diagonal-split-graph-technique/index.html" target="blank">以前の記事</a>で1/n点法の機能を手軽に使えるように応用して編み出した手法が「対角線分割法」であるとだけ言っておきましょう。</p>
+
+<p><img src="/assets/img/2018-01-16/20.png" alt="1/n点法の法則" /></p>
+
+<p>それに1/nというだけあって目分量の分割目盛りで分割することが簡単にできます。もし絵を描いているときに画面内で作図が完結できなさそうなときに、ササッと1/2くらいの点を探してしまえるように習得しておくとかなり応用力が身につきます。透視図法の既存のルールに囚われずに知りたい点を自由気ままに導きたいならオススメの理論です。</p>
+
+<p><img src="/assets/img/2018-01-16/21.png" alt="1/2 M点法の例" /></p>
+
+<h2 id="にぼし遠近法">にぼし遠近法</h2>
+
+<p>イラストや漫画を描かれている<oo>赤井さしみ</oo>さん（<a href="https://twitter.com/sas_akai" target="blank">@sas_akai</a>）はTwitter上で数学的な遠近法のノウハウをよく考案されており、その中でも2匹の煮干しを並べて比率計算によって縮小具合や配置がどう変化するかを解説した「<yy>にぼし遠近法</yy>（仮称）」（<a href="https://twitter.com/i/moments/928284868559212546" target="blank">Twitterモーメントまとめ</a>）はかなり実用的で、かつ対角線分割法と互換性のある手法です。にぼし遠近法の概要は、<bb>正方形に見立てた二匹の煮干し</bb>のうち<bb>手前の煮干しの位置を画面内のGLに固定</bb>し、<bb>カメラはそのGLを一定の位置で捉えるように画角変化しながら前後に移動</bb>（カメラワークの<yy>ドリーズーム</yy>にあたる）したとき、<bb>奥の煮干しの距離と大きさはどうなるかを比率計算で求める</bb>ものです。</p>
+
+<p>では対角線分割法と相性がいいというのはどういうことか。まず、<yy>にぼし遠近法</yy>とはすなわち<bb>D点法で1点透視図法の正方形の奥行きを求めるのと同じこと</bb>を、カメラ、手前の煮干し、奥の煮干し、アイレベル、これらの奥行き方向の距離の位置関係を考慮しながら解説しているものです。また、<bb>D点法における対角線分割法はアイレベル幅（VP-VP距離）と被写体の手前の辺の幅の対角線から奥行きを作図する</bb>もので、にぼし遠近法で言い換えれば<bb>アイレベルと手前の煮干しで作図した対角線の交点が奥の煮干しの位置になる</bb>ということです。説明に使うモチーフが違うだけで同じことをしています。</p>
+
+<p>ちなみに、カメラが前後に移動するというのは距離が変化しているという考え方をされるかもしれませんが、この場合体感距離は変化しません。赤いさしみさんの動画を見ると、<bb>手前の煮干しの位置はGLで固定されているため画面内での見え方は一切変化せず、奥の煮干しの縮小と圧縮のみが変化している</bb>のが分かると思います。つまり<bb>カメラの前後移動と同時に画角の変化がともなっている</bb>ということです。<bb>手前の煮干しの構図が変わらないのは画角の変化によって手前の煮干しの位置でのPP幅（画面幅・視界幅）を固定しているから</bb>で、描いている絵のレンズ感を変更したいときにはこのような考え方が必要になります。</p>
+
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="ja"><p lang="und" dir="ltr"><a href="https://t.co/1T8G5OmO2W">pic.twitter.com/1T8G5OmO2W</a></p>&mdash; 赤井さしみ (@sas_akai) <a href="https://twitter.com/sas_akai/status/914156100844380160?ref_src=twsrc%5Etfw">2017年9月30日</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>まさに「描いている絵のレンズ感を変える」ことこそがお絵描きパースを学ぶ目的といって良いかもしれません。レンズ感、具体的にいえば画角を考慮せずに絵を描くなら、消失点「的」な点を設定して線を描くだけで完了します。だからこそ画角という概念を理解する努力をするわけですが、<bb>理論に囚われても絵作りに活かすには別の工夫が必要</bb>です。それが<bb>被写体を画面に固定したままレンズ感を変える「にぼし理論」的な思考過程</bb>です。</p>
+
+<p>赤いさしみさんの動画ではレンズ感の変化する透視図上の映像しか映っていないので、<bb>足線法の基礎を知らないと理解に苦しむ</bb>かもしれません。せっかくなので<a href="/depth-reduction-and-compression/index.html#5" target="blank">前回の記事</a>で独自考案した透視図 - 平面図 変換図の「<yy>4つのV字模型</yy>」と、透視図法原理解析法の「<yy>対角線分割法</yy>」を組み合わせて、「<yy>にぼし理論</yy>」の図解を作ってみました。<bb>透視図法の原理は対角線分割法でできている</bb>という意味が理解しやすい動画になっていると思います。</p>
+
+<p><img src="/assets/img/2018-01-16/22.png" alt="平面図と透視図のイメージを掴むための4つのV字模型" /></p>
+
+<p><span>出典 <a href="/depth-reduction-and-compression/index.html#5" target="blank">お絵描きホーホー論</a></span></p>
+
+<p>下のツイートは<yy>4つのV字模型</yy>の仕組みをアニメーションで見たかったので試作してみたものです。左半分は省略しているので形が違うように見えますが4つのV字模型です。<bb>構図を固定したまま絵のレンズ感を変える、ということの実演</bb>です。被写体をGLに固定しているので、GLハンドルを動かしても被写体も一緒に移動します。これによって<bb>構図を変えずにカメラの画角や被写体との位置関係を変更するときのイメージを再現</bb>できます。</p>
+
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">前の記事で考案した「4つのV字模型」でやりたかったことが形にできた。言葉で説明するのでなくいわゆる具象的な説明ができる。画角変化とGL変化による奥行きの変化をリアルタイムで見たかった。画角変化では奥行きの縮小と圧縮があるけど、GL変化では縮小がないことがわかる。<a href="https://t.co/WVVco420H2">https://t.co/WVVco420H2</a> <a href="https://t.co/YPEG0y49cz">pic.twitter.com/YPEG0y49cz</a></p>&mdash; お絵描きホーホー論 (@oekaki_hoho_ron) <a href="https://twitter.com/oekaki_hoho_ron/status/953969877546487808?ref_src=twsrc%5Etfw">2018年1月18日</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<h2 id="対角線分割法実用化の兆し">対角線分割法、実用化の兆し</h2>
+
+<p>美術講師の<oo>湯浅誠</oo>さん（<a href="https://twitter.com/yuassamakoto" target="blank">@yuassamakoto</a>）が考案された「<yy>ユアッサーの法則</yy>」は<bb>消失点が紙の外側に配置されていても紙の上だけで作図を完結させられる手法</bb>です。そして<bb>足線法の原理に忠実に作られている</bb>ため、使えば使うほど足線法の理解が深まるという優れた教材としても完成度の高い手法です。対角線分割法もユアッサーの法則から着想を得て進化し続けています。</p>
+
+<p>湯浅さんが<bb>画角メーターの代用として左右角メーターを使う</bb>というアイデアについてツイートされていたとき、<bb>画角90°の左右各メーターの対角線が画面端に収束している添付画像</bb>を見てあることを閃きました。たいそうなことではありませんが、<gg>画面端に収束することを前提に作図手順を組み立てれば効率化が図れる</gg>、と。</p>
+
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">びわさんのツイートを見てひらめいたんだけど、<br />アイレベル上の画面端に向かって45°の対角線を引けば、そこが画角90°になるから、それを基準として奥行きを減らしていけば、画角の調整が可能になってくるなと。<br />こ、これは、すごい。<br />画角メーター、いらなくなるじゃん。 <a href="https://t.co/h1RjWnsCvl">pic.twitter.com/h1RjWnsCvl</a></p>&mdash; 湯浅誠 (@yuassamakoto) <a href="https://twitter.com/yuassamakoto/status/940733819673395200?ref_src=twsrc%5Etfw">2017年12月13日</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>まず<bb>画面端とCPの間の距離はPP幅</bb>を意味します。ここで再び<a href="/depth-reduction-and-compression/index.html#6" target="blank">前回の記事</a>の記事で苦し紛れに考案した「<yy>4つのV字模型</yy>」の出番です。<bb>画角90°未満のときに消失点が画面外に移動する</bb>のは、<bb>正方形の消失点方向</bb>（<oo>▲</oo>オレンジのV字模型）より<bb>視界の範囲</bb>（<bb>▲</bb>青のV字模型）が狭いため、必然的に<bb>消失点が視界の外側に位置する</bb>ことになるからです。その消失点を使って作図するなら透視図上で一般的な作図手順によって<bb>画面外の消失点</bb>（<gg>▲</gg>緑のV字模型）を求める必要がありますが面倒です。<gg>理想は、<bb>▲</bb>青のV字模型の&lt;画角の透視図を、<pp>▲</pp>赤のV字模型で作図することで画面外のDP（もしくはVP）とSPを求める手間を取らずに済ませること</gg>です。</p>
+
+<p>ではどうすべきか。例えば、<bb>平面図上で消失点方向が視界（画角）と一致していた</bb>としたら、その<bb>消失点の透視図上での位置</bb>はどうなるでしょう。答えは「<bb>平行線は無限遠で同じ1点に収束する</bb>」ので<bb>消失点は視界の外側でも内側でもなく視界端（画面端）に位置する</bb>、です。つまり<bb>画角が何度であったとしても正方形の直角方向の消失点ではなく、視界（画角）と一致する鋭角方向の消失点で作図する</bb>ことで、<gg>実際に絵を描くときに作画フレームの両端の点を使って作図できる</gg>ということです。</p>
+
+<p><img src="/assets/img/2018-01-16/23.png" alt="平行線は無限遠で1点に収束する" /></p>
+
+<p><span>出典 <a href="/principle-decoding-of-measuring-point-method/index.html#2" target="blank">お絵描きホーホー論</a></span></p>
+
+<p>つまり、<gg>透視図上の画面両端の消失点で作図したいから、平面図上で視円錐と平行な対角線を描く</gg>、これだけで<bb>消失点の位置に煩わされる作業から解放</bb>されます。これで<bb>対角線の奥の辺は画面幅ということが固定</bb>され、あとは手前の辺をどこにするかだけです。それももう解決していますが。</p>
+
+<p><img src="/assets/img/2018-01-16/24.png" alt="手前の辺の決め方構想" /></p>
+
+<h2 id="真理の扉の向こうにある真対角線分割法">真理の扉の向こうにある「真・対角線分割法」</h2>
+
+<p>対角線分割法は、もとは<bb>ただの幾何学の法則で、面を比率分割するだけの手法</bb>です。どちらかと言えば<bb>作図より解析の方が向いている理論</bb>です。ただ何度も言うように、<gg>透視図法の原理は根幹から末端まで全て対角線分割法の集積</gg>です。透視図法を作図手法として理論化した足線法を理解し、足線法を構築する対角線分割法を理解することができれば、もはや透視図法について知らないことはないと言っても過言ではありません。ここまでくると<bb>自由に新しい手法を発明することができる</bb>ようになります。まずは<bb>透視図法の原理を最小単位に分解</bb>してパーツとして保管しておき、<bb>ピンポイントな目的からそこまでの道のりを逆算</bb>し、その道のりを辿れる<bb>最小のパーツを組み込む</bb>だけで新しい手法が発明できます。</p>
+
+<p>例えば、「平行な線は無限遠で同じ1点に収束する」「視界の両端と平行な線は無限遠で画面端に収束する」「PPと平行方向には奥行きの縮小は生じない」「GL幅は平面図と透視図で同一の比率で扱える」「平面図上の対角線の交点（詳細は省略）は透視図上では奥行きとなる」。これらの原理を組み合わせて作られたのが「<a href="https://twitter.com/i/moments/956311175993606144" target="blank">真・対角線分割法</a>」です。まだ試行錯誤中なので未完成ですが。透視図法の作図をしているとは思えない単純明快な手順を辿りますが、ちゃんとパースが取れる独自の手法です。ただ、透視図法を完全に理解していないとただのブラックボックス、誤用に気づけない諸刃の剣ですが。</p>
+
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="ja"><p lang="ja" dir="ltr">真・対角線分割法の実演。やってて楽しいけど、これまでにないほど禍々しい作図風景になった。あとはラフレイアウトと平面図の対応のさせ方が曖昧で制度が悪くなるところを改善すれば使い物になる。 <a href="https://t.co/o0pYnMxX6Q">pic.twitter.com/o0pYnMxX6Q</a></p>&mdash; お絵描きホーホー論 (@oekaki_hoho_ron) <a href="https://twitter.com/oekaki_hoho_ron/status/953323260556460032?ref_src=twsrc%5Etfw">2018年1月16日</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+        </div> <!-- .entry-content -->
+
+        <div class="share-buttons">
+  <script type="text/javascript">(function(d){if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896)=='undefined'){document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/52708f535f08e25625d3b79233c81896'><\/sc"+"ript>");}else{window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896.ONETAGButton_Load();}})(document);//]]></script>
+  <span class="ninja_onebutton_hidden" style="display:none;">/introduction-to-diagonal-division-method/</span>
+  <span style="display:none;" class="ninja_onebutton_hidden">対角線分割法 概論　〜透視図法の空間を対角線で測るアイデア集〜</span>
+</div> <!-- .share-buttons -->
+
+        <div id="page-navi">
+          
+            <a id="page-navi-new" href="/mechanism-of-drawing-1/">次の記事</a>
+          
+
+          
+            <a id="page-navi-old" href="/depth-reduction-and-compression/">前の記事</a>
+          
+        </div> <!-- #page-navi -->
+
+
+        <article__bottom-info>
+
+  <h4>執筆者</h4>
+  <div class="profile__author">
+    <img src="/assets/img/hoho.png" />
+    <span>村上豪一</span>
+    <p>理屈人間。お絵描きや作曲などの芸術分野の理論化に挑戦中。独自開発の手法、「透視図法解剖図」「対角線分割法」「お絵描きのメカニズム」など。</p>
+  </div> <!-- .profile__author -->
+
+  <ul class="profile__follow-button">
+    <li id="button-twitter">
+      <a href="https://twitter.com/oekaki_hoho_ron" target="_blank">
+        <img src="/assets/img/button-twitter.png" />
+        <span>Twitter</span>
+      </a>
+   </li>
+    <li id="button-soundcloud">
+      <a href="https://soundcloud.com/oekaki-hoho-ron" target="_blank">
+        <img src="/assets/img/button-soundcloud.png" />
+        <span>Soundcloud</span>
+      </a>
+    </li>
+    <li id="button-note">
+      <a href="https://note.mu/oekaki_hoho_ron" target="_blank">
+        <img src="/assets/img/button-note.png" />
+        <span>nota</span>
+      </a>
+    </li>
+<!--    <li id="button-pixiv">
+      <a href="https://pixiv.me/oekaki_hoho_ron" target="_blank">
+        <img src="/assets/img/button-pixiv.png" />
+        <span>Pixiv</span>
+      </a>
+    </li>
+    <li id="button-nico">
+      <a href="http://www.nicovideo.jp/user/6755076" target="_blank">
+        <img src="/assets/img/button-nico.png" />
+        <span>ニコニコ動画</span>
+      </a>
+    </li>
+    <li id="button-vimeo">
+      <a href="https://vimeo.com/koma51" target="_blank">
+        <img src="/assets/img/button-vimeo.png" />
+        <span>vimeo<span>
+      </a>
+    </li>-->
+     <li id="button-pinterest">
+      <a href="https://www.pinterest.jp/oekaki_hoho_ron/" target="_blank">
+        <img src="/assets/img/button-pinterest.png" />
+        <span>Pinterest<span>
+      </a>
+    </li>
+    <li id="button-qiita">
+      <a href="https://qiita.com/oekaki-hoho-ron" target="_blank">
+        <img src="/assets/img/button-qiita.png" />
+        <span>Qiita<span>
+      </a>
+    </li>
+    <li id="button-git">
+      <a href="https://github.com/oekaki-hoho-ron" target="_blank">
+        <img src="/assets/img/button-git.png" />
+        <span>Github<span>
+      </a>
+    </li>
+  </ul>
+
+<!--
+<div class="archives">
+
+<h4 id="library">アーカイブ</h4>
+<ul class="article-bottom-post-list">
+  
+    
+    
+    
+      <li><a href="2019-01">2019年01月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2018-09">2018年09月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2018-08">2018年08月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2018-06">2018年06月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2018-05">2018年05月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2018-01">2018年01月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2017-12">2017年12月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2017-09">2017年09月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2017-06">2017年06月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2017-05">2017年05月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2016-12">2016年12月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2016-11">2016年11月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2015-11">2015年11月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2014-12">2014年12月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2014-08">2014年08月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2014-07">2014年07月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2014-06">2014年06月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2014-04">2014年04月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2014-03">2014年03月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2014-02">2014年02月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2013-12">2013年12月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2013-09">2013年09月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2013-08">2013年08月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2013-07">2013年07月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2013-06">2013年06月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2013-05">2013年05月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2013-04">2013年04月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2013-03">2013年03月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+</ul>
+
+<h4>カテゴリー</h4>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="日記">日記</a></li>
+      
+      <li><a href="日記">日記</a></li>
+      
+      <li><a href="日記">日記</a></li>
+      
+      <li><a href="日記">日記</a></li>
+      
+      <li><a href="日記">日記</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="人物画">人物画</a></li>
+      
+      <li><a href="人物画">人物画</a></li>
+      
+      <li><a href="人物画">人物画</a></li>
+      
+      <li><a href="人物画">人物画</a></li>
+      
+      <li><a href="人物画">人物画</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="演出">演出</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="精神分析">精神分析</a></li>
+      
+      <li><a href="精神分析">精神分析</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="画材">画材</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="色彩理論">色彩理論</a></li>
+      
+      <li><a href="色彩理論">色彩理論</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="デジタル">デジタル</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="カテゴリ1">カテゴリ1</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="ハードウェア">ハードウェア</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="シナリオ">シナリオ</a></li>
+      
+      <li><a href="シナリオ">シナリオ</a></li>
+      
+  </ul>
+
+
+
+<h4>タグ</h4>
+<ul class="article-bottom-post-list">
+  
+   <li><a href="">アタリ線</a><li>
+ 
+   <li><a href="">2点透視図法</a><li>
+ 
+   <li><a href="">3点透視図法</a><li>
+ 
+   <li><a href="">M点法</a><li>
+ 
+   <li><a href="">足線法</a><li>
+ 
+   <li><a href="">介線法</a><li>
+ 
+   <li><a href="">髪デッサン</a><li>
+ 
+   <li><a href="">クオリア</a><li>
+ 
+   <li><a href="">キャラデザイン</a><li>
+ 
+   <li><a href="">先入観</a><li>
+ 
+   <li><a href="">記憶</a><li>
+ 
+   <li><a href="">漫符</a><li>
+ 
+   <li><a href="">色彩検定</a><li>
+ 
+   <li><a href="">レイヤー描画モード</a><li>
+ 
+   <li><a href="">画角</a><li>
+ 
+   <li><a href="">魚眼パース</a><li>
+ 
+   <li><a href="">解剖学</a><li>
+ 
+   <li><a href="">タグ1</a><li>
+ 
+   <li><a href="">タグ2</a><li>
+ 
+   <li><a href="">もぐらたたき組曲</a><li>
+ 
+   <li><a href="">ペンタブ</a><li>
+ 
+   <li><a href="">重心</a><li>
+ 
+   <li><a href="">注視点</a><li>
+ 
+   <li><a href="">透視図法解剖図</a><li>
+ 
+   <li><a href="">対角線分割法</a><li>
+ 
+   <li><a href="">うろ覚えスケッチ</a><li>
+ 
+   <li><a href="">ユアッサーの法則</a><li>
+ 
+   <li><a href="">4つのV字模型</a><li>
+ 
+   <li><a href="">D点法</a><li>
+ 
+   <li><a href="">上達方法</a><li>
+ 
+   <li><a href="">その2</a><li>
+ 
+   <li><a href="">一筆描きパース理論</a><li>
+ 
+   <li><a href="">構図</a><li>
+ 
+</ul>
+
+</div> -->
+
+</article__bottom-info>
+
+      </article>
+
+      <footer>
+<ul>
+<li><a href="/post-type/jiyu-kenkyu.html">自由研究</a></li>
+<li><a href="/post-type/training.html">トレーニング</a></li>
+<li><a href="/post-type/youtube.html">YouTubeチャンネル</a></li>
+<li><a href="/post-type/animation.html">アニメ制作</a></li>
+</ul>
+<small class="centering">Copyright © お絵描きホーホー論</small>
+</footer>
+
+<a id="pageTop" href="#">&and; PAGE TOP</a>
+      </contents>
+  </container>
+
+</body>
+</html>

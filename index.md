@@ -6,6 +6,4 @@ description: 概要
 ---
 
 {% include tab-box1.html %}
-{% include tab-box2.html %}
-{% include tab-box3.html %}
 

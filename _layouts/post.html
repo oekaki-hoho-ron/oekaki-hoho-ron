@@ -4,27 +4,23 @@
 {% include header.html %}
 
 <body>
-  
+
   <container>
-    <main>
-      <input type="checkbox" id="sidebar-open-input" />
       {% include sidebar.html %}
+      <contents>
 
       <article>
         <h1>{{ page.title }}</h1>
-        <ul class="article-meta">
+        <ul class="article__meta">
           <li class="post-date">{{ page.date | date: '%Y年%m月%d日' }}</li>
-          <li class="category">Category <a href="{{ site.baseurl }}/tags#{{ tag | slugize }}">{{ page.categories }}</a></li>
-          <li class="tag">Tag {% if post %}{% assign tags = post.tags %}{% else %}{% assign tags = page.tags %}{% endif %}{% for tag in tags %}<a href="_posts/tags/{{ tag }}">{{ tag }} </a>{% endfor %}</li>
-        </ul> <!-- .article-meta -->
+          <!--<li class="category">Category <a href="{{ site.baseurl }}/tags#{{ tag | slugize }}">{{ page.categories }}</a></li>
+          <li class="tag">Tag {% if post %}{% assign tags = post.tags %}{% else %}{% assign tags = page.tags %}{% endif %}{% for tag in tags %}<a href="_posts/tags/{{ tag }}">{{ tag }} </a>{% endfor %}</li>-->
+          <li class="category">Category {{ page.categories }}</li>
+          <li class="tag">Tag {% if post %}{% assign tags = post.tags %}{% else %}{% assign tags = page.tags %}{% endif %}{% for tag in tags %}{{ tag }} {% endfor %}</li>
+        </ul> <!-- .article__meta -->
         <img src="{{ page.thumb }}" alt="{{ post.title }}" />
 
-        <div class="ninja_onebutton">
-          <script type="text/javascript">(function(d){if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896)=='undefined'){document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/52708f535f08e25625d3b79233c81896'><\/sc"+"ript>");}else{window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896.ONETAGButton_Load();}})(document);//]]></script>
-          <span class="ninja_onebutton_hidden" style="display:none;">{{ post.url }}</span>
-          <span style="display:none;" class="ninja_onebutton_hidden">{{ post.title }}</span>
-        </div> <!-- .ninja_onebutton" -->
-
+        {% include share-buttons.html %}
         {% include ads-article-top.html %}
 
         <div class="entry-content">
@@ -32,13 +28,7 @@
           {{ content }}
         </div> <!-- .entry-content -->
 
-
-        <div class="ninja_onebutton">
-          <script type="text/javascript">(function(d){if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896)=='undefined'){document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/52708f535f08e25625d3b79233c81896'><\/sc"+"ript>");}else{window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896.ONETAGButton_Load();}})(document);//]]></script>
-          <span class="ninja_onebutton_hidden" style="display:none;">{{ post.url }}</span>
-          <span style="display:none;" class="ninja_onebutton_hidden">{{ post.title }}</span>
-        </div> <!-- .ninja_onebutton" -->
-
+        {% include share-buttons.html %}
 
         <div id="page-navi">
           {% if page.next %}
@@ -55,7 +45,7 @@
       </article>
 
       {% include footer.html %}
-    </main>
+      </contents>
   </container>
 
 </body>

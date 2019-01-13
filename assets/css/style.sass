@@ -1,0 +1,160 @@
+---
+---
+
+@import 'variable'
+@import 'sidebar'
+@import 'sns-button'
+@import 'article-bottom-info'
+@import 'article'
+@import 'footer'
+@import 'google-ads'
+@import 'header'
+@import 'mokuji'
+@import 'others'
+@import 'page-navi'
+@import 'page-top-button'
+@import 'post-index'
+@import 'post-table'
+@import 'tab-contents'
+@import 'top-contents'
+
+$width-pc: 860px
+$width-mobile: 400px
+
+@mixin responsive
+ @media (max-width: ($width-pc))
+  @content
+
+*
+ font-family: "Hiragino maru Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO"
+
+body
+ margin: 0
+ padding: 0
+ background: #f5f9fd
+
+img
+ height: auto
+ max-width: 100%
+
+a
+ text-decoration: none
+ color: #0099ff
+
+a:hover
+ color: #ff6347
+
+video
+ width: 600px
+ height: auto
+
+/********** main Layout **************/
+header
+ position: fixed
+ z-index: 1
+ width: 100%
+ height: 80px
+ box-sizing: border-box
+ border-bottom: 1px solid #eee
+ background: #fff
+ opacity: 0.9
+
+container
+ display: block
+ max-width: 1200px
+ margin: 0 auto
+ padding-top: 80px
+
+main
+ display: block
+ width: 100%
+ height: auto
+ background: #000
+
+sidebar
+ display: block
+ float: left
+ width: 340px
+ margin: 0
+ padding-top: 10px
+ background: #000
+
+contents
+ display: block
+ width: auto
+ box-sizing: border-box
+ padding-left: 340px
+ background: #000
+
+/********** contents Layout ***********/
+top-contents
+ display: block
+ box-sizing: border-box
+ padding: 0 20px
+ background: #f5f9fd
+
+tab-contents
+ display: block
+ padding: 20px
+ background: #f5f9fd
+
+post-index
+ display: block
+ float: left
+ width: 100%
+ height: 150px
+ padding: 10px 0
+ border-bottom: 1px solid #eee
+
+article
+ display: block
+ padding: 20px
+ background: #f5f9fd
+
+article__bottom-info
+ display: block
+
+footer
+ display: block
+ width: 100%
+ padding: 20px
+ background: #f5f9fd
+
+/********** mobile Layout ************/
+@media(max-width: 860px)
+ header
+  height: 50px
+  position: static
+
+ container
+  padding-top: 0
+
+ .header__description
+  display: none
+
+ sidebar
+  display: none
+  margin-bottom: 10px
+
+ contents
+  width: 100%
+  padding-left: 0
+
+ top-contents,
+ tab-contents
+  padding: 0
+
+ post-index
+  box-sizing: border-box
+  padding: 10px 20px
+
+ article
+  padding: 10px 0
+  width: auto
+
+ article__bottom-info
+  padding: 0
+
+ video
+  width: 100%
+  height: auto

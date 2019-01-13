@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="utf-8" >
+
+{% include head.html %}
+{% include header.html %}
+
+<body>
+  
+  <container>
+      {% include sidebar.html %}
+      <contents>
+
+      <article>
+        {{ content }}
+      </article>
+
+      {% include footer.html %}
+      </contents>
+  </container>
+
+</body>
+</html>

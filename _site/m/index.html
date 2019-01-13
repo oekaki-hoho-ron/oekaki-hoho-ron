@@ -1,0 +1,1255 @@
+<!DOCTYPE html><html lang="utf-8" >
+
+<head>
+
+  <!-- 基本設定 -->
+  <!--link rel="canonical" href="サイトURL"-->  <!-- コンテンツ内容が重複するページの正規URLを指定する -->
+  <meta charset="utf-8">
+  <title>一筆描きパース理論</title>
+  <meta name="description" content="記事説明">
+  <link rel="icon" href="/assets/img/favicon.png">
+  <link rel="alternate" type="application/rss+xml" title="フィード" href="フィードページのURL" />  <!-- RSSフィード設定 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">  <!-- 使用端末のディスプレイサイズに最適化するレスポンシブ設定 -->
+
+
+  <!-- OGP -->
+  <meta property="og:site_name"  content="サイト名" />
+  <meta property="og:type" content="ページタイプ" />
+  <meta property="og:url" content="/m/" />
+  <meta property="og:title" content="一筆描きパース理論" />
+  <meta property="og:description" content="ディスクリプション" />
+  <meta property="og:image" content="/assets/img/2018-09-20/00.png" />
+  <meta name="twitter:card" content="Summary with Large Image" />
+  <meta name="twitter:site" content="@oekaki-hoho-ron" />
+  <meta property="fb:app_id" content="App ID" />
+  <meta property="article:publisher" content="FacebookページのURL" />
+
+
+  <!-- 外部ファイル -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+
+  <!-- GoogleAdsence -->
+  <!-- GoogleAdsence自動広告 --><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-7336552517082119",enable_page_level_ads: true});</script>
+  <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-30635583-8"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-30635583-8');</script>
+  <!-- ads-in-article自動挿入 -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+	$(document).ready(function() {
+		var adsCode = '<ads-in-article-box><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><\/script><ins class="adsbygoogle"style="display:block; text-align:center;"data-ad-layout="in-article"data-ad-format="fluid"data-ad-client="ca-pub-7336552517082119"data-ad-slot="6117821682"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></ads-in-article-box>';
+		$(".entry-content h2").each(function (i) {
+			if(i % 3 == 0 && i > 0 || i == 1){
+				$(this).before(adsCode);
+			}
+		});
+	});
+　　</script>
+
+</head>
+
+<header>
+  <label for="header__accordion-checkbox" id="header__accordion-button">
+    <img src="/assets/img/accordion-button.png" />
+  </label>
+  <header__accordion-button-dummy></header__accordion-button-dummy>
+  <h1 class="header__logo">
+    <a href="/index.html">
+      <img class="header__logo-img" src="/assets/img/logo.png" alt="お絵描きホーホー論" />
+    </a>
+  </h1>
+  <span class="header__description">理屈で絵が描ける事を証明する</span>
+</header>
+
+<input type="checkbox" id="header__accordion-checkbox" />
+
+
+<body>
+
+  <container>
+      <sidebar>
+
+  <sidebar__ads-box_mobile>
+    <img src="ads.png">
+  </sidebar__ads-box_mobile>
+
+  <sidebar__ads-box_pc>
+    <img src="ads.png">
+  </sidebar__ads-box_pc>
+
+  <div class="share-buttons">
+  <script type="text/javascript">(function(d){if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896)=='undefined'){document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/52708f535f08e25625d3b79233c81896'><\/sc"+"ript>");}else{window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896.ONETAGButton_Load();}})(document);//]]></script>
+  <span class="ninja_onebutton_hidden" style="display:none;">/m/</span>
+  <span style="display:none;" class="ninja_onebutton_hidden">一筆描きパース理論</span>
+</div> <!-- .share-buttons -->
+
+  <sidebar-bannar>
+    <a href="https://www.youtube.com/channel/UCe2lNmDXPV1LmIqaFGRnkFg" target="_blank">
+      <img src="/assets/img/banner-youtube-hoho.png" />
+    </a>
+  </sidebar-bannar>
+
+
+  <div id="post-table">
+    
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('日記').checked = true;">
+        日記<span>5</span>
+      </label>
+      <input type="checkbox" id="日記" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/establishing-the-private-studio/" target="_blank"><img src="/assets/img/2014-06-15/00.png" /><span>自主制作アニメ「STUDIO hoho」設立のお知らせ</span></a></li>
+        
+          <li class="post-table__li"><a href="/transition-of-web-server/" target="_blank"><img src="/assets/img/2014-03-16/00.png" /><span>サーバー引っ越して気分爽快！</span></a></li>
+        
+          <li class="post-table__li"><a href="/modification-to-simple-policy/" target="_blank"><img src="/assets/img/2013-05-06/00.png" /><span>お絵描き再始動、シンプルに方針変更</span></a></li>
+        
+          <li class="post-table__li"><a href="/idle-talk/" target="_blank"><img src="/assets/img/2013-03-07/00.png" /><span>人物画のアタリ線の研究に時間を費やす意義について考えた事</span></a></li>
+        
+          <li class="post-table__li"><a href="/failure-of-a-certain-beginner/" target="_blank"><img src="/assets/img/2013-03-04/00.png" /><span>ある初心者の失敗</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('日記').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('お絵描きのメカニズム').checked = true;">
+        お絵描きのメカニズム<span>11</span>
+      </label>
+      <input type="checkbox" id="お絵描きのメカニズム" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/kouzu/" target="_blank"><img src="/assets/img/2019-01-05/00.png" /><span>構図</span></a></li>
+        
+          <li class="post-table__li"><a href="/mechanism-of-drawing-4/" target="_blank"><img src="/assets/img/2018-08-30/00.png" /><span>お絵描きのメカニズム</span></a></li>
+        
+          <li class="post-table__li"><a href="/mechanism-of-drawing-3/" target="_blank"><img src="/assets/img/2018-08-30/00.png" /><span>お絵描きのメカニズム</span></a></li>
+        
+          <li class="post-table__li"><a href="/mechanism-of-drawing-2/" target="_blank"><img src="/assets/img/2018-06-11/00.png" /><span>お絵描きのメカニズム　第2巻 〜感覚で描く絵、理屈で描く絵〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/mechanism-of-drawing-1/" target="_blank"><img src="/assets/img/2018-05-18/00.png" /><span>お絵描きのメカニズム　第1巻　〜絵は才能でなく根気で描ける〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/sketch-of-the-pokemon-with-ambiguous-storage2/" target="_blank"><img src="/assets/img/2017-09-10/00.png" /><span>うろ覚えポケモンかけるかな？　〜第2フェイズ「脳内イメージの再現」〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/sketch-of-the-pokemon-with-ambiguous-storage/" target="_blank"><img src="/assets/img/2017-06-11/00.png" /><span>うろ覚えポケモン描けるかな？　〜第1フェイズ「うろ覚え」〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/not-drawing-draft-human-body-sketch/" target="_blank"><img src="/assets/img/2013-07-04/00.png" /><span>アタリ線を描かないデッサン</span></a></li>
+        
+          <li class="post-table__li"><a href="/right-brain-and-left-brain/" target="_blank"><img src="/assets/img/2013-03-12/00.png" /><span>右脳・左脳で使い分ける人体デッサンのアタリ線の描き方</span></a></li>
+        
+          <li class="post-table__li"><a href="/how-to-draw-makes-sketch-stabilize/" target="_blank"><img src="/assets/img/2013-03-06/00.png" /><span>人体デッサンを安定させるアタリ線の描き方</span></a></li>
+        
+          <li class="post-table__li"><a href="/draft-of-sketch-habit-conversion/" target="_blank"><img src="/assets/img/2013-03-05/00.png" /><span>安定して人体デッサンするためのアタリ線の習慣化</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('お絵描きのメカニズム').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('透視図法').checked = true;">
+        透視図法<span>18</span>
+      </label>
+      <input type="checkbox" id="透視図法" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/m/" target="_blank"><img src="/assets/img/2018-09-20/00.png" /><span>一筆描きパース理論</span></a></li>
+        
+          <li class="post-table__li"><a href="/introduction-to-diagonal-division-method/" target="_blank"><img src="/assets/img/2018-01-16/00.png" /><span>対角線分割法 概論　〜透視図法の空間を対角線で測るアイデア集〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/depth-reduction-and-compression/" target="_blank"><img src="/assets/img/2017-12-25/00.png" /><span>ユアッサーの法則の画角メーターで学ぶ奥行きの「縮小」と「圧縮」</span></a></li>
+        
+          <li class="post-table__li"><a href="/principle-decoding-of-measuring-point-method/" target="_blank"><img src="/assets/img/2017-05-28/00.png" /><span>ありそうでなかったM点法の原理解説　〜地平線に隠された秘密〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/device-of-diagonal-split-graph-technique/" target="_blank"><img src="/assets/img/2017-05-27/00.png" /><span>透視図法の基本原理「対角線分割法」誕生の軌跡　〜3次元を2次元に変換する仕組み〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/anatomical-chart-of-3point-perspective/" target="_blank"><img src="/assets/img/2016-12-06/00.png" /><span>3点透視図法の解剖図　〜なぜ4点ではなく3点なのか〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/anatomical-chart-of-perspective/" target="_blank"><img src="/assets/img/2016-11-18/00.png" /><span>パース理論の完全形態「透視図法解剖図」</span></a></li>
+        
+          <li class="post-table__li"><a href="/measuring-point-utilization-plan/" target="_blank"><img src="/assets/img/2015-11-23/00.png" /><span>「M点法」実用化計画　〜縮図で奥行きの長さを作図〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/prerequisite-of-perspective/" target="_blank"><img src="/assets/img/2014-12-25/00.png" /><span>透視図法の知られざる大前提　〜実は市販のパース理論書の教えは間違っていた〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/law-of-vertical-perspective/" target="_blank"><img src="/assets/img/2014-12-16/00.png" /><span>三点透視図法の縦パース講座（2/3）　〜縦パースの傾きの法則〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/how-to-think-the-vertical-perspective/" target="_blank"><img src="/assets/img/2014-12-11/00.png" /><span>三点透視図法の縦パース講座（1/3） 〜縦パース作図における2つのポイント〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/3point-perspective-which-used-the-viewing-cone/" target="_blank"><img src="/assets/img/2014-07-12/00.png" /><span>2つの視円錐を重ねて三点透視パース作画　〜建築パースとリアルパースの違い〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/supplementary-lessons-of-perspective-theory/" target="_blank"><img src="/assets/img/2014-04-16/00.png" /><span>建築パース理論補講　〜2点透視を2つ重ねると3点透視になる〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/how-to-draw-the-fish-eye-perspective/" target="_blank"><img src="/assets/img/2013-12-09/00.png" /><span>魚でも分かる魚眼パースの描き方講座　〜魚眼レンズのしくみ〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/device-of-perspective-ruler/" target="_blank"><img src="/assets/img/2013-12-08/00.png" /><span>一瞬で背景イラストのアングルと画角を決めるパースの描き方</span></a></li>
+        
+          <li class="post-table__li"><a href="/viewing-cone-and-perspective/" target="_blank"><img src="/assets/img/2013-12-07/00.png" /><span>視円錐を使って考える望遠パース・広角パースの描き方</span></a></li>
+        
+          <li class="post-table__li"><a href="/drawing-procedure-of-construction-perspective/" target="_blank"><img src="/assets/img/2013-03-26/00.png" /><span>建築パースを徹底研究！パース理論の基礎知識と描き方</span></a></li>
+        
+          <li class="post-table__li"><a href="/basic-knowledge-of-perspective-theory/" target="_blank"><img src="/assets/img/2013-03-14/00.png" /><span>パース理論の予備知識</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('透視図法').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('人物画').checked = true;">
+        人物画<span>5</span>
+      </label>
+      <input type="checkbox" id="人物画" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/center-of-gravity-of-human-body-sketch/" target="_blank"><img src="/assets/img/2014-06-29/00.png" /><span>絵描きが言う人体デッサンの「重心」が厳密には間違っている件</span></a></li>
+        
+          <li class="post-table__li"><a href="/memorization-manner-of-anatomy/" target="_blank"><img src="/assets/img/2014-02-18/00.png" /><span>解体新書　〜人体デッサンの解剖学における筋肉の暗記術〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/the-human-body-sketch-which-makes-time-lapse-feel/" target="_blank"><img src="/assets/img/2013-07-07/00.png" /><span>前後の時間を感じさせる人体デッサン</span></a></li>
+        
+          <li class="post-table__li"><a href="/relation-of-beautiful-hair-and-qualia/" target="_blank"><img src="/assets/img/2013-04-07/00.png" /><span>髪の描き方と、美しい髪というクオリアの関連性</span></a></li>
+        
+          <li class="post-table__li"><a href="/how-to-draw-the-hair/" target="_blank"><img src="/assets/img/2013-04-01/00.png" /><span>ヘアカットとデッサンを関連づけて考える髪の描き方</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('人物画').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('演出').checked = true;">
+        演出<span>1</span>
+      </label>
+      <input type="checkbox" id="演出" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/individual-character-design/" target="_blank"><img src="/assets/img/2013-04-18/00.png" /><span>オリジナルキャラの絵柄を獲得することについて</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('演出').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('精神分析').checked = true;">
+        精神分析<span>2</span>
+      </label>
+      <input type="checkbox" id="精神分析" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/evasion-manner-of-preconception/" target="_blank"><img src="/assets/img/2013-05-18/00.png" /><span>正しい記憶の隙間に宿る、誤った先入観の見つけ方</span></a></li>
+        
+          <li class="post-table__li"><a href="/preconception/" target="_blank"><img src="/assets/img/2013-05-15/00.png" /><span>先入観と仲良くしながら絵を描こう</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('精神分析').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('画材').checked = true;">
+        画材<span>1</span>
+      </label>
+      <input type="checkbox" id="画材" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/proper-use-of-thickness-of-drawing-streak/" target="_blank"><img src="/assets/img/2013-06-07/00.png" /><span>描画線の太さによる練習効果の違い</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('画材').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('色彩理論').checked = true;">
+        色彩理論<span>2</span>
+      </label>
+      <input type="checkbox" id="色彩理論" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/harmony-of-color-scheme/" target="_blank"><img src="/assets/img/2013-08-31/00.png" /><span>デジタルイラストの色を調和させる配色パターン</span></a></li>
+        
+          <li class="post-table__li"><a href="/color-scheme-theoretical-outline/" target="_blank"><img src="/assets/img/2013-08-29/00.png" /><span>デジタルイラストを描くための色彩理論概論</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('色彩理論').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('デジタル').checked = true;">
+        デジタル<span>1</span>
+      </label>
+      <input type="checkbox" id="デジタル" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/how-to-use-the-layer-blending-mode/" target="_blank"><img src="/assets/img/2013-09-01/00.png" /><span>デジタルイラストで使うレイヤーの描画モードの効果を画像で検証</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('デジタル').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('カテゴリ1').checked = true;">
+        カテゴリ1<span>1</span>
+      </label>
+      <input type="checkbox" id="カテゴリ1" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/human-body-sketch-theorization-plan-1/" target="_blank"><img src="/assets/img/2014-04-30/00.png" /><span>人体デッサン理論化計画・序　〜シルエットで捉える描き方の意味考える〜</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('カテゴリ1').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('ハードウェア').checked = true;">
+        ハードウェア<span>1</span>
+      </label>
+      <input type="checkbox" id="ハードウェア" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/pen-tablet-introduction/" target="_blank"><img src="/assets/img/2014-06-20/00.png" /><span>wacomペンタブレットのスペック解説　〜この数値どういう意味？編〜</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('ハードウェア').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('シナリオ').checked = true;">
+        シナリオ<span>2</span>
+      </label>
+      <input type="checkbox" id="シナリオ" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/script-of-animation-mole-hitting-suite/" target="_blank"><img src="/assets/img/2014-08-06/00.png" /><span>自主制作アニメ『もぐらたたき組曲』のシナリオの変更点</span></a></li>
+        
+          <li class="post-table__li"><a href="/conception-of-animation-mole-hitting-suite/" target="_blank"><img src="/assets/img/2014-07-23/00.png" /><span>現在制作中の『もぐらたたき組曲』でやりたいこと</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('シナリオ').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+</div> <!-- #post-table -->
+
+
+  <sidebar-bannar>
+  <!-- 風景デッサンの基本 -->		<sidebar__amazon><a target="_blank"  href="https://www.amazon.co.jp/gp/product/481635512X/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=481635512X&linkCode=as2&tag=koma5109-22&linkId=23c74bc6b24ba1fa260dcfc369c374e1"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=481635512X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=koma5109-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=koma5109-22&l=am2&o=9&a=481635512X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></sidebar__amazon>
+    <!-- 風景デッサンの基本 -->		<sidebar__amazon><a target="_blank"  href="https://www.amazon.co.jp/gp/product/481635512X/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=481635512X&linkCode=as2&tag=koma5109-22&linkId=23c74bc6b24ba1fa260dcfc369c374e1"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=481635512X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=koma5109-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=koma5109-22&l=am2&o=9&a=481635512X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></sidebar__amazon>
+    <!-- 風景デッサンの基本 -->		<sidebar__amazon><a target="_blank"  href="https://www.amazon.co.jp/gp/product/481635512X/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=481635512X&linkCode=as2&tag=koma5109-22&linkId=23c74bc6b24ba1fa260dcfc369c374e1"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=481635512X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=koma5109-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=koma5109-22&l=am2&o=9&a=481635512X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></sidebar__amazon>
+    <!-- 風景デッサンの基本 -->		<sidebar__amazon><a target="_blank"  href="https://www.amazon.co.jp/gp/product/481635512X/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=481635512X&linkCode=as2&tag=koma5109-22&linkId=23c74bc6b24ba1fa260dcfc369c374e1"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=481635512X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=koma5109-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=koma5109-22&l=am2&o=9&a=481635512X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></sidebar__amazon>
+  </sidebar-bannar>
+
+  <sidebar__ads-box_mobile>
+    <img src="ads.png">
+  </sidebar__ads-box_mobile>
+
+  <sidebar__ads-box_pc>
+    <img src="ads.png">
+  </sidebar__ads-box_pc>
+
+</sidebar>
+
+      <contents>
+
+      <article>
+        <h1>一筆描きパース理論</h1>
+        <ul class="article__meta">
+          <li class="post-date">2018年09月20日</li>
+          <!--<li class="category">Category <a href="/tags#">透視図法</a></li>
+          <li class="tag">Tag <a href="_posts/tags/一筆描きパース理論">一筆描きパース理論 </a><a href="_posts/tags/M点法">M点法 </a><a href="_posts/tags/画角">画角 </a></li>-->
+          <li class="category">Category 透視図法</li>
+          <li class="tag">Tag 一筆描きパース理論 M点法 画角 </li>
+        </ul> <!-- .article__meta -->
+        <img src="/assets/img/2018-09-20/00.png" alt="" />
+
+        <div class="share-buttons">
+  <script type="text/javascript">(function(d){if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896)=='undefined'){document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/52708f535f08e25625d3b79233c81896'><\/sc"+"ript>");}else{window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896.ONETAGButton_Load();}})(document);//]]></script>
+  <span class="ninja_onebutton_hidden" style="display:none;">/m/</span>
+  <span style="display:none;" class="ninja_onebutton_hidden">一筆描きパース理論</span>
+</div> <!-- .share-buttons -->
+        <ads-article-top>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- article-top --><ins class="adsbygoogle"style="display:block"data-ad-client="ca-pub-7336552517082119"data-ad-slot="7083082448"data-ad-format="link"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</ads-article-top>
+
+        <div class="entry-content">
+          <mokuji></mokuji> <!-- 目次のcssのセレクタ基準用 -->
+          <ul>
+  <li>
+    <h3 id="目次">目次</h3>
+  </li>
+  <li><a href="#">第3章　練習タイプ3（試し撃ち）</a>
+    <ul>
+      <li><a href="#">第1節　プリセット・原理スロット</a></li>
+      <li><a href="#">第2節　カテゴライズ・検索システム</a></li>
+      <li><a href="#">第3節　映像記憶</a></li>
+      <li><a href="#">第4節　上達サイクル</a></li>
+    </ul>
+  </li>
+  <li><a href="#">第4章　練習タイプ4（思いつき・機械的）</a>
+    <ul>
+      <li><a href="#">第1節　活性化・維持リハーサル</a></li>
+      <li><a href="#">第2節　集中サイクル</a></li>
+    </ul>
+  </li>
+  <li><a href="#">結言　~曖昧な記憶より再現性の言語~</a></li>
+</ul>
+
+<p>記号化の直後に描画工程に進めば分析サイクルのまま練習タイプ2（真似）を行うこととなりますが、さらに言語的な整理をする工程に進むと上達サイクルに入って「練習タイプ3（試し撃ち）」を行うことになります。</p>
+
+<p><img src="/assets/img/2018-05-18/01.png" alt="お絵描きのメカニズム全体の目次" /></p>
+
+<h2 id="第3章練習タイプ3試し撃ち第1節プリセット原理スロット">第3章　練習タイプ3（試し撃ち）<br />　第1節　プリセット・原理スロット</h2>
+
+<p><img src="/assets/img/2018-08-30/01.png" alt="上達サイクル・集中サイクル" /></p>
+
+<p>「<yy>転写</yy>」でも「<yy>真似</yy>」でもない方法で絵を描くには<bb>自身が持っている知識からアウトプットする</bb>他ありません。では自分が持っている知識がどれくらいあるかと言われると把握し切れていないのが現状だと思います。まずは<bb>どういった機能や用途のある知識をどれだけ持っているのかを一覧して整理し、いつでも引き出せるように内容と保管場所を把握する</bb>ための環境を作ります。そこで、それらの知識を「<yy>原理スロット</yy>」と「<yy>プリセット</yy>」という形で管理する方法を提案します。</p>
+
+<p>「<yy>スロット</yy>」とは、PC用語で言うところの<bb>機能を拡張するための空きスペース</bb>を指す言葉です。そして<yy>原理</yy>とは、<bb>物事の根本的な法則</bb>のことで、ここではお絵描きに関する<bb>手法や理論を最小単位まで分解した状態</bb>という意味で扱っています。また、<yy>プリセット</yy>とは、<bb>前もって調整する</bb>という意味があります。つまり、<yy>原理スロット</yy>は<bb>絵を描くための知識の種類や場所を予め決めておき、そのとき必要な知識を抜き差しする管理方法</bb>のことで、<yy>プリセット</yy>は<bb>いくつかの原理スロットを組み合わせて高度な処理を実行するための管理方法</bb>です。スロットやプリセットというネーミングから分かると思いますが、思考体系をソフトウェアやハードウェアに見立てています。</p>
+
+<p><img src="/assets/img/2018-09-01/01.png" alt="原理スロットとプリセット" /></p>
+
+<p>この原理スロットやプリセットの工程でやることとは、<gg><yy>記号化</yy>の工程で実用性が実証された記号を、今度は原理的に最小単位まで分解し、必要なら特定の機能を持つ組み合わせを作って名前を付ける</gg>ことです。これは記憶のメカニズムにおいて記憶の第一段階といわれる「<yy>記銘</yy>」という作業とほぼ同じです。「記銘」の本来の意味では何かしらの現象を認識したときの感覚を脳で覚えるために言語化することですが、お絵描きのメカニズムでは、<yy>記号化</yy>は<bb>分析した記号を覚えるための名称を与える工程</bb>、<yy>原理スロット・プリセット</yy>は<bb>覚えた記号を分解もしくは組み合わせて名称を与えることで想起を効率化する工程</bb>、という解釈をしています。例えば「S字カーブ」「正中線」「8頭身」などは人物デッサンに関する原理スロットで、「画角」「視円錐」「M点法」などは透視図法に関する原理スロットです。いくつか挙げた例から分かるように、原理スロットは抜き差し可能な項目で構成されています。こういった様々な原理をある目的に備えてパッケージングすると、例えば「素体」「<a href="http://www.posemaniacs.com/blog/negativespace" target="blank">ネガティブスペース</a>」「<a href="https://ja.wikipedia.org/wiki/%E3%82%A6%E3%82%A3%E3%83%88%E3%83%AB%E3%82%A6%E3%82%A3%E3%82%A6%E3%82%B9%E7%9A%84%E4%BA%BA%E4%BD%93%E5%9B%B3" target="blank">ウィトルウィウス的人体図</a>」などは人物デッサンに関するプリセット、「<a href="/depth-reduction-and-compression/" target="blank">ユアッサーの法則</a>」「<a href="https://twitter.com/animesijyuku/status/1035484995857465344" target="blank">空間ビート</a>」「<a href="/introduction-to-diagonal-division-method/" target="blank">対角線分割法</a>」などは透視図法に関する一連の手順を特定の目的にフォーカスし組み上げたプリセットとなります。プリセットは、PCで設定するショートカット、Photoshopのアクション機能、上手い絵描きのノウハウ、などと同義のニュアンスで、いくつかの手順（原理）をひとつにまとめ上げた（プリセット）ものです。また、<bb>記銘のために付けた名称は覚えるためだけでなく、想起するためのキッカケとしての機能もあるため、目的や手順を彷彿とさせるネーミングが望ましい</bb>です。</p>
+
+<p><img src="/assets/img/2018-09-01/02.png" alt="記銘の連鎖" /></p>
+
+<p>自分の持っている知識を原理スロットとして管理することで、現在どれだけの原理を理解しているか、新しく発見した記号を実用的な知識として格納できたか、それぞれの原理の相違点は何か、という<gg>知識体系を漠然としたイメージではなく明確な体系図として認識できる</gg>ようになります。重要なのは、<bb>他人のノウハウを分析するために最小単位まで分解</bb>したとき、<bb>根本の原理を自分の言葉で定義する</bb>こと、または<bb>既に定義されている原理と一致したものを統合する</bb>ことによって全てを自分言語に翻訳することです。そしてそれらを組み上げることで<gg>「他人言語のノウハウ」を「自分言語のプリセット」に変換</gg>し、いわゆる絵柄のコピーが可能となります。自分の知識の管理、他人のノウハウの翻訳（解釈ともいう）、この2つを確実に処理することで<bb>お絵描きの技法を習得するための思考体系</bb>が完成ます。もっと簡単な言い方をするなら、根本原理まで分解して原理スロットに格納することは「理解する」「覚える」と同義で、原理を組み合わせてプリセット化することは「会得する」「編み出す」と言ったところです。<a href="/mechanism-of-drawing-2/#第7節想起サイクル" target="blank">前回の記事</a>で述べた<yy>3つの想起の仕方</yy>でいうと、<bb>原理スロットの知識は「再認」「再生」</bb>することに有効で、<bb>プリセットの知識は「再構成」</bb>することに有効となります。</p>
+
+<p><img src="/assets/img/2018-09-01/03.png" alt="自分言語変換と想起" /></p>
+
+<h2 id="第2節カテゴライズ検索システム">第2節　カテゴライズ・検索システム</h2>
+
+<p>原理スロットやプリセットを使用するには、<bb>瞬時に思い浮かべられるスムーズな思考経路</bb>が必須です。また、新しく学び取った記号を覚えるときも正しい位置に格納しないと、後からその記号が何だったかを思い出すときに他の記憶と混同してしまい、そしていずれ忘れ去られます。先ほど述べた<gg>「記銘」で名称を与える作業は、キーワード検索によってピンポイントに原理スロットやプリセットを想起し、それによって印象抽出したシルエットに言語操作を行うことが目的</gg>です。理想は<bb>ほとんど思考を挟まず直感的に想起できること</bb>です。</p>
+
+<p>とはいえ、絵とは多くの情報が合成されたものなので、<bb>描いている最中は情報に翻弄されやすい</bb>のも事実です。たとえ<bb>直前の練習で注意点に気づいていたとしても、適切なタイミングでそのことを考える余裕もないまま絵を描いている</bb>はずです。だからこそ情報を処理し切れなくならないよう、まずは全ての原理を文字で書き起こして一覧し、その<gg>原理の一覧を視覚的に認識しながら絵を描くことで描画作業中に原理を想起するという訓練</gg>を行い、<gg>いずれは原理の一覧を視認しなくても頭に浮かぶ状態</gg>を目指します。</p>
+
+<p>では、原理の一覧とはどのような体系を持つものが最適なのでしょうか。ここで<bb>重要なのはカテゴライズの方法</bb>です。例えば、ラフ画、清書、着色、仕上げといった「工程」を基準にカテゴライズする方法があります。他にも、人物、動物、風景、建造物、抽象画といった「被写体の種類」を基準にカテゴライズする方法もあります。さらに、アニメ、漫画、絵画、イラスト、リアルといった「作品のジャンル」を基準にカテゴライズする方法も可能です。これらのカテゴリーでは<bb>それぞれ異なる描画技術が用いられますが、元を辿れば共通の原理の組み合わせ方が異なるだけ</bb>です。つまり、ここで挙げたカテゴライズの例は<bb>原理体系の末端付近で行っている</bb>に過ぎず、「工程」や「被写体の種類」や「作品のジャンル」などは<bb>人によって異なる解釈をする余地の残された曖昧な概念</bb>で、理論（メカニズム）と呼ぶには不十分と言えます。</p>
+
+<p>もっと原始的な根本部分でカテゴライズするには、<bb>「絵」という視点から一旦離れて「認識」というレベルまで分解する</bb>必要があります。<gg>人が絵を見て最初に認識する概念を基準にしてカテゴライズする</gg>ことで、全ての人に適用できる理論となります。また、<gg>原理体系の根本付近を正しくカテゴライズできれば、それに続く末端の概念もおのずと正しく整理されていく</gg>ことになります。人の認識のメカニズムに最適化されたカテゴライズであれば<gg>描画作業中でも自然と想起されるよう記銘されているため、そのとき必要な知識をほとんど思考せずに取り出すことができる</gg>はずです。言ってしまえば、必要なときに必要なものが勝手にポンッと手元に出現するようなものです。そして、このような考え方を実現するために哲学者<oo>カント</oo>の『<oo>純粋理性批判</oo>』を応用します。</p>
+
+<p>つまるところ、<yy>カテゴライズ</yy>とは<bb>原理体系の考え方のこと</bb>で、<yy>検索システム</yy>とは<bb>「描画中の思考」と「必要な原理」をリンクさせる仕掛けのこと</bb>です。そして、カテゴライズは人の認識のメカニズムに基づいているため、<bb>「描画中の思考」の過程で「必要な原理」が無意識（強制的）にピックアップ</bb>されます。「描画中の思考」とは、<yy>映像記憶</yy>や<yy>ラフスケッチ</yy>を認識しながら<yy>添削・微調整</yy>を施すという一連の流れのことです。よって、後は<gg>その時々で自然とピックアップされた原理を使って描画し、物足りないなら今度は意図的に別カテゴリの原理をピックアップするだけ</gg>です。</p>
+
+<p>■ここまでの文章にはこのコンセプトが抜けてる■慣れたポーズや構図なら、いちいち知識を検索しなくても使い慣れた記号を順番に積み上げていくことで描けます。ここの工程の意義は、頻繁に使わないけどいつか使おうと習得しておいたマニアックな記号や、複数の記号の同時処理（プリセット）を瞬時に想起することです。</p>
+
+<h2 id="純粋理性批判の悟性におけるカテゴライズとは">『純粋理性批判』の悟性におけるカテゴライズとは</h2>
+
+<p>カテゴライズという発想は『<oo>純粋理性批判</oo>』に書かれている<yy>悟性</yy>の解説で登場します。はっきり言ってかなり難解なので、実例と結びつけながら「お絵描き」と「純粋理性批判」の関係を掘り下げる必要があります。まずは「お絵描き」の方は置いておいて「純粋理性批判」に焦点を当てて哲学のお勉強といきましょう。</p>
+
+<p>透視図法は「空間」、素体は「形態」、アタリ線は「延長」</p>
+
+<p>視覚的スケッチパッド、音韻ループ</p>
+
+<p><span>判断表</span></p>
+
+<ul>
+  <li>分量
+    <ul>
+      <li>全称的判断　全てのAはBである（包含）</li>
+      <li>特称的判断　いくつかのAはBである（限定）</li>
+      <li>単勝的判断　このAはBである（特定・指定）</li>
+    </ul>
+  </li>
+  <li>性質
+    <ul>
+      <li>肯定的判断　AはBである（人は死ぬ）</li>
+      <li>否定的判断　AはBでない（人は神ではない）</li>
+      <li>無限的判断　Aは非Bである（魂は不死である）</li>
+    </ul>
+  </li>
+  <li>関係
+    <ul>
+      <li>提言的判断　AはBである</li>
+      <li>仮言的判断　AがBならば、CはDである</li>
+      <li>宣言的判断　AはBであるか、さもなくばCである</li>
+    </ul>
+  </li>
+  <li>様態
+    <ul>
+      <li>蓋然的判断　AはBでありうる</li>
+      <li>実然的判断　AはBである</li>
+      <li>必然的判断　AはBでなければならない</li>
+    </ul>
+  </li>
+</ul>
+
+<p><span>カテゴリー表</span></p>
+
+<ul>
+  <li>数学的カテゴリー（数学的直感と経験的対象の直感的把握）
+    <ul>
+      <li>分量
+        <ul>
+          <li>単一性</li>
+          <li>数多生</li>
+          <li>総体性</li>
+        </ul>
+      </li>
+      <li>性質
+        <ul>
+          <li>実在性</li>
+          <li>否定性</li>
+          <li>制限性</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>力学的カテゴリー（対象の存在様式）
+    <ul>
+      <li>関係
+        <ul>
+          <li>自存性と付属性（実体性と付属性）</li>
+          <li>下忍性（因果性）と依存性（原因と結果）</li>
+          <li>相互性（能動者と受動者との間の相互作用）</li>
+        </ul>
+      </li>
+      <li>様態
+        <ul>
+          <li>可能性と不可能性</li>
+          <li>現実存在と非存在</li>
+          <li>必然性と偶然性</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="第3節映像記憶">第3節　映像記憶</h2>
+
+<p>「<yy>映像記憶</yy>」は、写真記憶や直観像記憶とも言われます。この能力は<bb>幼少期は高く、思春期以前あたりで消失してしまう</bb>そうです。言語能力が発達してくるのもその頃です。映像記憶能力は、物事を形容する言語が存在しない自然界で地形や天敵を認識するために必要な原始的な能力です。ハトやシャケの帰巣本能に似て言語化できない類の能力です。それに対して<bb>言語を発明してしまった人類は映像記憶より意味記憶などを発達させた</bb>と言われています（<a href="https://ja.wikipedia.org/wiki/%E6%98%A0%E5%83%8F%E8%A8%98%E6%86%B6" target="blank">Wiki「映像記憶」</a>より）。</p>
+
+<p>お絵描きにおける映像記憶は、ほとんどの人の場合は正確に認識できていません。例えば、何かしらの風景やシーンを想起したとして、隅々まで見渡すことができないどころか、その映像には意外なものは何一つ映っていません。つまり、<bb>曖昧な映像記憶をベースとして<yy>プライミング記憶</yy>によって先入観に満ちた映像を再構成している</bb>わけです。<a href="http://brain-create.net/science/tetsuduki.html" target="blank">プライミング記憶</a>とは、<bb>何かを認識するときに全てを正確に認識せず、認識しなかった部分を先入観によって補完する機能を持つもの</bb>です。そして、<bb>プライミング記憶は主に意味記憶、手続き記憶、エピソード記憶によって支えられている</bb>ため、基本的にはお絵描きにおいて映像記憶そのものを当てにすることはできません。あくまで、<gg>イメージのベースとして利用</gg>します。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>短期記憶</th>
+      <th>意味記憶</th>
+      <th>エピソード記憶</th>
+      <th>手続き記憶</th>
+      <th>プライミング記憶</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>役割</td>
+      <td>直前の記憶<br />メモリ</td>
+      <td>言語によって形成され、論理的に想起される</td>
+      <td>イメージによって形成され、関連性によって想起される</td>
+      <td>体感によって形成され、無意識に想起される</td>
+      <td>先入観によって一時的に生成される</td>
+    </tr>
+    <tr>
+      <td>人類</td>
+      <td><oo>○</oo>：使える<br />時間経過で著しく劣化してしまう</td>
+      <td><yy>△</yy>：いまいち<br />言語でしか理論化できないが、人の処理能力の範囲内でしか機能しない</td>
+      <td><yy>△</yy>：いまいち<br />人の処理能力の範囲内で制限されるが、関連性を見出すのは人にしかできない</td>
+      <td><bb>×</bb>：使えない<br />相当な訓練が必要</td>
+      <td><pp>◎</pp>：優秀<br />論理が破綻する方向へも想像できる</td>
+    </tr>
+    <tr>
+      <td>AI</td>
+      <td><pp>◎</pp>：優秀<br />半永久的に保持が可能</td>
+      <td><pp>◎</pp>：優秀<br />論理の慣性系であるプログラムによって、間違いをせず一瞬で想起できるし劣化しない</td>
+      <td><pp>◎</pp>：優秀<br />関連付けさえできれば、意味記憶と同等に扱える</td>
+      <td><pp>◎</pp>：優秀<br />手順さえマニュアル化できれば完全再現できるし劣化しない</td>
+      <td><bb>×</bb>：使えない<br />先入観を持たず、データベースのみに従う</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><span>表　記憶の種類早見表</span></p>
+
+<p>ただ、当てにならないからと言って不要というわけではありません。<bb>曖昧な映像記憶すらない状態だとすると、絵を描く為の初期イメージを外部記録に依存する</bb>ことになり、それで出来ることは<yy>練習タイプ1（転写）</yy>と<yy>練習タイプ2（真似）</yy>に絞られ、これらは練習目的で行うものなのでお絵描きの全行程が機械的な行為となってしまい退屈です。映像記憶は<bb>曖昧であるからこそ自由度が非常に高く</bb>、イメージのベースとするには最適なのです。例えるなら、ある立体作品を彫刻するためのラフ形状を作成する素材に、木材（外部記録）を選ぶか、粘土（映像記憶）を選ぶかというくらいの違いがあります。<bb>映像記憶の最大のメリットは加工のしやすさとリセットのしやすさ</bb>です。逆に言えば変わりやすく消えやすいのですが、付いて回る欠点に悩むより有効利用するのが吉です。</p>
+
+<p>よって、<bb>無意識状態だと映像記憶をプライミング記憶で補完</bb>していたところを、<bb>意識的に映像記憶を意味記憶（言語）によって補強</bb>します。彫刻の例えを用いると、プライミング記憶による補完は型に粘土をねじ込む行為で、<bb>意味記憶による補強は型（プライミング記憶）に加えて彫刻刀（意味記憶）を使った繊細な造形をも可能にする</bb>行為です。型は既に決まった形状の生成しかできませんが、様々な小道具を使えるならどのような形状でも生成できるようになります。そして、ここでいう意味記憶や彫刻刀などのことを<yy>記号</yy>や<yy>原理スロット</yy>や<yy>プリセット</yy>と呼んでいます。<bb>映像記憶とは、人によって能力の優劣はあれど記憶と冠する以上は素材でしかない</bb>ということです。しかし、<bb>素材としては外部記録に比べかなり曖昧で、それ故に描きたい絵のイメージのベースとするには高い自由度を発揮</bb>します。また、映像記憶をラフスケッチとしてアウトプットするには印象抽出という変換効率の低い工程を経るため、そもそも映像記憶自体を絵として利用することはまず不可能です。<gg>映像記憶の正しい運用方法は、構図のコンセプトの決定のたたき台、ラフスケッチの評価の比較対象、という2つの目的に限定される</gg>ことになります。</p>
+
+<p>ちなみに、映像記憶が異常に発達した人は複雑な街並みなども正確に描画できるそうですが、それは言わばただの写真、あくまで「上手い絵」であって「良い絵」ではありません。良い絵を描くにはそういった文脈の記号を使わなくてはならず、映像記憶能力が高ければ有利というわけではありません。</p>
+
+<h2 id="第4節上達サイクル">第4節　上達サイクル</h2>
+
+<p>まとめると、<yy>上達サイクル</yy>には、<yy>原理スロット・プリセット</yy>の工程で<bb>知識や手順にタイトルを付けて記銘の作業を補強</bb>し、<yy>カテゴライズ・検索システム</yy>の工程で<bb>知識体系を整理して描画中の思考と知識体系の密接した関係を構築</bb>することで<yy>映像記憶</yy>に<bb>高精度で影響を与えて絵の構図のコンセプトを決定</bb>する、つまり<gg><yy>分析サイクル</yy>での学びを確実に取り込む準備をするという意味</gg>があります。またそうすることによって、<yy>言語操作フィルタ</yy>の工程で、<yy>ラフスケッチ</yy>と<yy>映像記憶</yy>との<bb>誤差の検出の範囲を特定しやすく</bb>なり、<yy>添削・微調整</yy>に必要な<yy>原理スロット・プリセット</yy>を<bb>最短で検索するための土台</bb>を作る、つまり<gg><yy>想起サイクル</yy>での描画技術の底力をつけるという意味</gg>もあります。これらは、以前に<a href="/evasion-manner-of-preconception/" target="blank">正しい記憶の隙間に宿る、誤った先入観の見つけ方</a>の記事で考察していた、記憶を本棚に例えていたものに科学的根拠が付与された考え方になります。</p>
+
+<p>この上達サイクルの仕組みさえ理解できれば、普段の絵の練習の目的意識が明確になり、必死に数をこなす練習をしなくて済むようになるはずです。というより、量をこなしても収穫を得られず虚無感に見舞われるということが回避できます。分析サイクルでは情報収集のために数をこなし、上達サイクルでは情報整理のために数をこなす、そして想起サイクルでは慣れるために数をこなす、ということです。人間は知識欲の生き物なので目的がわかっていればモチベーションを維持しやすくなります。</p>
+
+<p>上達した人は、これまでは真似して上達しようとしていた側の人だったのが、これからは真似される側になるということ。真似されるということは様々なプリセットを発明しているということ。そして真似できるということは、なんとなくで描いているのではなく、意図的に描いていると他人に見えているということ。無意識にやっていたとしても真似された時点で共通言語に則った思考を辿っている。</p>
+
+<p>練習タイプ3（試し撃ち）について言及。</p>
+
+<h2 id="第4章練習タイプ4思いつき機械的第1節活性化維持リハーサル">第4章　練習タイプ4（思いつき・機械的）<br />　第1節　活性化・維持リハーサル</h2>
+
+<p><img src="/assets/img/2018-08-30/01.png" alt="上達サイクル・集中サイクル" /></p>
+
+<p>この工程は<bb>ウォーミングアップをすることが目的</bb>です。そして何を温めるのかというと「記憶」です。普通は筋肉をほぐして動きやすくすることを目的としますが、ここでは<gg>前回の練習の記憶を活性化させて短期記憶に格納することを目的</gg>とします。短期記憶とは〜で、ワーキングメモリとも言われます。ワーキングメモリとは、7チャンク。</p>
+
+<p>ここでいう記憶とは、<bb>練習課題、作品テーマ、イメージしていた構図やストーリー、モチベーションや目的意識など</bb>です。そういった漠然とした記憶を実作業の直前に使用することで、過去の記憶や感情を再インストールすることを<yy>活性化</yy>と読んでいます。筋肉もほぐれないこともないですが、お絵描きはそれほど激しい運動を伴わないのであまり関係がないと思われます。</p>
+
+<p>練習を行う前に実際に<bb>運動を伴う工程を経ることで、画材の配置や線を描く体勢などの作業環境を初期設定する</bb>効果もあります。これもある意味、記憶の活性化に近い行為で、画材の再配置はいつも通りの環境を構築して<bb>過去と現在の空間的な記憶（映像記憶・手続き記憶）の互換性を高める</bb>こと、線を描く体勢の初期化は<bb>手続き記憶の活性化</bb>をすることができます。</p>
+
+<p>まず認めなくてはいけないことは、人類は言語を発明することでコミュニケーションの精度を高めることに成功しましたが、結局は物事を認識するのは視覚を通してしか行えず、言語という曖昧な概念による思考は迷走する可能性が高いということです。言語による思考と、視覚による認識、これらの違いは明白です。視覚による認識は言うまでもなく自分の目で見たものにしか行えませんが、言語による思考は知識を組み合わせて文章を作ればフィクションでも可能となります。</p>
+
+<p>本番前に行う練習には作業環境の整理という意味以外に、精神安定や精神統一という効果もあることが科学的に提唱されています。アスリートが競技直前に音楽を聴いたり、タオルをかぶって俯いていたり、筋肉を叩いて刺激したりという光景を見たことがありますが、これらも競技に臨む精神状態をインストールするためです。このような行為を、維持リハーサル（？）や・・・と呼びます。また、あえてアプリケーション設計用語を使うのは、お絵描きという行為を機械的な方法に落とし込んで再現性を獲得したいからです。そうすると必然的にプログラミングやAIやインターフェイスといった概念にたとえてしまいます。</p>
+
+<p>活性化する記憶はどのような形式でもいいわけではない。活性化するというのはすなわち短期記憶（ワーキングメモリ）に格納することで、それはデータ容量が小さければ小さいほど好ましく、検索システムに割く思考容量も小さいことが好ましい。理想は検索に使うキーワードと、ワーキングメモリに格納するキーワードが一致していること。それにより検索して格納するまでの要領が半分で済む。</p>
+
+<p>スレーブシステム、スレーブとは奴隷という意味、またはIT用語では親システムに制御される側のシステムのことをいう。中央実行系が情報の統合とスレーブシステムの管理を行う。</p>
+
+<p>余談ですが、この記事（お絵描きのメカニズムシリーズ）を執筆している最中に、練習タイプごとの項目であれば一気に文章が浮かんでくるのですが、練習タイプが変わった途端に文章が浮かんでこなくなるということがありました。これは各練習タイプの目的が異なり、注意を向けているものが・・・</p>
+
+<h2 id="第2節集中サイクル">第2節　集中サイクル</h2>
+
+<p>オリジナルキャラのオリジナルポーズを描けと言われると描けない。それは「#5分だけ描く」で次の手順が思いつかなくてパニックになるのと関係ある。それに描けない人でも数日や数週間の猶予を与えると描いてくるだろう。それは時間があれば練習タイプ1で正確に転写する時間を確保できるから。パーツごとに欲しいアングルを転写してコラージュして、それを土台にポーズのアレンジをしていけばいずれ完成する。また、十分な知識や経験や構想があれば分析サイクルを繰り返す事で完成する。</p>
+
+<h2 id="結言曖昧な記憶より再現性の言語">結言　~曖昧な記憶より再現性の言語~</h2>
+
+<p>未定</p>
+
+<p>（言語で操作する。手本を参考にするときも、転写以上の行為をしたければ言語化して操作する必要がある。）</p>
+
+        </div> <!-- .entry-content -->
+
+        <div class="share-buttons">
+  <script type="text/javascript">(function(d){if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896)=='undefined'){document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/52708f535f08e25625d3b79233c81896'><\/sc"+"ript>");}else{window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896.ONETAGButton_Load();}})(document);//]]></script>
+  <span class="ninja_onebutton_hidden" style="display:none;">/m/</span>
+  <span style="display:none;" class="ninja_onebutton_hidden">一筆描きパース理論</span>
+</div> <!-- .share-buttons -->
+
+        <div id="page-navi">
+          
+            <a id="page-navi-new" href="/kouzu/">次の記事</a>
+          
+
+          
+            <a id="page-navi-old" href="/mechanism-of-drawing-4/">前の記事</a>
+          
+        </div> <!-- #page-navi -->
+
+
+        <article__bottom-info>
+
+  <h4>執筆者</h4>
+  <div class="profile__author">
+    <img src="/assets/img/hoho.png" />
+    <span>村上豪一</span>
+    <p>理屈人間。お絵描きや作曲などの芸術分野の理論化に挑戦中。独自開発の手法、「透視図法解剖図」「対角線分割法」「お絵描きのメカニズム」など。</p>
+  </div> <!-- .profile__author -->
+
+  <ul class="profile__follow-button">
+    <li id="button-twitter">
+      <a href="https://twitter.com/oekaki_hoho_ron" target="_blank">
+        <img src="/assets/img/button-twitter.png" />
+        <span>Twitter</span>
+      </a>
+   </li>
+    <li id="button-soundcloud">
+      <a href="https://soundcloud.com/oekaki-hoho-ron" target="_blank">
+        <img src="/assets/img/button-soundcloud.png" />
+        <span>Soundcloud</span>
+      </a>
+    </li>
+    <li id="button-note">
+      <a href="https://note.mu/oekaki_hoho_ron" target="_blank">
+        <img src="/assets/img/button-note.png" />
+        <span>nota</span>
+      </a>
+    </li>
+<!--    <li id="button-pixiv">
+      <a href="https://pixiv.me/oekaki_hoho_ron" target="_blank">
+        <img src="/assets/img/button-pixiv.png" />
+        <span>Pixiv</span>
+      </a>
+    </li>
+    <li id="button-nico">
+      <a href="http://www.nicovideo.jp/user/6755076" target="_blank">
+        <img src="/assets/img/button-nico.png" />
+        <span>ニコニコ動画</span>
+      </a>
+    </li>
+    <li id="button-vimeo">
+      <a href="https://vimeo.com/koma51" target="_blank">
+        <img src="/assets/img/button-vimeo.png" />
+        <span>vimeo<span>
+      </a>
+    </li>-->
+     <li id="button-pinterest">
+      <a href="https://www.pinterest.jp/oekaki_hoho_ron/" target="_blank">
+        <img src="/assets/img/button-pinterest.png" />
+        <span>Pinterest<span>
+      </a>
+    </li>
+    <li id="button-qiita">
+      <a href="https://qiita.com/oekaki-hoho-ron" target="_blank">
+        <img src="/assets/img/button-qiita.png" />
+        <span>Qiita<span>
+      </a>
+    </li>
+    <li id="button-git">
+      <a href="https://github.com/oekaki-hoho-ron" target="_blank">
+        <img src="/assets/img/button-git.png" />
+        <span>Github<span>
+      </a>
+    </li>
+  </ul>
+
+<!--
+<div class="archives">
+
+<h4 id="library">アーカイブ</h4>
+<ul class="article-bottom-post-list">
+  
+    
+    
+    
+      <li><a href="2019-01">2019年01月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2018-09">2018年09月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2018-08">2018年08月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2018-06">2018年06月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2018-05">2018年05月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2018-01">2018年01月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2017-12">2017年12月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2017-09">2017年09月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2017-06">2017年06月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2017-05">2017年05月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2016-12">2016年12月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2016-11">2016年11月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2015-11">2015年11月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2014-12">2014年12月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2014-08">2014年08月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2014-07">2014年07月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2014-06">2014年06月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2014-04">2014年04月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2014-03">2014年03月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2014-02">2014年02月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2013-12">2013年12月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2013-09">2013年09月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2013-08">2013年08月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2013-07">2013年07月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2013-06">2013年06月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2013-05">2013年05月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2013-04">2013年04月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2013-03">2013年03月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+</ul>
+
+<h4>カテゴリー</h4>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="日記">日記</a></li>
+      
+      <li><a href="日記">日記</a></li>
+      
+      <li><a href="日記">日記</a></li>
+      
+      <li><a href="日記">日記</a></li>
+      
+      <li><a href="日記">日記</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="人物画">人物画</a></li>
+      
+      <li><a href="人物画">人物画</a></li>
+      
+      <li><a href="人物画">人物画</a></li>
+      
+      <li><a href="人物画">人物画</a></li>
+      
+      <li><a href="人物画">人物画</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="演出">演出</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="精神分析">精神分析</a></li>
+      
+      <li><a href="精神分析">精神分析</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="画材">画材</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="色彩理論">色彩理論</a></li>
+      
+      <li><a href="色彩理論">色彩理論</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="デジタル">デジタル</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="カテゴリ1">カテゴリ1</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="ハードウェア">ハードウェア</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="シナリオ">シナリオ</a></li>
+      
+      <li><a href="シナリオ">シナリオ</a></li>
+      
+  </ul>
+
+
+
+<h4>タグ</h4>
+<ul class="article-bottom-post-list">
+  
+   <li><a href="">アタリ線</a><li>
+ 
+   <li><a href="">2点透視図法</a><li>
+ 
+   <li><a href="">3点透視図法</a><li>
+ 
+   <li><a href="">M点法</a><li>
+ 
+   <li><a href="">足線法</a><li>
+ 
+   <li><a href="">介線法</a><li>
+ 
+   <li><a href="">髪デッサン</a><li>
+ 
+   <li><a href="">クオリア</a><li>
+ 
+   <li><a href="">キャラデザイン</a><li>
+ 
+   <li><a href="">先入観</a><li>
+ 
+   <li><a href="">記憶</a><li>
+ 
+   <li><a href="">漫符</a><li>
+ 
+   <li><a href="">色彩検定</a><li>
+ 
+   <li><a href="">レイヤー描画モード</a><li>
+ 
+   <li><a href="">画角</a><li>
+ 
+   <li><a href="">魚眼パース</a><li>
+ 
+   <li><a href="">解剖学</a><li>
+ 
+   <li><a href="">タグ1</a><li>
+ 
+   <li><a href="">タグ2</a><li>
+ 
+   <li><a href="">もぐらたたき組曲</a><li>
+ 
+   <li><a href="">ペンタブ</a><li>
+ 
+   <li><a href="">重心</a><li>
+ 
+   <li><a href="">注視点</a><li>
+ 
+   <li><a href="">透視図法解剖図</a><li>
+ 
+   <li><a href="">対角線分割法</a><li>
+ 
+   <li><a href="">うろ覚えスケッチ</a><li>
+ 
+   <li><a href="">ユアッサーの法則</a><li>
+ 
+   <li><a href="">4つのV字模型</a><li>
+ 
+   <li><a href="">D点法</a><li>
+ 
+   <li><a href="">上達方法</a><li>
+ 
+   <li><a href="">その2</a><li>
+ 
+   <li><a href="">一筆描きパース理論</a><li>
+ 
+   <li><a href="">構図</a><li>
+ 
+</ul>
+
+</div> -->
+
+</article__bottom-info>
+
+      </article>
+
+      <footer>
+<ul>
+<li><a href="/post-type/jiyu-kenkyu.html">自由研究</a></li>
+<li><a href="/post-type/training.html">トレーニング</a></li>
+<li><a href="/post-type/youtube.html">YouTubeチャンネル</a></li>
+<li><a href="/post-type/animation.html">アニメ制作</a></li>
+</ul>
+<small class="centering">Copyright © お絵描きホーホー論</small>
+</footer>
+
+<a id="pageTop" href="#">&and; PAGE TOP</a>
+      </contents>
+  </container>
+
+</body>
+</html>

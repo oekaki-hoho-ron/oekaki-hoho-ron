@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="utf-8" >
+
+{% include head.html %}
+{% include header.html %}
+
+<body>
+  
+  <container>
+      {% include sidebar.html %}
+      <contents>
+
+      <article>
+        <h1>{{ page.title }}</h1>
+        <ul class="article__meta">
+          <li class="post-date">{{ page.date | date: '%Y年%m月%d日' }}</li>
+          <li class="category">Category <a href="{{ site.baseurl }}/tags#{{ tag | slugize }}">{{ page.categories }}</a></li>
+          <li class="tag">Tag {% if post %}{% assign tags = post.tags %}{% else %}{% assign tags = page.tags %}{% endif %}{% for tag in tags %}<a href="_posts/tags/{{ tag }}">{{ tag }} </a>{% endfor %}</li>
+        </ul> <!-- .article__meta -->
+        <img src="{{ page.thumb }}" alt="{{ post.title }}" />
+
+        {% include share-buttons.html %}
+        {% include ads-article-top.html %}
+
+        <div class="entry-content">
+          <mokuji></mokuji> <!-- 目次のcssのセレクタ基準用 -->
+          {{ content }}
+        </div> <!-- .entry-content -->
+
+        {% include share-buttons.html %}
+
+        <div id="page-navi">
+          {% if page.next %}
+            <a id="page-navi-new" href="{{ page.next.url }}">次の記事</a>
+          {% endif %}
+
+          {% if page.previous %}
+            <a id="page-navi-old" href="{{ page.previous.url }}">前の記事</a>
+          {% endif %}
+        </div> <!-- #page-navi -->
+
+
+        {% include article-bottom-info.html %}
+      </article>
+
+      {% include footer.html %}
+      </contents>
+  </container>
+
+</body>
+</html>

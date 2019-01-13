@@ -1,0 +1,1082 @@
+<!DOCTYPE html><html lang="utf-8" >
+
+<head>
+
+  <!-- 基本設定 -->
+  <!--link rel="canonical" href="サイトURL"-->  <!-- コンテンツ内容が重複するページの正規URLを指定する -->
+  <meta charset="utf-8">
+  <title>視円錐を使って考える望遠パース・広角パースの描き方</title>
+  <meta name="description" content="記事説明">
+  <link rel="icon" href="/assets/img/favicon.png">
+  <link rel="alternate" type="application/rss+xml" title="フィード" href="フィードページのURL" />  <!-- RSSフィード設定 -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">  <!-- 使用端末のディスプレイサイズに最適化するレスポンシブ設定 -->
+
+
+  <!-- OGP -->
+  <meta property="og:site_name"  content="サイト名" />
+  <meta property="og:type" content="ページタイプ" />
+  <meta property="og:url" content="/viewing-cone-and-perspective/" />
+  <meta property="og:title" content="視円錐を使って考える望遠パース・広角パースの描き方" />
+  <meta property="og:description" content="ディスクリプション" />
+  <meta property="og:image" content="/assets/img/2013-12-07/00.png" />
+  <meta name="twitter:card" content="Summary with Large Image" />
+  <meta name="twitter:site" content="@oekaki-hoho-ron" />
+  <meta property="fb:app_id" content="App ID" />
+  <meta property="article:publisher" content="FacebookページのURL" />
+
+
+  <!-- 外部ファイル -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+
+  <!-- GoogleAdsence -->
+  <!-- GoogleAdsence自動広告 --><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-7336552517082119",enable_page_level_ads: true});</script>
+  <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-30635583-8"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-30635583-8');</script>
+  <!-- ads-in-article自動挿入 -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+	$(document).ready(function() {
+		var adsCode = '<ads-in-article-box><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><\/script><ins class="adsbygoogle"style="display:block; text-align:center;"data-ad-layout="in-article"data-ad-format="fluid"data-ad-client="ca-pub-7336552517082119"data-ad-slot="6117821682"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script></ads-in-article-box>';
+		$(".entry-content h2").each(function (i) {
+			if(i % 3 == 0 && i > 0 || i == 1){
+				$(this).before(adsCode);
+			}
+		});
+	});
+　　</script>
+
+</head>
+
+<header>
+  <label for="header__accordion-checkbox" id="header__accordion-button">
+    <img src="/assets/img/accordion-button.png" />
+  </label>
+  <header__accordion-button-dummy></header__accordion-button-dummy>
+  <h1 class="header__logo">
+    <a href="/index.html">
+      <img class="header__logo-img" src="/assets/img/logo.png" alt="お絵描きホーホー論" />
+    </a>
+  </h1>
+  <span class="header__description">理屈で絵が描ける事を証明する</span>
+</header>
+
+<input type="checkbox" id="header__accordion-checkbox" />
+
+
+<body>
+
+  <container>
+      <sidebar>
+
+  <sidebar__ads-box_mobile>
+    <img src="ads.png">
+  </sidebar__ads-box_mobile>
+
+  <sidebar__ads-box_pc>
+    <img src="ads.png">
+  </sidebar__ads-box_pc>
+
+  <div class="share-buttons">
+  <script type="text/javascript">(function(d){if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896)=='undefined'){document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/52708f535f08e25625d3b79233c81896'><\/sc"+"ript>");}else{window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896.ONETAGButton_Load();}})(document);//]]></script>
+  <span class="ninja_onebutton_hidden" style="display:none;">/viewing-cone-and-perspective/</span>
+  <span style="display:none;" class="ninja_onebutton_hidden">視円錐を使って考える望遠パース・広角パースの描き方</span>
+</div> <!-- .share-buttons -->
+
+  <sidebar-bannar>
+    <a href="https://www.youtube.com/channel/UCe2lNmDXPV1LmIqaFGRnkFg" target="_blank">
+      <img src="/assets/img/banner-youtube-hoho.png" />
+    </a>
+  </sidebar-bannar>
+
+
+  <div id="post-table">
+    
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('日記').checked = true;">
+        日記<span>5</span>
+      </label>
+      <input type="checkbox" id="日記" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/establishing-the-private-studio/" target="_blank"><img src="/assets/img/2014-06-15/00.png" /><span>自主制作アニメ「STUDIO hoho」設立のお知らせ</span></a></li>
+        
+          <li class="post-table__li"><a href="/transition-of-web-server/" target="_blank"><img src="/assets/img/2014-03-16/00.png" /><span>サーバー引っ越して気分爽快！</span></a></li>
+        
+          <li class="post-table__li"><a href="/modification-to-simple-policy/" target="_blank"><img src="/assets/img/2013-05-06/00.png" /><span>お絵描き再始動、シンプルに方針変更</span></a></li>
+        
+          <li class="post-table__li"><a href="/idle-talk/" target="_blank"><img src="/assets/img/2013-03-07/00.png" /><span>人物画のアタリ線の研究に時間を費やす意義について考えた事</span></a></li>
+        
+          <li class="post-table__li"><a href="/failure-of-a-certain-beginner/" target="_blank"><img src="/assets/img/2013-03-04/00.png" /><span>ある初心者の失敗</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('日記').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('お絵描きのメカニズム').checked = true;">
+        お絵描きのメカニズム<span>11</span>
+      </label>
+      <input type="checkbox" id="お絵描きのメカニズム" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/kouzu/" target="_blank"><img src="/assets/img/2019-01-05/00.png" /><span>構図</span></a></li>
+        
+          <li class="post-table__li"><a href="/mechanism-of-drawing-4/" target="_blank"><img src="/assets/img/2018-08-30/00.png" /><span>お絵描きのメカニズム</span></a></li>
+        
+          <li class="post-table__li"><a href="/mechanism-of-drawing-3/" target="_blank"><img src="/assets/img/2018-08-30/00.png" /><span>お絵描きのメカニズム</span></a></li>
+        
+          <li class="post-table__li"><a href="/mechanism-of-drawing-2/" target="_blank"><img src="/assets/img/2018-06-11/00.png" /><span>お絵描きのメカニズム　第2巻 〜感覚で描く絵、理屈で描く絵〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/mechanism-of-drawing-1/" target="_blank"><img src="/assets/img/2018-05-18/00.png" /><span>お絵描きのメカニズム　第1巻　〜絵は才能でなく根気で描ける〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/sketch-of-the-pokemon-with-ambiguous-storage2/" target="_blank"><img src="/assets/img/2017-09-10/00.png" /><span>うろ覚えポケモンかけるかな？　〜第2フェイズ「脳内イメージの再現」〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/sketch-of-the-pokemon-with-ambiguous-storage/" target="_blank"><img src="/assets/img/2017-06-11/00.png" /><span>うろ覚えポケモン描けるかな？　〜第1フェイズ「うろ覚え」〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/not-drawing-draft-human-body-sketch/" target="_blank"><img src="/assets/img/2013-07-04/00.png" /><span>アタリ線を描かないデッサン</span></a></li>
+        
+          <li class="post-table__li"><a href="/right-brain-and-left-brain/" target="_blank"><img src="/assets/img/2013-03-12/00.png" /><span>右脳・左脳で使い分ける人体デッサンのアタリ線の描き方</span></a></li>
+        
+          <li class="post-table__li"><a href="/how-to-draw-makes-sketch-stabilize/" target="_blank"><img src="/assets/img/2013-03-06/00.png" /><span>人体デッサンを安定させるアタリ線の描き方</span></a></li>
+        
+          <li class="post-table__li"><a href="/draft-of-sketch-habit-conversion/" target="_blank"><img src="/assets/img/2013-03-05/00.png" /><span>安定して人体デッサンするためのアタリ線の習慣化</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('お絵描きのメカニズム').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('透視図法').checked = true;">
+        透視図法<span>18</span>
+      </label>
+      <input type="checkbox" id="透視図法" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/m/" target="_blank"><img src="/assets/img/2018-09-20/00.png" /><span>一筆描きパース理論</span></a></li>
+        
+          <li class="post-table__li"><a href="/introduction-to-diagonal-division-method/" target="_blank"><img src="/assets/img/2018-01-16/00.png" /><span>対角線分割法 概論　〜透視図法の空間を対角線で測るアイデア集〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/depth-reduction-and-compression/" target="_blank"><img src="/assets/img/2017-12-25/00.png" /><span>ユアッサーの法則の画角メーターで学ぶ奥行きの「縮小」と「圧縮」</span></a></li>
+        
+          <li class="post-table__li"><a href="/principle-decoding-of-measuring-point-method/" target="_blank"><img src="/assets/img/2017-05-28/00.png" /><span>ありそうでなかったM点法の原理解説　〜地平線に隠された秘密〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/device-of-diagonal-split-graph-technique/" target="_blank"><img src="/assets/img/2017-05-27/00.png" /><span>透視図法の基本原理「対角線分割法」誕生の軌跡　〜3次元を2次元に変換する仕組み〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/anatomical-chart-of-3point-perspective/" target="_blank"><img src="/assets/img/2016-12-06/00.png" /><span>3点透視図法の解剖図　〜なぜ4点ではなく3点なのか〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/anatomical-chart-of-perspective/" target="_blank"><img src="/assets/img/2016-11-18/00.png" /><span>パース理論の完全形態「透視図法解剖図」</span></a></li>
+        
+          <li class="post-table__li"><a href="/measuring-point-utilization-plan/" target="_blank"><img src="/assets/img/2015-11-23/00.png" /><span>「M点法」実用化計画　〜縮図で奥行きの長さを作図〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/prerequisite-of-perspective/" target="_blank"><img src="/assets/img/2014-12-25/00.png" /><span>透視図法の知られざる大前提　〜実は市販のパース理論書の教えは間違っていた〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/law-of-vertical-perspective/" target="_blank"><img src="/assets/img/2014-12-16/00.png" /><span>三点透視図法の縦パース講座（2/3）　〜縦パースの傾きの法則〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/how-to-think-the-vertical-perspective/" target="_blank"><img src="/assets/img/2014-12-11/00.png" /><span>三点透視図法の縦パース講座（1/3） 〜縦パース作図における2つのポイント〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/3point-perspective-which-used-the-viewing-cone/" target="_blank"><img src="/assets/img/2014-07-12/00.png" /><span>2つの視円錐を重ねて三点透視パース作画　〜建築パースとリアルパースの違い〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/supplementary-lessons-of-perspective-theory/" target="_blank"><img src="/assets/img/2014-04-16/00.png" /><span>建築パース理論補講　〜2点透視を2つ重ねると3点透視になる〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/how-to-draw-the-fish-eye-perspective/" target="_blank"><img src="/assets/img/2013-12-09/00.png" /><span>魚でも分かる魚眼パースの描き方講座　〜魚眼レンズのしくみ〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/device-of-perspective-ruler/" target="_blank"><img src="/assets/img/2013-12-08/00.png" /><span>一瞬で背景イラストのアングルと画角を決めるパースの描き方</span></a></li>
+        
+          <li class="post-table__li"><a href="/viewing-cone-and-perspective/" target="_blank"><img src="/assets/img/2013-12-07/00.png" /><span>視円錐を使って考える望遠パース・広角パースの描き方</span></a></li>
+        
+          <li class="post-table__li"><a href="/drawing-procedure-of-construction-perspective/" target="_blank"><img src="/assets/img/2013-03-26/00.png" /><span>建築パースを徹底研究！パース理論の基礎知識と描き方</span></a></li>
+        
+          <li class="post-table__li"><a href="/basic-knowledge-of-perspective-theory/" target="_blank"><img src="/assets/img/2013-03-14/00.png" /><span>パース理論の予備知識</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('透視図法').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('人物画').checked = true;">
+        人物画<span>5</span>
+      </label>
+      <input type="checkbox" id="人物画" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/center-of-gravity-of-human-body-sketch/" target="_blank"><img src="/assets/img/2014-06-29/00.png" /><span>絵描きが言う人体デッサンの「重心」が厳密には間違っている件</span></a></li>
+        
+          <li class="post-table__li"><a href="/memorization-manner-of-anatomy/" target="_blank"><img src="/assets/img/2014-02-18/00.png" /><span>解体新書　〜人体デッサンの解剖学における筋肉の暗記術〜</span></a></li>
+        
+          <li class="post-table__li"><a href="/the-human-body-sketch-which-makes-time-lapse-feel/" target="_blank"><img src="/assets/img/2013-07-07/00.png" /><span>前後の時間を感じさせる人体デッサン</span></a></li>
+        
+          <li class="post-table__li"><a href="/relation-of-beautiful-hair-and-qualia/" target="_blank"><img src="/assets/img/2013-04-07/00.png" /><span>髪の描き方と、美しい髪というクオリアの関連性</span></a></li>
+        
+          <li class="post-table__li"><a href="/how-to-draw-the-hair/" target="_blank"><img src="/assets/img/2013-04-01/00.png" /><span>ヘアカットとデッサンを関連づけて考える髪の描き方</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('人物画').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('演出').checked = true;">
+        演出<span>1</span>
+      </label>
+      <input type="checkbox" id="演出" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/individual-character-design/" target="_blank"><img src="/assets/img/2013-04-18/00.png" /><span>オリジナルキャラの絵柄を獲得することについて</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('演出').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('精神分析').checked = true;">
+        精神分析<span>2</span>
+      </label>
+      <input type="checkbox" id="精神分析" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/evasion-manner-of-preconception/" target="_blank"><img src="/assets/img/2013-05-18/00.png" /><span>正しい記憶の隙間に宿る、誤った先入観の見つけ方</span></a></li>
+        
+          <li class="post-table__li"><a href="/preconception/" target="_blank"><img src="/assets/img/2013-05-15/00.png" /><span>先入観と仲良くしながら絵を描こう</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('精神分析').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('画材').checked = true;">
+        画材<span>1</span>
+      </label>
+      <input type="checkbox" id="画材" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/proper-use-of-thickness-of-drawing-streak/" target="_blank"><img src="/assets/img/2013-06-07/00.png" /><span>描画線の太さによる練習効果の違い</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('画材').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('色彩理論').checked = true;">
+        色彩理論<span>2</span>
+      </label>
+      <input type="checkbox" id="色彩理論" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/harmony-of-color-scheme/" target="_blank"><img src="/assets/img/2013-08-31/00.png" /><span>デジタルイラストの色を調和させる配色パターン</span></a></li>
+        
+          <li class="post-table__li"><a href="/color-scheme-theoretical-outline/" target="_blank"><img src="/assets/img/2013-08-29/00.png" /><span>デジタルイラストを描くための色彩理論概論</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('色彩理論').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('デジタル').checked = true;">
+        デジタル<span>1</span>
+      </label>
+      <input type="checkbox" id="デジタル" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/how-to-use-the-layer-blending-mode/" target="_blank"><img src="/assets/img/2013-09-01/00.png" /><span>デジタルイラストで使うレイヤーの描画モードの効果を画像で検証</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('デジタル').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('カテゴリ1').checked = true;">
+        カテゴリ1<span>1</span>
+      </label>
+      <input type="checkbox" id="カテゴリ1" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/human-body-sketch-theorization-plan-1/" target="_blank"><img src="/assets/img/2014-04-30/00.png" /><span>人体デッサン理論化計画・序　〜シルエットで捉える描き方の意味考える〜</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('カテゴリ1').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('ハードウェア').checked = true;">
+        ハードウェア<span>1</span>
+      </label>
+      <input type="checkbox" id="ハードウェア" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/pen-tablet-introduction/" target="_blank"><img src="/assets/img/2014-06-20/00.png" /><span>wacomペンタブレットのスペック解説　〜この数値どういう意味？編〜</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('ハードウェア').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+    
+    <div class="post-table-category">
+      <label class="post-table__label_open" onclick="document.getElementById('シナリオ').checked = true;">
+        シナリオ<span>2</span>
+      </label>
+      <input type="checkbox" id="シナリオ" class="accordion">
+      <ul>
+        
+          <li class="post-table__li"><a href="/script-of-animation-mole-hitting-suite/" target="_blank"><img src="/assets/img/2014-08-06/00.png" /><span>自主制作アニメ『もぐらたたき組曲』のシナリオの変更点</span></a></li>
+        
+          <li class="post-table__li"><a href="/conception-of-animation-mole-hitting-suite/" target="_blank"><img src="/assets/img/2014-07-23/00.png" /><span>現在制作中の『もぐらたたき組曲』でやりたいこと</span></a></li>
+        
+        <li class="post-table__li_label-close">
+          <label class="post-table__label_close" onclick="document.getElementById('シナリオ').checked = false;">
+            ∧ CLOSE
+          </label>
+        </li>
+      </ul>
+    </div><!-- .post-table-category -->
+  
+</div> <!-- #post-table -->
+
+
+  <sidebar-bannar>
+  <!-- 風景デッサンの基本 -->		<sidebar__amazon><a target="_blank"  href="https://www.amazon.co.jp/gp/product/481635512X/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=481635512X&linkCode=as2&tag=koma5109-22&linkId=23c74bc6b24ba1fa260dcfc369c374e1"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=481635512X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=koma5109-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=koma5109-22&l=am2&o=9&a=481635512X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></sidebar__amazon>
+    <!-- 風景デッサンの基本 -->		<sidebar__amazon><a target="_blank"  href="https://www.amazon.co.jp/gp/product/481635512X/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=481635512X&linkCode=as2&tag=koma5109-22&linkId=23c74bc6b24ba1fa260dcfc369c374e1"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=481635512X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=koma5109-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=koma5109-22&l=am2&o=9&a=481635512X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></sidebar__amazon>
+    <!-- 風景デッサンの基本 -->		<sidebar__amazon><a target="_blank"  href="https://www.amazon.co.jp/gp/product/481635512X/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=481635512X&linkCode=as2&tag=koma5109-22&linkId=23c74bc6b24ba1fa260dcfc369c374e1"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=481635512X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=koma5109-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=koma5109-22&l=am2&o=9&a=481635512X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></sidebar__amazon>
+    <!-- 風景デッサンの基本 -->		<sidebar__amazon><a target="_blank"  href="https://www.amazon.co.jp/gp/product/481635512X/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=481635512X&linkCode=as2&tag=koma5109-22&linkId=23c74bc6b24ba1fa260dcfc369c374e1"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=481635512X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=koma5109-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=koma5109-22&l=am2&o=9&a=481635512X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></sidebar__amazon>
+  </sidebar-bannar>
+
+  <sidebar__ads-box_mobile>
+    <img src="ads.png">
+  </sidebar__ads-box_mobile>
+
+  <sidebar__ads-box_pc>
+    <img src="ads.png">
+  </sidebar__ads-box_pc>
+
+</sidebar>
+
+      <contents>
+
+      <article>
+        <h1>視円錐を使って考える望遠パース・広角パースの描き方</h1>
+        <ul class="article__meta">
+          <li class="post-date">2013年12月07日</li>
+          <!--<li class="category">Category <a href="/tags#">透視図法</a></li>
+          <li class="tag">Tag <a href="_posts/tags/画角">画角 </a></li>-->
+          <li class="category">Category 透視図法</li>
+          <li class="tag">Tag 画角 </li>
+        </ul> <!-- .article__meta -->
+        <img src="/assets/img/2013-12-07/00.png" alt="" />
+
+        <div class="share-buttons">
+  <script type="text/javascript">(function(d){if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896)=='undefined'){document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/52708f535f08e25625d3b79233c81896'><\/sc"+"ript>");}else{window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896.ONETAGButton_Load();}})(document);//]]></script>
+  <span class="ninja_onebutton_hidden" style="display:none;">/viewing-cone-and-perspective/</span>
+  <span style="display:none;" class="ninja_onebutton_hidden">視円錐を使って考える望遠パース・広角パースの描き方</span>
+</div> <!-- .share-buttons -->
+        <ads-article-top>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- article-top --><ins class="adsbygoogle"style="display:block"data-ad-client="ca-pub-7336552517082119"data-ad-slot="7083082448"data-ad-format="link"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</ads-article-top>
+
+        <div class="entry-content">
+          <mokuji></mokuji> <!-- 目次のcssのセレクタ基準用 -->
+          <ul>
+  <li>
+    <h3 id="目次">目次</h3>
+  </li>
+  <li><a href="#視円錐のおさらい">視円錐のおさらい</a></li>
+  <li><a href="#望遠と広角の視円錐の違い">望遠と広角の視円錐の違い</a></li>
+  <li><a href="#視円錐の底面に風景を投影する考え方">視円錐の底面に風景を投影する考え方</a></li>
+</ul>
+
+<h2 id="視円錐のおさらい">視円錐のおさらい</h2>
+
+<p>以前書いた<a href="/drawing-procedure-of-construction-perspective/index.html" t="blank">建築パースを徹底研究！パース理論の基礎知識と描き方</a>の記事で視円錐のことについて触れましたが、どうやらパースを理解するカギはこの視円錐にあるということに気づきました。パース初心者はまず透視図法から学び始めますが、そのうち画角という概念や、カメラレンズによる画面の変化などに足止めを食らうものだと思います。そして、望遠パースは遠くの景色を切り取ったものだとか、広角パースは立体の角が鋭角になって歪むものだと聞かされます。今だから言う事ができますが、そんなの解説ではなくてただ見たまんま言ってるだけですね。</p>
+
+<p>そこでどうにかして一言で簡単に説明できないかと考えたところ、視円錐のことをしっかり理解した上で、その視円錐という図形の中に風景を配置していくという方法に行き着きました。これだといとも簡単にカメラレンズによって風景が違って見える理由が図解できます。</p>
+
+<p>まずは視円錐についておさらいしておきましょう。難しく考える必要はないので、視円錐の見方と用語を覚える程度はしておいてください。小難しく解説しているものを読みたい場合はこちらの<a href="/drawing-procedure-of-construction-perspective/index.html" t="blank">建築パースを徹底研究！パース理論の基礎知識と描き方</a>[建築パースを徹底研究！パース理論の基礎知識と描き方]の記事をどうぞ。</p>
+
+<p><img src="/assets/img/2013-12-07/01.png" alt="視円錐の基本図" /></p>
+
+<p>このとき視円錐の形状を規定する数値が必要になります。それは視円錐の頂角と高さです。それぞれ画角と距離を意味します。ちなみに距離については望遠パースと広角パースで見た目で違いがあるように見えますが実際は同じ距離を表すのですが、詳しくは後ほど。</p>
+
+<p><img src="/assets/img/2013-12-07/02.png" alt="視円錐の形状" /></p>
+
+<h2 id="望遠と広角の視円錐の違い">望遠と広角の視円錐の違い</h2>
+
+<p>望遠パースと広角パースの視円錐の形状を比較すると、画角が明らかに異なることが分かります。望遠パースは画角が小さく（約10~30°程度）、広角パースは画角が大きい（約70~90°）ということはちょっと調べれば情報は手に入りますし、視円錐の形状も分かりやすく画角を反映しています。</p>
+
+<p><img src="/assets/img/2013-12-03/00.png" alt="望遠と広角の視円錐" /></p>
+
+<p>ところで、この図では望遠パースの視円錐の方がかなり長く描かれていますが、視円錐の高さはカメラレンズによらず全て同じになります。なぜなら、視円錐とはカメラレンズで撮影することができる風景の範囲のことなので、望遠レンズであっても広角レンズであっても室内や地面を撮影しない限り最も遠くに写るものは広大な空になるはずだからです。しかし空は無限遠の彼方にある宇宙なので距離を数値で表すことができませんので、その広大な空間に存在する空の次に遠いもので代用します。それが地平線であり、一般的な言い方をするとアイレベル（EL）ということになります。つまり、望遠レンズだろうと広角レンズであろうと撮影者の立ち位置（SP）と地平線（EL）の距離は変化しないということです。でも視円錐の高さを望遠・広角ともに等しく作図してしまうと底面が紙に収まらなくなるくらい大きくなってしまうので、やむを得ず視円錐の高さ（つまり地平線までの距離）を短くして、視円錐の底面が紙に収まる大きさになるようにしています。あ、一応断っておくと、地平線＝アイレベルというのはほとんどの場合そうなるだけなのであって、実際のアイレベルとは視線の高さで画面を横切る水平線という考え方が正しいです。そして人間が見る景色と、絵にしたときの景色はもはや全くの別次元のものなので、人間が認識する景色ではアイレベルは画面の中心を通るものと考えますが、絵にするときは一番良い構図で画面を切り取るのでアイレベルが画面の中心を通るとは限りません。</p>
+
+<p><img src="/assets/img/2013-12-04/00.png" alt="地球上で見た視円錐" /></p>
+
+<p>要するに望遠パースと広角パースの視円錐の違いは画角のみということになります。ただ、実際に絵にするときには被写界深度（ピントのこと）を表現するため望遠パースにはぼかしフィルターがかけられることが多いです。</p>
+
+<h2 id="視円錐の底面に風景を投影する考え方">視円錐の底面に風景を投影する考え方</h2>
+
+<p>では実際に視円錐を使ってパース作画の原理を考えていきましょう。基本は投影図です。視円錐の視点SPに照明があると仮定して、視円錐の内部にある立体の影を視円錐の底面に投影してみてください。このとき黄緑色の平面が描かれていますが、これは地面のことです。キャラが立っている場所の目線の高さがSPとなるので、風景中の立体が接地している部分は位置関係からすると傾いて見えています。なので目線より下側に位置する地面と接地する部分はアイレベルELより下側に投影されることになります。ちなみにSPからELまでの距離が数十kmだとすると、この立体のサイズは数百m〜数kmという巨大建造物になってしまいますね。まあ細かい事はあまり気にしないでください。</p>
+
+<p>まずは広角パースの視円錐を見てみましょう。これは単純に影を投影するようにしながら、手前に見えるものから画面PPに配置していくだけです。このとき手前にあるものほど拡大されるため、画面PPには手前にあったものは大きく写り、遠くにあったものになるにつれて小さくなっていきます。アイレベルEL付近のものはもはや小さくなりすぎて潰れて見えると思います。</p>
+
+<p><img src="/assets/img/2013-12-05/00.png" alt="広角パースの簡略図" /></p>
+
+<p>次に望遠パースの視円錐を見てみます。こちらも広角パースのときと同じ原理で投影していくのですが、画角が小さいので「投影される元の立体」と「その影」の大きさの差は広角パースのときに比べ小さくなります。すると「手前にあったものの影」と「遠くにあったものの影」の大きさの差も小さくなります。故に望遠パースでは奥行きの縮小が少なくなり、前後関係にある立体がほぼ原寸のまま並ぶような絵になります。ただ、望遠レンズは被写界深度が浅いので被写体の前景と背景をぼかすことができたりしますが、そのあたりはここでは触れないので各自で勉強したカメラの知識や画面の演出方法に基づいて美しい絵にしてください。</p>
+
+<p><img src="/assets/img/2013-12-07/06.png" alt="望遠パースの簡略図" /></p>
+
+<p>ちなみに望遠レンズで近景と遠景がぼけてしまう理由は何でしょう。カメラに詳しくないのでビシッと断言することはできないのですが、被写界深度と焦点距離がどうのこうのという感じじゃないですか？うまく説明できないので絵で描くとこんな感じ。ピントが合う風景までの距離は、例えば遠くの街並を望遠レンズで撮影したとしたら数km先というくらいでしょうか。</p>
+
+<p><img src="/assets/img/2013-12-07/07.png" alt="被写界深度の図説" /></p>
+
+<p>ところで、望遠パースのときに奥行きが圧縮されているという話は聞いた事があるでしょうか。奥行きの縮小ではなく奥行きの圧縮です。言葉の使い方がややこしいので<a href="/drawing-procedure-of-construction-perspective/index.html" t="blank">建築パースを徹底研究！パース理論の基礎知識と描き方</a>の記事で用語の確認をしておいてください。有名な資料でいうと宮崎駿が『母をたずねて三千里』の制作スタッフに配布したパース作画の(http://members2.jcom.home.ne.jp/0914488901/anim.html){:t=”blank”}[注意書き]などがありますね。奥行きの圧縮が極端になると、場合によっては奥行きを無視して正面から見た平面図を並べるだけで望遠パースの絵ができてしまうことがあります。ビル街を遠くから撮影した写真などはほとんど奥行きのない煙突みたいなビルが並んでいるだけに見えたりします。この奥行きの圧縮の原理もさきほどの視円錐で影を投影するように考えれば簡単に説明できます。</p>
+
+<p>さて、奥行きというのは手前の部分と奥の部分までの距離をどれくらいで描くかで決定しますが、それはつまり視円錐の中で立体の手前側と奥側を投影すればいいわけです。すると広角パースのときは奥行きが長くなり、望遠パースでは奥行きが短くなります。この奥行きの圧縮の原理は望遠パースの絵を作るときには非常に重要なことなので、なんとなく分かるけどなんでそうなるのか理解できなかった人も、このように単純に投影した結果そうなってますよ〜と覚えておく良いと思います。ただし、完成した絵は望遠パースだろうと広角パースだろうと画面は同じサイズに統一されるはずなので、広角パースで見た立体はかなり小さくなってしまいます。逆に言えば、望遠パースで見た立体は遠くのものも大きく写ります。SPから同じ距離にある立体でも望遠レンズだと大きく見え、広角レンズだと小さく見えるのはこのためです。…このためというか、望遠レンズが被写体を拡大して写しているだけです。</p>
+
+<p><img src="/assets/img/2013-12-07/08.png" alt="奥行きの圧縮がおこる原理" /></p>
+
+<p>以上が視円錐を用いた望遠パースと広角パースの解説ですが、望遠や広角に限らずノーマルなレンズも同じ考え方で理解できると思います。パースを勉強中だけど透視図法を理解しただけでステップアップできなくて悩んでいる方は是非、視円錐の勉強に取りかかってみると面白くなってくるんじゃないでしょうか。</p>
+
+        </div> <!-- .entry-content -->
+
+        <div class="share-buttons">
+  <script type="text/javascript">(function(d){if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896)=='undefined'){document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/52708f535f08e25625d3b79233c81896'><\/sc"+"ript>");}else{window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896.ONETAGButton_Load();}})(document);//]]></script>
+  <span class="ninja_onebutton_hidden" style="display:none;">/viewing-cone-and-perspective/</span>
+  <span style="display:none;" class="ninja_onebutton_hidden">視円錐を使って考える望遠パース・広角パースの描き方</span>
+</div> <!-- .share-buttons -->
+
+        <div id="page-navi">
+          
+            <a id="page-navi-new" href="/device-of-perspective-ruler/">次の記事</a>
+          
+
+          
+            <a id="page-navi-old" href="/how-to-use-the-layer-blending-mode/">前の記事</a>
+          
+        </div> <!-- #page-navi -->
+
+
+        <article__bottom-info>
+
+  <h4>執筆者</h4>
+  <div class="profile__author">
+    <img src="/assets/img/hoho.png" />
+    <span>村上豪一</span>
+    <p>理屈人間。お絵描きや作曲などの芸術分野の理論化に挑戦中。独自開発の手法、「透視図法解剖図」「対角線分割法」「お絵描きのメカニズム」など。</p>
+  </div> <!-- .profile__author -->
+
+  <ul class="profile__follow-button">
+    <li id="button-twitter">
+      <a href="https://twitter.com/oekaki_hoho_ron" target="_blank">
+        <img src="/assets/img/button-twitter.png" />
+        <span>Twitter</span>
+      </a>
+   </li>
+    <li id="button-soundcloud">
+      <a href="https://soundcloud.com/oekaki-hoho-ron" target="_blank">
+        <img src="/assets/img/button-soundcloud.png" />
+        <span>Soundcloud</span>
+      </a>
+    </li>
+    <li id="button-note">
+      <a href="https://note.mu/oekaki_hoho_ron" target="_blank">
+        <img src="/assets/img/button-note.png" />
+        <span>nota</span>
+      </a>
+    </li>
+<!--    <li id="button-pixiv">
+      <a href="https://pixiv.me/oekaki_hoho_ron" target="_blank">
+        <img src="/assets/img/button-pixiv.png" />
+        <span>Pixiv</span>
+      </a>
+    </li>
+    <li id="button-nico">
+      <a href="http://www.nicovideo.jp/user/6755076" target="_blank">
+        <img src="/assets/img/button-nico.png" />
+        <span>ニコニコ動画</span>
+      </a>
+    </li>
+    <li id="button-vimeo">
+      <a href="https://vimeo.com/koma51" target="_blank">
+        <img src="/assets/img/button-vimeo.png" />
+        <span>vimeo<span>
+      </a>
+    </li>-->
+     <li id="button-pinterest">
+      <a href="https://www.pinterest.jp/oekaki_hoho_ron/" target="_blank">
+        <img src="/assets/img/button-pinterest.png" />
+        <span>Pinterest<span>
+      </a>
+    </li>
+    <li id="button-qiita">
+      <a href="https://qiita.com/oekaki-hoho-ron" target="_blank">
+        <img src="/assets/img/button-qiita.png" />
+        <span>Qiita<span>
+      </a>
+    </li>
+    <li id="button-git">
+      <a href="https://github.com/oekaki-hoho-ron" target="_blank">
+        <img src="/assets/img/button-git.png" />
+        <span>Github<span>
+      </a>
+    </li>
+  </ul>
+
+<!--
+<div class="archives">
+
+<h4 id="library">アーカイブ</h4>
+<ul class="article-bottom-post-list">
+  
+    
+    
+    
+      <li><a href="2019-01">2019年01月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2018-09">2018年09月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2018-08">2018年08月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2018-06">2018年06月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2018-05">2018年05月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2018-01">2018年01月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2017-12">2017年12月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2017-09">2017年09月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2017-06">2017年06月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2017-05">2017年05月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2016-12">2016年12月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2016-11">2016年11月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2015-11">2015年11月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2014-12">2014年12月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2014-08">2014年08月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2014-07">2014年07月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2014-06">2014年06月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2014-04">2014年04月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2014-03">2014年03月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2014-02">2014年02月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2013-12">2013年12月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2013-09">2013年09月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2013-08">2013年08月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2013-07">2013年07月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2013-06">2013年06月</a></li>
+    
+  
+    
+    
+    
+      <li><a href="2013-05">2013年05月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2013-04">2013年04月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+      <li><a href="2013-03">2013年03月</a></li>
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+</ul>
+
+<h4>カテゴリー</h4>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="日記">日記</a></li>
+      
+      <li><a href="日記">日記</a></li>
+      
+      <li><a href="日記">日記</a></li>
+      
+      <li><a href="日記">日記</a></li>
+      
+      <li><a href="日記">日記</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+      <li><a href="透視図法">透視図法</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="人物画">人物画</a></li>
+      
+      <li><a href="人物画">人物画</a></li>
+      
+      <li><a href="人物画">人物画</a></li>
+      
+      <li><a href="人物画">人物画</a></li>
+      
+      <li><a href="人物画">人物画</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="演出">演出</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="精神分析">精神分析</a></li>
+      
+      <li><a href="精神分析">精神分析</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="画材">画材</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="色彩理論">色彩理論</a></li>
+      
+      <li><a href="色彩理論">色彩理論</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="デジタル">デジタル</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="カテゴリ1">カテゴリ1</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="ハードウェア">ハードウェア</a></li>
+      
+  </ul>
+
+  <ul class="article-bottom-post-list">
+          
+      <li><a href="シナリオ">シナリオ</a></li>
+      
+      <li><a href="シナリオ">シナリオ</a></li>
+      
+  </ul>
+
+
+
+<h4>タグ</h4>
+<ul class="article-bottom-post-list">
+  
+   <li><a href="">アタリ線</a><li>
+ 
+   <li><a href="">2点透視図法</a><li>
+ 
+   <li><a href="">3点透視図法</a><li>
+ 
+   <li><a href="">M点法</a><li>
+ 
+   <li><a href="">足線法</a><li>
+ 
+   <li><a href="">介線法</a><li>
+ 
+   <li><a href="">髪デッサン</a><li>
+ 
+   <li><a href="">クオリア</a><li>
+ 
+   <li><a href="">キャラデザイン</a><li>
+ 
+   <li><a href="">先入観</a><li>
+ 
+   <li><a href="">記憶</a><li>
+ 
+   <li><a href="">漫符</a><li>
+ 
+   <li><a href="">色彩検定</a><li>
+ 
+   <li><a href="">レイヤー描画モード</a><li>
+ 
+   <li><a href="">画角</a><li>
+ 
+   <li><a href="">魚眼パース</a><li>
+ 
+   <li><a href="">解剖学</a><li>
+ 
+   <li><a href="">タグ1</a><li>
+ 
+   <li><a href="">タグ2</a><li>
+ 
+   <li><a href="">もぐらたたき組曲</a><li>
+ 
+   <li><a href="">ペンタブ</a><li>
+ 
+   <li><a href="">重心</a><li>
+ 
+   <li><a href="">注視点</a><li>
+ 
+   <li><a href="">透視図法解剖図</a><li>
+ 
+   <li><a href="">対角線分割法</a><li>
+ 
+   <li><a href="">うろ覚えスケッチ</a><li>
+ 
+   <li><a href="">ユアッサーの法則</a><li>
+ 
+   <li><a href="">4つのV字模型</a><li>
+ 
+   <li><a href="">D点法</a><li>
+ 
+   <li><a href="">上達方法</a><li>
+ 
+   <li><a href="">その2</a><li>
+ 
+   <li><a href="">一筆描きパース理論</a><li>
+ 
+   <li><a href="">構図</a><li>
+ 
+</ul>
+
+</div> -->
+
+</article__bottom-info>
+
+      </article>
+
+      <footer>
+<ul>
+<li><a href="/post-type/jiyu-kenkyu.html">自由研究</a></li>
+<li><a href="/post-type/training.html">トレーニング</a></li>
+<li><a href="/post-type/youtube.html">YouTubeチャンネル</a></li>
+<li><a href="/post-type/animation.html">アニメ制作</a></li>
+</ul>
+<small class="centering">Copyright © お絵描きホーホー論</small>
+</footer>
+
+<a id="pageTop" href="#">&and; PAGE TOP</a>
+      </contents>
+  </container>
+
+</body>
+</html>

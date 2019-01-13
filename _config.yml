@@ -5,3 +5,9 @@ highlighter: rouge
 category_title_prefix: カテゴリー：
 category_title_suffix: ' '
 category_dir: category
+
+sass:
+    sass_dir: /assets/css/imports
+
+
+url: https://oekaki-hoho-ron.firebaseapp.com
