@@ -1,41 +1,17 @@
----
----
+*{
+ font-family: "Hiragino maru Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO";
+}
 
-@import 'variable'
-@import 'sidebar'
-@import 'sns-button'
-@import 'article-bottom-info'
-@import 'article'
-@import 'footer'
-@import 'google-ads'
-@import 'header'
-@import 'mokuji'
-@import 'others'
-@import 'page-navi'
-@import 'page-top-button'
-@import 'post-index'
-@import 'post-table'
-@import 'tab-contents'
-@import 'top-contents'
+body{
+ margin: 0;
+ padding: 0;
+ background: #f5f9fd;
+}
 
-$width-pc: 860px
-$width-mobile: 400px
-
-@mixin responsive
- @media (max-width: ($width-pc))
-  @content
-
-*
- font-family: "Hiragino maru Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO"
-
-body
- margin: 0
- padding: 0
- background: #f5f9fd
-
-img
- height: auto
- max-width: 100%
+img{
+ height: auto;
+ max-width: 100%;
+}
 
 a{
  text-decoration: none;
@@ -46,9 +22,10 @@ a:hover{
  color: #ff6347;
 }
 
-video
- width: 600px
- height: auto
+video{
+ width: 600px;
+ height: auto;
+}
 
 /********** main Layout **************/
 header{
@@ -62,102 +39,123 @@ header{
  opacity: 0.9;
 }
 
-container
- display: block
- max-width: 1200px
- margin: 0 auto
- padding-top: 80px
+container{
+ display: block;
+ max-width: 1200px;
+ margin: 0 auto;
+ padding-top: 80px;
+}
 
-main
- display: block
- width: 100%
- height: auto
- background: #000
+main{
+ display: block;
+ width: 100%;
+ height: auto;
+ background: #000;
+}
 
-sidebar
- display: block
- float: left
- width: 340px
- margin: 0
- padding-top: 10px
- background: #000
+sidebar{
+ display: block;
+ float: left;
+ width: 340px;
+ margin: 0;
+ padding-top: 10px;
+ background: #000;
+}
 
-contents
- display: block
- width: auto
- box-sizing: border-box
- padding-left: 340px
- background: #000
+contents{
+ display: block;
+ width: auto;
+ box-sizing: border-box;
+ padding-left: 340px;
+ background: #000;
+}
 
 /********** contents Layout ***********/
-top-contents
- display: block
- box-sizing: border-box
- padding: 0 20px
- background: #f5f9fd
+top-contents{
+ display: block;
+ box-sizing: border-box;
+ padding: 0 20px;
+ background: #f5f9fd;
+}
 
-tab-contents
- display: block
- padding: 20px
- background: #f5f9fd
+tab-contents{
+ display: block;
+ padding: 20px;
+ background: #f5f9fd;
+}
 
-post-index
- display: block
- float: left
- width: 100%
- height: 150px
- padding: 10px 0
- border-bottom: 1px solid #eee
+post-index{
+ display: block;
+ float: left;
+ width: 100%;
+ height: 150px;
+ padding: 10px 0;
+ border-bottom: 1px solid #eee;
+}
 
-article
- display: block
- padding: 20px
- background: #f5f9fd
+article{
+ display: block;
+ padding: 20px;
+ background: #f5f9fd;
+}
 
-article__bottom-info
- display: block
+article__bottom-info{
+ display: block;;
+}
 
-footer
- display: block
- width: 100%
- padding: 20px
- background: #f5f9fd
+footer{
+ display: block;
+ width: 100%;
+ padding: 20px;
+ background: #f5f9fd;
+}
 
 /********** mobile Layout ************/
-@media(max-width: 860px)
- header
-  height: 50px
-  position: static
+@media(max-width: 860px){
+ header{
+  height: 50px;
+  position: static;
+ }
+}
 
- container
-  padding-top: 0
+ container{
+  padding-top: 0;
+}
 
- .header__description
-  display: none
+ .header__description{
+  display: none;
+}
 
- sidebar
-  display: none
-  margin-bottom: 10px
+ sidebar{
+  display: none;
+  margin-bottom: 10px;
+}
 
- contents
-  width: 100%
-  padding-left: 0
+ contents{
+  width: 100%;
+  padding-left: 0;
+}
 
  top-contents,
- tab-contents
-  padding: 0
+ tab-contents{
+  padding: 0;
+}
 
- post-index
-  box-sizing: border-box
-  padding: 10px 20px
+ post-index{
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
 
- article
-  padding: 10px 0
-  width: auto
+ article{
+  padding: 10px 0;
+  width: auto;
+}
 
- article__bottom-info
-  padding: 0
+ article__bottom-info{
+  padding: 0;
+}
 
- video
-  width: 100%
-  height: auto
+ video{
+  width: 100%;
+  height: auto;
+}
