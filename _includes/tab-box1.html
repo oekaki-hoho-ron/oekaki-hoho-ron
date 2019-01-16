@@ -3,7 +3,7 @@
 {% for post in site.posts %}
 
 <post-index>
-  <a href="{{ post.url | relative_url }}"><img src="{{ site.baseurl }}{{ post.thumb }}" /></a>
+  <a href="{{ post.url | relative_url }}"><img src="{{ post.thumb }}" /></a>
   <post-index-meta>
     <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
     <ul>
