@@ -100,7 +100,7 @@ article{
 }
 
 article__bottom-info{
- display: block;;
+ display: block;
 }
 
 footer{
@@ -116,7 +116,6 @@ footer{
   height: 50px;
   position: static;
  }
-}
 
  container{
   padding-top: 0;
@@ -151,6 +150,7 @@ footer{
   width: auto;
 }
 
+}
  article__bottom-info{
   padding: 0;
 }

@@ -1,0 +1,93 @@
+header{
+ text-align: center;
+}
+
+.header__logo{
+ display: inline;
+ margin: 0 auto;
+}
+
+.header__logo-img{
+ width: 30%;
+ max-width: 320px;
+ min-width: 230px;
+}
+
+.header__description{
+ display: block;
+ position: relative;
+ bottom: 5px;
+ margin-left: 50px;
+ font-size: 13px;
+ color: #333;
+}
+
+@media(max-width: 860px){
+ .header__description{
+  display: none;
+ }
+}
+
+/************ header__accordion-button **************/
+
+@media(max-width: 860px){
+ contents{
+  margin-left: 0;
+ }
+
+ sidebar{
+  display: none;
+}
+
+  ads-box{
+   display: none;
+}
+
+}
+#header__accordion-button{
+ float: left;
+}
+
+#header__accordion-button img{
+  margin: 8px 0 0 8px;
+}
+
+@media(min-width: 860px){
+ #header__accordion-button img{
+  display: none;
+ }
+
+#header__accordion-checkbox{
+ display: none;
+}
+
+#header__accordion-checkbox:checked + container sidebar{
+ display: block;
+ width: 100%;
+ position: static;
+}
+
+#header__accordion-checkbox:checked + container sidebar ads-box{
+  display: block;
+}
+
+}
+/*アコーディオンボタンが非表示のときのヘッダーのレイアウト崩れ防止用*/
+header__accordion-button-dummy{
+ width: 40px;
+ height: 40px;
+ display: block;
+ float: left;
+}
+
+@media(max-width: 860px){
+ header__accordion-button-dummy{
+  display: none;
+ }
+}
+
+@media(min-width: 860px){
+ header__accordion-button-dummy{
+  display: block;
+ }
+}

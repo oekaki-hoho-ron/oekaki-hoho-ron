@@ -1,0 +1,21 @@
+#pageTop{
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+ font-size: 10px;
+ opacity: 0.3;
+ -webkit-transition: all .3s;
+ transition: all .3s;
+ display: block;
+ z-index: 999
+ padding: 5px;
+ width: 70px;
+ height: 17px;
+ background: #000;
+ color: #fff;
+ text-align: center;
+}
+
+#pageTop:hover{
+ opacity: 1;
+}

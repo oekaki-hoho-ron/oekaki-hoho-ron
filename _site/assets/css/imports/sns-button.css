@@ -1,0 +1,71 @@
+.share-buttons{
+ margin: 20px auto;
+ padding: 0 20px;
+}
+
+.profile__follow-button{
+ padding: 20px 20px;
+ margin: 0 auto 20px;
+ height: 40px;
+}
+
+.profile__follow-button li{
+  display: inline-block;
+  width: 16.6666666666666%;
+  float: left;
+  font-size: 10px;
+  text-align: center;
+  height: 40px;
+  padding-top: 5px;
+}
+
+.profile__follow-button li img{
+   margin: 0 auto;
+   height: 50% ;
+ }
+
+.profile__follow-button li span{
+   display: block;
+   clear: both;
+   color: #fff;
+ }
+
+.profile__follow-button li:hover{
+  opacity: 0.7;
+}
+
+#button-twitter{
+ background: #00aded;
+}
+
+#button-soundcloud{
+ background: #ff5e27;
+}
+
+#button-note{
+ background: #0ccab6;
+}
+
+#button-nico{
+ background: #3c3c3c;
+}
+
+#button-pixiv{
+ background: #0075a6;
+}
+
+#button-vimeo{
+ background: #00b8e5;
+}
+
+#button-pinterest{
+ background: rgb(196,0,31);
+}
+
+#button-qiita{
+ background: rgb(58,197,63);
+}
+
+#button-git{
+ background: rgb(36,41,46);
+}

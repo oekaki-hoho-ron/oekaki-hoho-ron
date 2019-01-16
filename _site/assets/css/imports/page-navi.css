@@ -1,0 +1,53 @@
+#page-navi{
+ display: block;
+ width: 100%;
+ height: 50px;
+ margin-bottom: 40px;
+}
+
+tab-box__pagination_noborder{
+ display: block;
+ float: left;
+ width: 100%;
+ height: 50px;
+ padding: 10px 0;
+ margin-bottom: 40px;
+ text-align: center;
+}
+
+tab-box__pagination_noborder a{
+  display: block;
+  margin: 10px auto;
+}
+
+#page-navi-new{
+ float: left;
+}
+
+#page-navi-old{
+ float: right;
+}
+
+.tab-box__pagination,
+#page-navi-new,
+#page-navi-old{
+ width: 150px;
+ height: 40px;
+ border-radius: 20px;
+ text-align: center;
+ background: #000;
+ color: #fff;
+ line-height: 2.5em;
+}
+
+.tab-box__pagination:hover,
+#page-navi-new:hover,
+#page-navi-old:hover{
+ color: #000;
+ background: none;
+ border: 3px solid #000;
+ width: 144px;
+ height: 34px;
+ border-radius: 20px;
+ line-height: 2.2em;
+}

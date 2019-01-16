@@ -1,0 +1,34 @@
+footer small{
+ color: #ccc;
+}
+
+footer small #jiyu-kenkyu:before{
+  content: '';
+}
+
+footer small #training:before{
+  content: '';
+}
+
+footer small #youtube-ch:before{
+  content: '';
+}
+
+footer small #animation:before{
+  content: '';
+}
+
+footer small #jiyu-kenkyu{
+  border: none;
+}
+
+
+footer ul{
+  text-align: center;
+  font-size: 12px;
+}
+
+footer ul li{
+   display: inline-block;
+   margin-right: 20px;
+ }
