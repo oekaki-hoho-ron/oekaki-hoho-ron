@@ -1,131 +1,103 @@
-#post-table{
- padding-top: 40px;
- clear: both;
-}
+div#post-table{
+  padding-top: 40px;
+  clear: both;}
 
-.post-table-category:first-child{
- border-top: 1px solid #fff;
-}
 
-.post-table-category{
- margin: 0 20px;
-}
+/* カテゴリ別ボックス */
+div.post-table-category{
+  margin: 0 20px;
+  border-bottom: 1px solid #fff;}
+div.post-table-category:first-child {border-top: 1px solid #fff;} /* 1番目の記事のborder-top設定 */
+/*div.post-table-category input {display: none;}   アコーディオンのチェックボックスは非表示 */
 
-.post-table-category{
- border-bottom: 1px solid #fff;
-}
 
-.post-table-category h4{
-  margin-bottom: 0;
-  color: #999;
-  font-size: 14px;
-  font-weight: normal;
-}
+/* 赤 */
 
-.post-table-category a{
+/* openボタン <label> */
+label.post-table__label_open{
+  display: block;
+  margin: 0 0 2px 0;
+  padding: 12px;
+  line-height: 1;
+  color: #fff;
+  cursor: pointer;
+  background: #000;}
+label.post-table__label_open span {float: right;}
+label.post-table__label_open:hover {background: #444;}
+
+
+/* 青 */
+
+/* 記事リスト<ul> */
+div.post-table-category ul{ /* post-table内のリストボックス設定 */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;}
+.post-table__label_open input:checked .ulul {display: block;}  /* checked:trueになるとアコーディオンのulを表示 */
+
+/* 記事リスト<li> */
+li.post-table__li{
+  max-height: 80px;
+  margin-bottom: 2px;
+  padding-right: 2px;
+  background: #fff;}
+li.post-table__li { /* オコーディオンの中身のレイアウト */
+  margin: 0;
+  padding: 0;
+  max-height: 0;
+  overflow-y: hidden;
+  border: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;}
+li.post-table__li a{
   padding: 2px 0;
   text-decoration: none;
   color: #000;
-  line-height: 1;
-}
-
-.post-table-category a span{
-   margin-top: 10px;
-   display: block;
-   font-size: 12px;
-   line-height: 1.4em;
- }
-
-.post-table-category a span:hover{
-   color: #FF6347;
- }
-
-.post-table-category img{
+  line-height: 1;}
+li.post-table__li img{
   height: 60px;
   float: left;
-  margin-right: 10px;
-}
-
-.post-table-category img:hover{
-  opacity: 0.5;
-}
-
-.post-table-category input{
-  display: none;
-}
-
-.post-table-category input:checked + ul{
+  margin-right: 10px;}
+li.post-table__li img:hover {opacity: 0.5;}
+li.post-table__li span{
+  margin-top: 10px;
   display: block;
-}
+  font-size: 12px;
+  line-height: 1.4em;}
+li.post-table__li span:hover{
+  color: #FF6347;}
 
-  .post-table__li{
-   max-height: 80px;
-   margin-bottom: 2px;
-   padding-right: 2px;
- }
 
-  .post-table__li_label-close{
-   text-align: center;
-   max-height: 80px;
-   margin: 10px;
-   padding-right: 2px;
- }
-
-.post-table-category ul{
+/* closeボタン <li> */
+label.post-table__li_label-close{
   margin: 0;
   padding: 0;
-  list-style-type: none;
-}
+  max-height: 0;
+  overflow-y: hidden;
+  border: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;}
+label.post-table__li_label-close{
+  margin: 0 0 2px 0;
+  padding: 12px;
+  line-height: 1;
+  color: #fff;
+  cursor: pointer;
+  background: #000;}
+label.post-table__li_label-close:hover {background: #444;}
 
-  .post-table__li{
-   background: #fff;
- }
 
-  .post-table__li_label-close{
-   display: block;
-   background: #000;
-   text-align: center;
- }
-
-  .post-table__li,
-  .post-table__li_label-close{
-   margin: 0;
-   padding: 0;
-   max-height: 0;
-   overflow-y: hidden;
-   border: none;
-   -webkit-transition: all 0.5s;
-   -moz-transition: all 0.5s;
-   -ms-transition: all 0.5s;
-   -o-transition: all 0.5s;
-   transition: all 0.5s;
- }
-
-.post-table__label_open{
- display: block;
-}
-
-.post-table__li_label-close{
- background: none;
- display: block;
-}
-
-.post-table__label_open,
-.post-table__li_label-close{
- margin: 0 0 2px 0;
- padding: 12px;
- line-height: 1;
- color: #fff;
- cursor: pointer;
- background: #000;
-}
-
- .post-table__label_open span,
- .post-table__li_label-close span{
-  float: right;
-}
-
-.post-table__label_open:hover,
-.post-table__li_label-close:hover{
- background: #444;
-}
+ /* closeボタンラベル <label>*/
+.post-table__label_close{
+  text-align: center;
+  max-height: 80px;
+  margin: 10px;
+  padding-right: 2px;
+  display: block;
+  color:#fff;}
