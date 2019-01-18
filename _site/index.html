@@ -80,15 +80,15 @@
 
   <container>
     <main>
-      <sidebar>
+      <!--
+<input type="checkbox" id="header__accordion-checkbox" />
+-->
 
-  <sidebar__ads-box_mobile>
-    <img src="/ads.png">
-  </sidebar__ads-box_mobile>
+<sidebar>
 
-  <sidebar__ads-box_pc>
-    <img src="/ads.png">
-  </sidebar__ads-box_pc>
+  <!-- Googleアドセンス（PC・mobile） -->
+  <sidebar__ads-box_mobile> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- sidebar-top-mobile --><ins class="adsbygoogle"style="display:inline-block;width:320px;height:100px"data-ad-client="ca-pub-7336552517082119"data-ad-slot="3918976440"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </sidebar__ads-box_mobile>
+  <sidebar__ads-box_pc> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- sidebar-top-pc --><ins class="adsbygoogle"style="display:inline-block;width:300px;height:250px"data-ad-client="ca-pub-7336552517082119"data-ad-slot="3011324040"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </sidebar__ads-box_pc>
 
   <div class="share-buttons">
   <script type="text/javascript">(function(d){if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896)=='undefined'){document.write("<sc"+"ript type='text\/javascript' src='\/\/omt.shinobi.jp\/b\/52708f535f08e25625d3b79233c81896'><\/sc"+"ript>");}else{window.NINJA_CO_JP_ONETAG_BUTTON_52708f535f08e25625d3b79233c81896.ONETAGButton_Load();}})(document);//]]></script>
@@ -96,12 +96,10 @@
   <span style="display:none;" class="ninja_onebutton_hidden">お絵描きホーホー論</span>
 </div> <!-- .share-buttons -->
 
+  <!-- 外部コンテンツの広告バナー -->
   <sidebar-bannar>
-    <a href="https://www.youtube.com/channel/UCe2lNmDXPV1LmIqaFGRnkFg" target="_blank">
-      <img src="/assets/img/banner-youtube-hoho.png" />
-    </a>
+    <a href="https://www.youtube.com/channel/UCe2lNmDXPV1LmIqaFGRnkFg" target="_blank"><img src="/assets/img/banner-youtube-hoho.png" /></a>
   </sidebar-bannar>
-
 
   <div id="post-table">
   
@@ -174,7 +172,7 @@
 
     <label class="open-button" onclick="document.getElementById('お絵描きのメカニズム').checked = true;">
       お絵描きのメカニズム
-      <span>11</span>
+      <span>8</span>
     </label>
     <input type="checkbox" id="お絵描きのメカニズム" class="check-box">
 
@@ -182,27 +180,6 @@
 
     <ul class="accordion-box">
 
-      
-      <li class="post-table-meta">
-        <a href="/kouzu/" target="blank">
-          <img src="/assets/img/2019-01-05/00.png" />
-          <span>構図</span>
-        </a>
-      </li>
-      
-      <li class="post-table-meta">
-        <a href="/mechanism-of-drawing-4/" target="blank">
-          <img src="/assets/img/2018-08-30/00.png" />
-          <span>お絵描きのメカニズム</span>
-        </a>
-      </li>
-      
-      <li class="post-table-meta">
-        <a href="/mechanism-of-drawing-3/" target="blank">
-          <img src="/assets/img/2018-08-30/00.png" />
-          <span>お絵描きのメカニズム</span>
-        </a>
-      </li>
       
       <li class="post-table-meta">
         <a href="/mechanism-of-drawing-2/" target="blank">
@@ -278,7 +255,7 @@
 
     <label class="open-button" onclick="document.getElementById('透視図法').checked = true;">
       透視図法
-      <span>18</span>
+      <span>17</span>
     </label>
     <input type="checkbox" id="透視図法" class="check-box">
 
@@ -286,13 +263,6 @@
 
     <ul class="accordion-box">
 
-      
-      <li class="post-table-meta">
-        <a href="/m/" target="blank">
-          <img src="/assets/img/2018-09-20/00.png" />
-          <span>一筆描きパース理論</span>
-        </a>
-      </li>
       
       <li class="post-table-meta">
         <a href="/introduction-to-diagonal-division-method/" target="blank">
@@ -431,7 +401,7 @@
 
     <label class="open-button" onclick="document.getElementById('人物画').checked = true;">
       人物画
-      <span>5</span>
+      <span>6</span>
     </label>
     <input type="checkbox" id="人物画" class="check-box">
 
@@ -444,6 +414,13 @@
         <a href="/center-of-gravity-of-human-body-sketch/" target="blank">
           <img src="/assets/img/2014-06-29/00.png" />
           <span>絵描きが言う人体デッサンの「重心」が厳密には間違っている件</span>
+        </a>
+      </li>
+      
+      <li class="post-table-meta">
+        <a href="/human-body-sketch-theorization-plan-1/" target="blank">
+          <img src="/assets/img/2014-04-30/00.png" />
+          <span>人体デッサン理論化計画・序　〜シルエットで捉える描き方の意味考える〜</span>
         </a>
       </li>
       
@@ -675,40 +652,6 @@
 
 
 
-    <label class="open-button" onclick="document.getElementById('カテゴリ1').checked = true;">
-      カテゴリ1
-      <span>1</span>
-    </label>
-    <input type="checkbox" id="カテゴリ1" class="check-box">
-
-
-
-    <ul class="accordion-box">
-
-      
-      <li class="post-table-meta">
-        <a href="/human-body-sketch-theorization-plan-1/" target="blank">
-          <img src="/assets/img/2014-04-30/00.png" />
-          <span>人体デッサン理論化計画・序　〜シルエットで捉える描き方の意味考える〜</span>
-        </a>
-      </li>
-      
-
-      <li class="close-button-box">
-        <label class="close-button" onclick="document.getElementById('カテゴリ1').checked = false;">∧ CLOSE</label>
-      </li>
-
-    </ul>
-
-
-
-  </div><!-- .post-table-category -->
-  
-  
-  <div class="post-table-category">
-
-
-
     <label class="open-button" onclick="document.getElementById('ハードウェア').checked = true;">
       ハードウェア
       <span>1</span>
@@ -789,32 +732,28 @@
     <!-- 風景デッサンの基本 -->		<sidebar__amazon><a target="_blank"  href="https://www.amazon.co.jp/gp/product/481635512X/ref=as_li_tl?ie=UTF8&camp=247&creative=1211&creativeASIN=481635512X&linkCode=as2&tag=koma5109-22&linkId=23c74bc6b24ba1fa260dcfc369c374e1"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=JP&ASIN=481635512X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=koma5109-22" ></a><img src="//ir-jp.amazon-adsystem.com/e/ir?t=koma5109-22&l=am2&o=9&a=481635512X" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></sidebar__amazon>
   </sidebar-bannar>
 
-  <sidebar__ads-box_mobile>
-    <img src="/ads.png">
-  </sidebar__ads-box_mobile>
-
-  <sidebar__ads-box_pc>
-    <img src="/ads.png">
-  </sidebar__ads-box_pc>
+  <!-- Googleアドセンス（PC・mobile） -->
+  <sidebar__ads-box_mobile> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- sidebar-bottom-large --><ins class="adsbygoogle"style="display:inline-block;width:300px;height:600px"data-ad-client="ca-pub-7336552517082119"data-ad-slot="9744976449"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </sidebar__ads-box_mobile>
+  <sidebar__ads-box_pc> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- sidebar-bottom-large --><ins class="adsbygoogle"style="display:inline-block;width:300px;height:600px"data-ad-client="ca-pub-7336552517082119"data-ad-slot="9744976449"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </sidebar__ads-box_pc>
 
 </sidebar>
 
       <contents>
         <top-contents>
 
-<a class="top-box1" href="_posts/mechanism-of-drawing-2/index.html">
+<a class="top-box1" href="/mechanism-of-drawing-2/">
   <img class="top-contents-obi" src="/assets/img/top-contents-obi-new.png" />
   <img class="top-contents-thumbnail" src="/assets/img/2018-06-11/00.png" />
   <h2>お絵描きのメカニズム　第2巻　〜感覚で描く絵、理屈で描く絵〜 </h2>
 </a>
 
-<a class="top-box2" href="_posts/depth-reduction-and-compression/index.html">
+<a class="top-box2" href="/depth-reduction-and-compression/">
   <img class="top-contents-obi" src="/assets/img/top-contents-obi-hitsudoku.png" />
   <img class="top-contents-thumbnail" src="/assets/img/2017-12-25/00.png" />
   <h2>ユアッサーの法則の画角メーターで学ぶ奥行きの「縮小」と「圧縮」</h2>
 </a>
 
-<a class="top-box2" href="_posts/introduction-to-diagonal-division-method/index.html">
+<a class="top-box2" href="/introduction-to-diagonal-division-method/">
   <img class="top-contents-obi" src="/assets/img/top-contents-obi-osusume.png" />
   <img class="top-contents-thumbnail" src="/assets/img/2018-01-16/00.png" />
   <h2>対角線分割法 概論　〜透視図法の空間を対角線で測るアイデア集〜</h2>
@@ -824,74 +763,14 @@
 
         <tab-contents>
           <input id="tab1" type="radio" name="tab" checked>
-          <label for="tab1" id="tab1-label">新着記事</label>
+          <label for="tab1" id="tab1-label">研究レポート</label>
           <input id="tab2" type="radio" name="tab">
-          <label for="tab2" id="tab2-label">人気記事</label>
+          <label for="tab2" id="tab2-label">外部コンテンツ</label>
           <input id="tab3" type="radio" name="tab">
-          <label for="tab3" id="tab3-label">外部コンテンツ</label>
+          <label for="tab3" id="tab3-label">Twitterモーメント</label>
           <tab-box>
             <tab-box1>
 
-
-
-<post-index>
-  <a href="/kouzu/"><img src="/assets/img/2019-01-05/00.png" /></a>
-  <post-index-meta>
-    <h2><a href="/kouzu/">構図</a></h2>
-    <ul>
-      <li class="post-date">2019年01月05日</li>
-      <!--<li class="category">Category <a href="/category/diary.html">お絵描きのメカニズム</a></li>
-      <li class="tags">Tag <a href="">構図</a></li>-->
-      <li class="category">Category お絵描きのメカニズム</li>
-      <li class="tags">Tag 構図</li>
-    </ul>
-  </post-index-meta>
-</post-index>
-
-
-<post-index>
-  <a href="/m/"><img src="/assets/img/2018-09-20/00.png" /></a>
-  <post-index-meta>
-    <h2><a href="/m/">一筆描きパース理論</a></h2>
-    <ul>
-      <li class="post-date">2018年09月20日</li>
-      <!--<li class="category">Category <a href="/category/diary.html">透視図法</a></li>
-      <li class="tags">Tag <a href="">一筆描きパース理論M点法画角</a></li>-->
-      <li class="category">Category 透視図法</li>
-      <li class="tags">Tag 一筆描きパース理論M点法画角</li>
-    </ul>
-  </post-index-meta>
-</post-index>
-
-
-<post-index>
-  <a href="/mechanism-of-drawing-4/"><img src="/assets/img/2018-08-30/00.png" /></a>
-  <post-index-meta>
-    <h2><a href="/mechanism-of-drawing-4/">お絵描きのメカニズム</a></h2>
-    <ul>
-      <li class="post-date">2018年08月30日</li>
-      <!--<li class="category">Category <a href="/category/diary.html">お絵描きのメカニズム</a></li>
-      <li class="tags">Tag <a href="">上達方法</a></li>-->
-      <li class="category">Category お絵描きのメカニズム</li>
-      <li class="tags">Tag 上達方法</li>
-    </ul>
-  </post-index-meta>
-</post-index>
-
-
-<post-index>
-  <a href="/mechanism-of-drawing-3/"><img src="/assets/img/2018-08-30/00.png" /></a>
-  <post-index-meta>
-    <h2><a href="/mechanism-of-drawing-3/">お絵描きのメカニズム</a></h2>
-    <ul>
-      <li class="post-date">2018年08月30日</li>
-      <!--<li class="category">Category <a href="/category/diary.html">お絵描きのメカニズム</a></li>
-      <li class="tags">Tag <a href="">上達方法</a></li>-->
-      <li class="category">Category お絵描きのメカニズム</li>
-      <li class="tags">Tag 上達方法</li>
-    </ul>
-  </post-index-meta>
-</post-index>
 
 
 <post-index>
@@ -1200,10 +1079,10 @@
     <h2><a href="/human-body-sketch-theorization-plan-1/">人体デッサン理論化計画・序　〜シルエットで捉える描き方の意味考える〜</a></h2>
     <ul>
       <li class="post-date">2014年04月30日</li>
-      <!--<li class="category">Category <a href="/category/diary.html">カテゴリ1</a></li>
-      <li class="tags">Tag <a href="">タグ1タグ2</a></li>-->
-      <li class="category">Category カテゴリ1</li>
-      <li class="tags">Tag タグ1タグ2</li>
+      <!--<li class="category">Category <a href="/category/diary.html">人物画</a></li>
+      <li class="tags">Tag <a href=""></a></li>-->
+      <li class="category">Category 人物画</li>
+      <li class="tags">Tag </li>
     </ul>
   </post-index-meta>
 </post-index>
@@ -1584,62 +1463,53 @@
 </post-index>
 
 
-
-<tab-box__pagination_noborder>
-</tab-box__pagination_noborder>
-
-<ads-article-bottom-box>
-  <img src="ads.png" />
-</ads-article-bottom-box>
-
 </tab-box1>
 
 
             <tab-box2>
 
-
-<!--#include virtual="/include/post-index-list/2013-12-19.html" -->
-<!--#include virtual="/include/post-index-list/2017-05-28.html" -->
-<!--#include virtual="/include/post-index-list/2013-03-26.html" -->
-
-<!--#include virtual="/include/ads-roop-tab-contents.html" -->
-
-<!--#include virtual="/include/post-index-list/2016-12-06.html" -->
-<!--#include virtual="/include/post-index-list/2014-02-18.html" -->
-<!--#include virtual="/include/post-index-list/2014-04-30.html" -->
-<!--#include virtual="/include/post-index-list/2017-05-28.html" -->
-<!--#include virtual="/include/post-index-list/2013-03-14.html" -->
-
-<!--#include virtual="/include/ads-roop-tab-contents.html" -->
-
-<!--#include virtual="/include/post-index-list/2013-03-06.html" -->
-<!--#include virtual="/include/post-index-list/2014-12-16.html" -->
-<!--#include virtual="/include/post-index-list/2016-11-18.html" -->
-<!--#include virtual="/include/post-index-list/2014-12-25.html" -->
-<!--#include virtual="/include/post-index-list/2015-11-23.html" -->
-
+<post-index>
+  <a href=""><img src="記事サムネ" /></a>
+  <post-index-meta>
+    <h2><a href="記事URL">ただいま準備中</a></h2>
+    <ul>
+      <li class="post-date">-</li>
+      <!--<li class="category">Category <a href="/category/diary.html"></a></li>
+      <li class="tags">Tag <a href=""></a></li>-->
+      <li class="category">Category -</li>
+      <li class="tags">Tag -</li>
+    </ul>
+  </post-index-meta>
+</post-index>
 
 </tab-box2>
+
             <tab-box3>
-<!--#include virtual="/include/post-index-list/2014-09-11.html" -->
-<!--#include virtual="/include/post-index-list/2014-07-22.html" -->
-<!--#include virtual="/include/post-index-list/2014-05-28.html" -->
 
-<!--#include virtual="/include/ads-roop-tab-contents.html" -->
+<post-index>
+  <a href=""><img src="記事サムネ" /></a>
+  <post-index-meta>
+    <h2><a href="記事URL">ただいま準備中</a></h2>
+    <ul>
+      <li class="post-date">-</li>
+      <!--<li class="category">Category <a href="/category/diary.html"></a></li>
+      <li class="tags">Tag <a href=""></a></li>-->
+      <li class="category">Category -</li>
+      <li class="tags">Tag -</li>
+    </ul>
+  </post-index-meta>
+</post-index>
 
-<!--#include virtual="/include/post-index-list/2014-05-27.html" -->
-<!--#include virtual="/include/post-index-list/2014-04-26.html" -->
-<!--#include virtual="/include/post-index-list/2014-04-25.html" -->
-<!--#include virtual="/include/post-index-list/2014-04-24.html" -->
-<!--#include virtual="/include/post-index-list/2014-04-23.html" -->
-
-
-<a class="roop-navi" href="/post-type/youtube.html">もっと読む　　&gt;</a>
 </tab-box3>
+
           </tab-box>
         </tab-contents>
         <article>
-          <article__bottom-info>
+          <ads-article-bottom-box>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- article-bottom-responcive --><ins class="adsbygoogle"style="display:block"data-ad-client="ca-pub-7336552517082119"data-ad-slot="4994234280"data-ad-format="auto"data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</ads-article-bottom-box>
+
+<article__bottom-info>
 
   <h4>執筆者</h4>
   <div class="profile__author">
@@ -1710,28 +1580,6 @@
 
 <h4 id="library">アーカイブ</h4>
 <ul class="article-bottom-post-list">
-  
-    
-    
-    
-      <li><a href="2019-01">2019年01月</a></li>
-    
-  
-    
-    
-    
-      <li><a href="2018-09">2018年09月</a></li>
-    
-  
-    
-    
-    
-      <li><a href="2018-08">2018年08月</a></li>
-    
-  
-    
-    
-    
   
     
     
@@ -2003,12 +1851,6 @@
       
       <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
       
-      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
-      
-      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
-      
-      <li><a href="お絵描きのメカニズム">お絵描きのメカニズム</a></li>
-      
   </ul>
 
   <ul class="article-bottom-post-list">
@@ -2047,12 +1889,12 @@
       
       <li><a href="透視図法">透視図法</a></li>
       
-      <li><a href="透視図法">透視図法</a></li>
-      
   </ul>
 
   <ul class="article-bottom-post-list">
           
+      <li><a href="人物画">人物画</a></li>
+      
       <li><a href="人物画">人物画</a></li>
       
       <li><a href="人物画">人物画</a></li>
@@ -2096,12 +1938,6 @@
   <ul class="article-bottom-post-list">
           
       <li><a href="デジタル">デジタル</a></li>
-      
-  </ul>
-
-  <ul class="article-bottom-post-list">
-          
-      <li><a href="カテゴリ1">カテゴリ1</a></li>
       
   </ul>
 
@@ -2158,10 +1994,6 @@
  
    <li><a href="">解剖学</a><li>
  
-   <li><a href="">タグ1</a><li>
- 
-   <li><a href="">タグ2</a><li>
- 
    <li><a href="">もぐらたたき組曲</a><li>
  
    <li><a href="">ペンタブ</a><li>
@@ -2186,10 +2018,6 @@
  
    <li><a href="">その2</a><li>
  
-   <li><a href="">一筆描きパース理論</a><li>
- 
-   <li><a href="">構図</a><li>
- 
 </ul>
 
 </div> -->
@@ -2198,16 +2026,19 @@
 
         </article>
         <footer>
+<!--
 <ul>
 <li><a href="/post-type/jiyu-kenkyu.html">自由研究</a></li>
 <li><a href="/post-type/training.html">トレーニング</a></li>
 <li><a href="/post-type/youtube.html">YouTubeチャンネル</a></li>
 <li><a href="/post-type/animation.html">アニメ制作</a></li>
 </ul>
+-->
 <small class="centering">Copyright © お絵描きホーホー論</small>
 </footer>
 
 <a id="pageTop" href="#">&and; PAGE TOP</a>
+
       </contents>
     </main>
   </container>

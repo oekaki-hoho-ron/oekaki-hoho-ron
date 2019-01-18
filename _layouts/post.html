@@ -16,7 +16,7 @@
           <!--<li class="category">Category <a href="{{ site.baseurl }}/tags#{{ tag | slugize }}">{{ page.categories }}</a></li>
           <li class="tag">Tag {% if post %}{% assign tags = post.tags %}{% else %}{% assign tags = page.tags %}{% endif %}{% for tag in tags %}<a href="_posts/tags/{{ tag }}">{{ tag }} </a>{% endfor %}</li>-->
           <li class="category">Category {{ page.categories }}</li>
-          <li class="tag">Tag {% if post %}{% assign tags = post.tags %}{% else %}{% assign tags = page.tags %}{% endif %}{% for tag in tags %}{{ tag }} {% endfor %}</li>
+          <li class="tag">Tag {% if post %}あ{% assign tags = post.tags %}{% else %}{% assign tags = page.tags %}{% endif %}{% for tag in tags %}{{ tag }} {% endfor %}</li>
         </ul> <!-- .article__meta -->
         <img src="{{ page.thumb }}" alt="{{ post.title }}" />
 

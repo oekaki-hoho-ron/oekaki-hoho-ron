@@ -1,11 +1,5 @@
-top-contents a{
-  position: relative;
-}
-
-top-contents a:hover{
-  opacity: 0.7;
-}
-
+top-contents a {position: relative;}
+top-contents a:hover {opacity: 0.7;}
 top-contents h2{
   position: absolute;
   bottom: 0;
@@ -14,56 +8,29 @@ top-contents h2{
   color: #fff;
   background: linear-gradient(bottom,rgba(0,0,0,0.5),rgba(0,0,0,0));
   background: -moz-linear-gradient(bottom, #ff0000, rgba(255,0,0,0));
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));
-}
-
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0)));}
 top-contents img{
   width: 100%;
-  vertical-align: bottom;
-}
-
+  vertical-align: bottom;}
 .top-contents-obi{
- position: absolute;
- top: 0;
- left: 0;
-}
-
+  position: absolute;
+  top: 0;
+  left: 0;}
 .top-box1{
- float: left;
- width: 66.666666666666%;
-}
-
-.top-box1 h2{
-  font-size: 2vw;
-}
-
-.top-box1 .top-contents-obi{
-  width: 10%;
-}
-
+  float: left;
+  width: 66.666666666666%;}
+.top-box1 h2 {font-size: 2vw;}
+.top-box1 .top-contents-obi {width: 10%;}
 .top-box2{
- float: right;
- width: 33.33333333333333%;
-}
+  float: right;
+  width: 33.33333333333333%;}
+.top-box2 h2 {font-size: 1vw;}
+.top-box2 .top-contents-obi {width: 13%;}
 
-.top-box2 h2{
-  font-size: 1vw;
-}
 
-.top-box2 .top-contents-obi{
-  width: 13%;
-}
-
+/* 幅860px未満のとき（タブレット・スマホ用） */
 @media(max-width: 860px){
- .top-box1{
-  width: 100%;
-}
-}
-
- .top-box1 h2{
-   font-size: 4vw;
-}
-
- .top-box1 .top-box2{
-  display: none;
+  .top-box1 {width: 100%;}
+  .top-box1 h2 {font-size: 4vw;}
+  .top-box2 {display: none;}
 }

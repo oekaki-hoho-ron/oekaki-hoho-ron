@@ -91,6 +91,7 @@ post-index{
  height: 150px;
  padding: 10px 0;
  border-bottom: 1px solid #eee;
+ background: #f5f9fd;
 }
 
 article{
@@ -101,6 +102,7 @@ article{
 
 article__bottom-info{
  display: block;
+ clear:both;
 }
 
 footer{

@@ -16,7 +16,8 @@ ads-in-article-box{
 
 ads-article-bottom-box{
  display: block;
- text-align: center ;
+ text-align: center;
+ clear:both;
 }
 
 
