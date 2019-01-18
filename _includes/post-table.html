@@ -5,18 +5,18 @@
 
 
 
-    <label class="post-table__label_open" onclick="document.getElementById('{{ CATEGORY_NAME }}').checked = true;">
+    <label class="open-button" onclick="document.getElementById('{{ CATEGORY_NAME }}').checked = true;">
       {{ CATEGORY_NAME }}
       <span>{{ site.categories[CATEGORY_NAME] | size }}</span>
     </label>
-    <input type="checkbox" id="{{ CATEGORY_NAME }}" class="accordion">
+    <input type="checkbox" id="{{ CATEGORY_NAME }}" class="check-box">
 
 
 
-    <ul class="ulul">
+    <ul class="accordion-box">
 
       {% for post in site.categories[CATEGORY_NAME] %}
-      <li class="post-table__li">
+      <li class="post-table-meta">
         <a href="{{ post.url }}" target="blank">
           <img src="{{ post.thumb }}" />
           <span>{{post.title}}</span>
@@ -24,8 +24,8 @@
       </li>
       {% endfor %}
 
-      <li class="post-table__li_label-close">
-        <label class="post-table__label_close" onclick="document.getElementById('{{ CATEGORY_NAME }}').checked = false;">∧ CLOSE</label>
+      <li class="close-button-box">
+        <label class="close-button" onclick="document.getElementById('{{ CATEGORY_NAME }}').checked = false;">∧ CLOSE</label>
       </li>
 
     </ul>

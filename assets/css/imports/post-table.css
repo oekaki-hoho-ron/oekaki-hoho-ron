@@ -1,78 +1,76 @@
 div#post-table{
-  padding-top: 40px;
   clear: both;}
 
 
 /* カテゴリ別ボックス */
 div.post-table-category{
-  margin: 0 20px;
-  border-bottom: 1px solid #fff;}
-div.post-table-category:first-child {border-top: 1px solid #fff;} /* 1番目の記事のborder-top設定 */
-/*div.post-table-category input {display: none;}   アコーディオンのチェックボックスは非表示 */
+  margin: 0 20px; /* リストのボーダーの左右の余白 */
+  border-bottom: 1px solid #fff;} /* リスト最下段のボーダー */
+div.post-table-category:first-child {border-top: 1px solid #fff;} /* リスト最上段のボーダー */
+div.post-table-category input {display: none;}  /* open-buttonのチェックボックス非表示 */
 
 
 /* 赤 */
 
 /* openボタン <label> */
-label.post-table__label_open{
-  display: block;
-  margin: 0 0 2px 0;
+label.open-button{
+  display: block; /* open-buttonのlabelをブロックオブジェクトにして寸法・余白・位置を適用する */
+  margin-bottom: 2px;
   padding: 12px;
   line-height: 1;
   color: #fff;
-  cursor: pointer;
-  background: #000;}
-label.post-table__label_open span {float: right;}
-label.post-table__label_open:hover {background: #444;}
+  cursor: pointer;}  /* open-buttonのlabelにhoverでマウスカーソルを変化 */
+label.open-button span {float: right;}  /* カテゴリ別の記事投稿数表示は右寄せ */
+label.open-button:hover {background: #444;} /* open-buttonのlabelにhoverでハイライト */
 
 
 /* 青 */
 
-/* 記事リスト<ul> */
-div.post-table-category ul{ /* post-table内のリストボックス設定 */
+/* アコーデォンボックス・記事リスト<ul> */
+ul.accordion-box{
   margin: 0;
   padding: 0;
   list-style-type: none;}
-.post-table__label_open input:checked .ulul {display: block;}  /* checked:trueになるとアコーディオンのulを表示 */
 
-/* 記事リスト<li> */
-li.post-table__li{
-  max-height: 80px;
-  margin-bottom: 2px;
-  padding-right: 2px;
-  background: #fff;}
-li.post-table__li { /* オコーディオンの中身のレイアウト */
+
+/* 記事meta情報リスト<li> */
+.check-box:checked + .accordion-box .post-table-meta{
+  max-height: 80px; /* 記事meta情報の表示サイズ */
+  margin-bottom: 2px; /* 次の記事のサムネと融合しないための余白 */
+  padding-right: 2px;} /* ■■い■ら■な■い■か■も■■ */
+li.post-table-meta {  /* open-buttonがoffのときの記事meta情報li */
   margin: 0;
   padding: 0;
-  max-height: 0;
+  max-height: 0;  /* 犯人はお前だ！！！！！！！！ */
   overflow-y: hidden;
   border: none;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
-  transition: all 0.5s;}
-li.post-table__li a{
+  transition: all 0.5s;
+  background: #fff;}  /* 記事meta情報はcolor:#000;なので背景は白 */
+li.post-table-meta a{
   padding: 2px 0;
   text-decoration: none;
   color: #000;
   line-height: 1;}
-li.post-table__li img{
-  height: 60px;
-  float: left;
-  margin-right: 10px;}
-li.post-table__li img:hover {opacity: 0.5;}
-li.post-table__li span{
+li.post-table-meta img{
+  height: 60px; /* サムネは記事meta情報ボックスの高さより小さめ */
+  float: left;  /* サムネは左寄せ */
+  margin-right: 10px;}  /* サムネとタイトルのすき間 */
+li.post-table-meta img:hover {opacity: 0.5;}
+li.post-table-meta span{
   margin-top: 10px;
   display: block;
   font-size: 12px;
   line-height: 1.4em;}
-li.post-table__li span:hover{
-  color: #FF6347;}
+li.post-table-meta span:hover {color: #FF6347;}
 
 
 /* closeボタン <li> */
-label.post-table__li_label-close{
+label.close-button-box{
+  display:block;
   margin: 0;
   padding: 0;
   max-height: 0;
@@ -83,21 +81,20 @@ label.post-table__li_label-close{
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;}
-label.post-table__li_label-close{
-  margin: 0 0 2px 0;
+label.close-button-box{
+  margin-bottom: 2px;
   padding: 12px;
   line-height: 1;
-  color: #fff;
-  cursor: pointer;
-  background: #000;}
-label.post-table__li_label-close:hover {background: #444;}
+  cursor: pointer;} /* これ反応してない */
+label.close-button-box:hover {background: #444;}
+.close-button-box{display:none;}
+.check-box:checked + .accordion-box .close-button-box{display:block;}
 
 
  /* closeボタンラベル  <label>*/
-.post-table__label_close{
+.close-button{
   text-align: center;
   max-height: 80px;
   margin: 10px;
-  padding-right: 2px;
   display: block;
   color:#fff;}
