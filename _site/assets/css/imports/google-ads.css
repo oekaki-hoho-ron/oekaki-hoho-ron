@@ -40,9 +40,9 @@ sidebar__amazon{
 @media(min-width: 860px){
  sidebar__ads-box_mobile{
   display: none;
-}
+}}
 
 @media(max-width: 860px){
  sidebar__ads-box_pc{
   display: none;
-}
+}}
