@@ -35,10 +35,12 @@ sidebar__ads-box_pc{
 
 sidebar__amazon {margin: 10px;}
 
+/* 幅860px以上のとき（PC用） */
 @media(min-width: 860px){
   sidebar__ads-box_mobile {display: none;}
 }
 
+/* 幅860px未満のとき（タブレット・スマホ用） */
 @media(max-width: 860px){
   sidebar__ads-box_pc {display: none;}
 }

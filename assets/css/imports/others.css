@@ -1,27 +1,19 @@
+/********** 5色ペン ***********************************************************
+pp {color: #ff3bb8;}
+oo {color: orange;}
+yy {color: #FFd600;}
+gg {color: rgba(0,200,0,1);}
+bb {color: rgba(50,190,255,1);}
+rr {color: rgba(255,30,30,1);}
+*/
 /********** 5色ペン ************************************************************/
-pp{
- color: #ff3bb8;
-}
+pp {background: linear-gradient(transparent 60%, #ff88dd 60%);}
+oo {background: linear-gradient(transparent 60%, #ffaa66 60%);}
+yy {background: linear-gradient(transparent 40%, #ffee66 40%);}
+gg {background: linear-gradient(transparent 60%, #66ff77 60%);}
+bb {background: linear-gradient(transparent 60%, #88ddff 60%);}
+rr {background: linear-gradient(transparent 60%, #ff5555 60%);}
 
-oo{
- color: orange;
-}
-
-yy{
- color: #FFd600;
-}
-
-gg{
- color: rgba(0,200,0,1);
-}
-
-bb{
- color: rgba(50,190,255,1);
-}
-
-rr{
- color: rgba(255,30,30,1);
-}
 
 /********** Other ************************************************************/
 .centering{
