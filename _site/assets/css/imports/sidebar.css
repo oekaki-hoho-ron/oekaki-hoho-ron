@@ -66,3 +66,8 @@ sidebar-bannar{
  margin: 20px 0;
  padding: 0 20px;
 }
+
+.sidebar-bannar{
+  display: block;
+  margin-bottom: 10px;
+}
