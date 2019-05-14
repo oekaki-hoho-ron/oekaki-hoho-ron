@@ -1,10 +1,10 @@
 {
-  "name": "TRICKY SELFIE",
-  "short_name": "Galaxy Tab S4 Animation",
-  "theme_color": "#190000",
-  "background_color": "#190000",
+  "name": "お絵描きホーホー論",
+  "short_name": "お絵描きホーホー論",
+  "theme_color": "#f5f9fd",
+  "background_color": "#f5f9fd",
   "display": "standalone",
-  "orientation": "landscape",
+  "orientation": "portrate",
   "Scope": "/",
   "start_url": "https://www.oekaki-hoho-ron.com/",
   "icons": [
