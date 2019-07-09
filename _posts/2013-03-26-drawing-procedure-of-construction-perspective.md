@@ -4,6 +4,7 @@ permalink: :title/
 title: 建築パースを徹底研究！パース理論の基礎知識と描き方
 description: 全てのパース技法の解説と実例によって理解を深め、お絵描きに応用する方法を模索します。
 thumb: /assets/img/2013-03-26/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-03-26/00.png"
 
 categories:
 - 透視図法
