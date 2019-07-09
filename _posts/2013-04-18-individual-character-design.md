@@ -4,6 +4,7 @@ permalink: :title/
 title: オリジナルキャラの絵柄を獲得することについて
 description: キャラクターの絵柄について、流行や普遍性の観点で考察しています。
 thumb: /assets/img/2013-04-18/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-04-18/00.png"
 
 categories:
 - 演出
