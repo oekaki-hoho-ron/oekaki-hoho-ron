@@ -4,6 +4,7 @@ permalink: :title/
 title: 絵描きが言う人体デッサンの「重心」が厳密には間違っている件
 description: キャラクターのポーズには必ず重心がありますが、絵描きの言う重心が厳密には使い方が間違えているので、新しい考え方を発明して表現の幅を広げようと模索しています。
 thumb: /assets/img/2014-06-29/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2014-06-29/00.png"
 
 categories:
 - 人物画
