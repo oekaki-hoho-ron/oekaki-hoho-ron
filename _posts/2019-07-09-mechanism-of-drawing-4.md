@@ -2,7 +2,7 @@
 layout: post
 permalink: :title/
 title: お絵描きのメカニズム　第4巻 〜「知識の検索」と「気分の高揚」の仕方〜
-description: 絵を描く2つのウォームアップは、必要なタイミングで知識を思い出す「記憶の活性化」と、絵を描くモチベーションを高める「高揚」
+description: 必要なタイミングで知識を思い出す「記憶の活性化」と、絵を描くモチベーションを高める「高揚」
 thumb: /assets/img/2019-07-09/00.png
 image: "https://www.oekaki-hoho-ron.com/assets/img/2019-07-09/00.png"
 
