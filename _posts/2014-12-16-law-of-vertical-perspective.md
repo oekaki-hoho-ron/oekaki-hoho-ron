@@ -4,6 +4,7 @@ permalink: :title/
 title: 三点透視図法の縦パース講座（2/3）　〜縦パースの傾きの法則〜
 description: 風景画を描くとき、横パースは2点透視図法のアイレベルを基準に作画できましたが、縦パースは何を基準に作画すればいいのか、ということを解説しています。
 thumb: /assets/img/2014-12-16/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2014-12-16/00.png"
 
 categories:
 - 透視図法
