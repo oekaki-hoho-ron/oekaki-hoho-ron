@@ -1,0 +1,176 @@
+/********** Global **********/
+
+#x-button{
+    display:none;
+    width:70px;
+    opacity:0;
+}
+
+
+/********** Main Layout **********/
+body{
+    background:#fff7ee;
+    margin:0;
+    padding:0;
+}
+
+header{
+    width:100%;
+    margin-bottom:30px;
+}
+
+#container{
+    width:100%;
+    text-align:center;
+}
+
+#menu-box{
+    width:70%;
+    margin:0 auto;
+}
+
+#menu1-contents,
+#menu2-contents,
+#menu3-contents,
+#menu4-contents,
+#menu5-contents,
+#menu6-contents{
+    display:none;
+    text-align:center;
+    opacity:0;
+}
+
+footer{
+    width:100%;
+    text-align:center;
+    color:#afa79e;
+    margin:70px 0 30px;
+}
+
+
+/********** Sub Layout **********/
+
+#menu-thumb1,
+#menu-thumb2,
+#menu-thumb3,
+#menu-thumb4,
+#menu-thumb5,
+#menu-thumb6{
+    width:25%;
+    margin:0 1.2%;
+    margin-bottom:20px;
+}
+
+
+/********** header **********/
+#logo{
+    display:block;
+    margin:0 auto;
+    width: 30%;
+}
+
+h1{
+    margin-bottom:0;
+}
+
+#copy{
+    text-align:center;
+    display:block;
+    font-size:1vw;
+    color:#afa79e;
+}
+
+
+/********** menu-contents **********/
+
+#menu-contents-h2{
+    width:20%;
+}
+
+#profile-icon{
+    width:10%;
+    display:block;
+    margin:0 auto;
+}
+
+#profile-name{width:30%;}
+
+#menu1-contents hr{
+    width:50%;
+	border-top: 1px solid #3f3027;
+    margin:20px auto;
+}
+
+#menu1-contents p{
+    text-indent: 1em;
+    width:50%;
+    text-align:left;
+    margin:0 auto 1em;
+    color:#3f3027;
+}
+
+
+/* SNSボタン */
+
+#menu1-contents ul{
+    margin-top:50px;
+    padding:0;
+}
+
+#menu1-contents li{
+    display: inline;
+    margin-right:20px;
+}
+
+.sns-twitter{width:40px;}
+.sns-youtube{width:50px;}
+.sns-instagram{width:40px;}
+.sns-soundcloud{width:60px;}
+.sns-pixiv{width:40px;}
+.sns-note{width:40px;}
+
+
+/* コンテンツのサムネイル */
+
+.menu-contents-list{
+    list-style:none;
+    padding-left:0;
+}
+
+.menu-contents-thumb{
+    margin:0 auto;
+    width:40%;
+    margin-bottom:20px;
+}
+
+
+/********** mobile Layout **********/
+
+@media(max-width:860px){
+    #logo{width:80%;}
+    #copy{font-size:2vw;}
+    #menu-thumb1,
+    #menu-thumb2,
+    #menu-thumb3,
+    #menu-thumb4,
+    #menu-thumb5,
+    #menu-thumb6{
+        width:40%;
+        margin-bottom:20px;
+    }
+    .menu-contents-thumb,
+    #menu1-contents p,
+    #menu1-contents hr{width:70%;}
+    #menu-contents-h2{width:50%;}
+    #profile-icon{width:30%;}
+    #profile-name{width:60%;}
+    .sns-twitter{width:30px;}
+    .sns-youtube{width:30px;}
+    .sns-instagram{width:30px;}
+    .sns-soundcloud{width:40px;}
+    .sns-pixiv{width:30px;}
+    .sns-note{width:30px;}
+    #menu1-contents li{
+        margin-right:10px;;
+    }
+}
