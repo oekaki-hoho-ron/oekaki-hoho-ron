@@ -2,7 +2,7 @@
 layout: post
 permalink: :title/
 title: ありそうでなかったM点法の原理解説　〜地平線に隠された秘密〜
-description: 以前考案した「対角線分割法」を使えばM点法の原理の証明が簡単にできる。M点法については作図手順の解説はよく目にするが、なぜその手順で正確に作図できるのかには触れられていない。消化不良ならこの記事を読むべし。
+description: M点法の作図手順の根拠が解説されているのを見かけないと思い、自分で奥行きが測定できる原理を幾何学的に解説した
 thumb: /assets/img/2017-05-28/00.png
 image: "https://www.oekaki-hoho-ron.com/assets/img/2017-05-28/00.png"
 
