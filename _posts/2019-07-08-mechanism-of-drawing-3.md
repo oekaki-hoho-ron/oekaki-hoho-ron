@@ -4,6 +4,7 @@ permalink: :title/
 title: お絵描きのメカニズム　第3巻 〜知識のカテゴライズ〜
 description: 絵の記号は無数に存在しますが、現状では全く整理がされていないために絵を描くことが難しいと言われます。お絵描きを理論化するため、絵の記号をカテゴライズして知識体系を整理する方法を提案します。
 thumb: /assets/img/2019-07-08/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2019-07-08/00.png"
 
 categories:
 - お絵描きのメカニズム
