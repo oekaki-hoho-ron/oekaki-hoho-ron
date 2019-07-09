@@ -2,7 +2,7 @@
 layout: post
 permalink: :title/
 title: お絵描きのメカニズム　第1巻　〜絵は才能でなく根気で描ける〜
-description:
+description: 絵の練習では常識とされる模写練習の本当の意味を追求しました。模写するときに何を考えながら描けば知識を身につけられるかを理論化することで理屈で絵が描けることの証明の第一歩とします。
 thumb: /assets/img/2018-05-18/00.png
 
 categories:
