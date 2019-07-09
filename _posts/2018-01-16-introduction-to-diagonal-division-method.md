@@ -5,6 +5,8 @@ title: 対角線分割法 概論　〜透視図法の空間を対角線で測る
 description: 透視図法の原理の根幹を成す対角線分割法の仕組みをもっと知ってもらうために、D点法やM点法などの透視図法にまつわる様々な手法に使われている対角線分割法の解説をしています。
 thumb: /assets/img/2018-01-16/00.png
 
+image: "https://www.oekaki-hoho-ron.com/assets/img/2018-01-16/00.png"
+
 categories:
 - 透視図法
 
