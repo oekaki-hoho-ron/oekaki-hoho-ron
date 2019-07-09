@@ -2,7 +2,7 @@
 layout: post
 permalink: :title/
 title: お絵描きのメカニズム　第2巻 〜感覚で描く絵、理屈で描く絵〜
-description: 概要
+description: 絵の練習では常識とされる模写練習の本当の意味を追求しました。模写するときに何を考えながら描けば知識を身につけられるかを理論化することで、漠然と数をこなす必要を排除し、楽に確実に上達できます。
 thumb: /assets/img/2018-06-11/00.png
 
 categories:
