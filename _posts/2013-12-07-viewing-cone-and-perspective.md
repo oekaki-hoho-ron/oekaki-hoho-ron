@@ -4,6 +4,7 @@ permalink: :title/
 title: 視円錐を使って考える望遠パース・広角パースの描き方
 description: 視円錐を使ってカメラレンズの違いによって変化するパースについて解説しています。望遠・広角パースを使った背景イラストの描き方はこれで理解できます。
 thumb: /assets/img/2013-12-07/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-12-07/00.png"
 
 categories:
 - 透視図法
