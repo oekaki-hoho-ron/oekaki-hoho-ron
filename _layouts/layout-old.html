@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="utf-8" >
+{% include head.html %}
+<body>
+  {% include header.html %}
+  <container>
+    <main>
+      {% include sidebar.html %}
+      <contents>
+        {% include top-contents.html %}
+        <tab-contents>
+          <input id="tab1" type="radio" name="tab" checked>
+          <label for="tab1" id="tab1-label">研究レポート</label>
+          <input id="tab2" type="radio" name="tab">
+          <label for="tab2" id="tab2-label">外部コンテンツ</label>
+          <input id="tab3" type="radio" name="tab">
+          <label for="tab3" id="tab3-label">Twitterモーメント</label>
+          <tab-box>
+            {{ content }}
+            {% include tab-box2.html %}
+            {% include tab-box3.html %}
+          </tab-box>
+        </tab-contents>
+        <article>
+          {% include article-bottom-info.html %}
+        </article>
+        {% include footer.html %}
+      </contents>
+    </main>
+  </container>
+</body>
+</html>
