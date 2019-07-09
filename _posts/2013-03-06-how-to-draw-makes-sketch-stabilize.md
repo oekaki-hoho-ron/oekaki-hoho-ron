@@ -4,6 +4,7 @@ permalink: :title/
 title: 人体デッサンを安定させるアタリ線の描き方
 description: 人物を模写するときのアタリ線の描き方について、様々な参考資料を元に模索しています。
 thumb: /assets/img/2013-03-06/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-03-06/00.png"
 
 categories:
 - お絵描きのメカニズム
