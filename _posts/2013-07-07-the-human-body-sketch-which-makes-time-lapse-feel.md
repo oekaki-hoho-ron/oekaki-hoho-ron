@@ -4,6 +4,7 @@ permalink: :title/
 title: 前後の時間を感じさせる人体デッサン
 description: 人体デッサンの躍動感は何によって決まるのかを模索しています。
 thumb: /assets/img/2013-07-07/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-07-07/00.png"
 
 categories:
 - 人物画
