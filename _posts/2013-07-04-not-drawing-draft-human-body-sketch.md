@@ -4,6 +4,7 @@ permalink: :title/
 title: アタリ線を描かないデッサン
 description: アタリ線を描かずにデッサンする方が描きやすいという発見をしました。
 thumb: /assets/img/2013-07-04/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-07-04/00.png"
 
 categories:
 - お絵描きのメカニズム
