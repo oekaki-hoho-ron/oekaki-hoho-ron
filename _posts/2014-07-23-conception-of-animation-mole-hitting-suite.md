@@ -4,6 +4,7 @@ permalink: :title/
 title: 現在制作中の『もぐらたたき組曲』でやりたいこと
 description: 今回の制作では、過去の制作でできなかったことにリベンジするべく、制作環境のと作品概要の見直しをしました。
 thumb: /assets/img/2014-07-23/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2014-07-23/00.png"
 
 categories:
 - シナリオ
