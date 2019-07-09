@@ -4,6 +4,7 @@ permalink: :title/
 title: デジタルイラストを描くための色彩理論概論
 description: デジタルイラストを塗るときに知っておくべき色彩理論の基礎となる表色系について解説しています。
 thumb: /assets/img/2013-08-29/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-08-29/00.png"
 
 categories:
 - 色彩理論
