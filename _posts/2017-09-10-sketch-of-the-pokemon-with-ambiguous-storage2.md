@@ -4,6 +4,7 @@ permalink: :title/
 title: うろ覚えポケモンかけるかな？　〜第2フェイズ「脳内イメージの再現」〜
 description: うろ覚えポケモンかけるかな？実験の第2フェイズの記録です。主に脳内イメージのコントロールとデッサンのクオリティを上げる過程を観察しており、お絵描きのメカニズムの理論化のキッカケを掴むことができた。
 thumb: /assets/img/2017-09-10/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2017-09-10/00.png"
 
 categories:
 - お絵描きのメカニズム
