@@ -4,6 +4,7 @@ permalink: :title/
 title: 描画線の太さによる練習効果の違い
 description: お絵描きの練習に使う画材の線の太さについて考察しています。
 thumb: /assets/img/2013-06-07/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-06-07/00.png"
 
 categories:
 - 画材
