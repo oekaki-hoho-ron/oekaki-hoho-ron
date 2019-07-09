@@ -2,7 +2,7 @@
 layout: post
 permalink: :title/
 title: うろ覚えポケモン描けるかな？　〜第1フェイズ「うろ覚え」〜
-description: 絵を描くのが下手ということの多くは、上手く描けないという以前に何をどう描けばいいかが分からないのだと思う。まず第一歩は誰でも絶対にできる「たぶんこんな感じだったはず」レベルでスケッチするところから始める練習法を考案。
+description: 上手く絵が描けずに悩むより、誰でも簡単にできる「たぶんこんな感じだったはず」レベルから始める練習方法
 thumb: /assets/img/2017-06-11/00.png
 image: "https://www.oekaki-hoho-ron.com/assets/img/2017-06-11/00.png"
 
