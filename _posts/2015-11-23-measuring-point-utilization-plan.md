@@ -4,6 +4,7 @@ permalink: :title/
 title: 「M点法」実用化計画　〜縮図で奥行きの長さを作図〜
 description: いままではキャンバスの外側にはみ出して作図せざるを得なかったM点法の実用化に成功。どの教本を読んでも書かれていないお絵描きパースの「奥行きの長さ」を正確に作図する方法をついに編み出しました。
 thumb: /assets/img/2015-11-23/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2015-11-23/00.png"
 
 categories:
 - 透視図法
