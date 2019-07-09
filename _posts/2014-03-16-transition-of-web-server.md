@@ -4,6 +4,7 @@ permalink: :title/
 title: サーバー引っ越して気分爽快！
 description: サイトのサーバーを引っ越して管理環境を改善しました。今後は人体デッサンにも精を出して人物画の描き方についても執筆していこうと思います。
 thumb: /assets/img/2014-03-16/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2014-03-16/00.png"
 
 categories:
 - 日記
