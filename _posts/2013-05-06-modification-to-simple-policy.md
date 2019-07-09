@@ -4,6 +4,7 @@ permalink: :title/
 title: お絵描き再始動、シンプルに方針変更
 description: 記事の執筆方針をシンプルに見直し、より読みやすいサイトにしようという意気込みを発表します。
 thumb: /assets/img/2013-05-06/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-05-06/00.png"
 
 categories:
 - 日記
