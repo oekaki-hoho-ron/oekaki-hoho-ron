@@ -4,6 +4,7 @@ permalink: :title/
 title: 透視図法の基本原理「対角線分割法」誕生の軌跡　〜3次元を2次元に変換する仕組み〜
 description: パース作図を必要とせず、幾何学的な比率の計算のみで寸法を求める「対角線分割法」を考案するまでの記録。これを覚えておけば透視図法の様々な原理の証明も簡単になる。
 thumb: /assets/img/2017-05-27/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2017-05-27/00.png"
 
 categories:
 - 透視図法
