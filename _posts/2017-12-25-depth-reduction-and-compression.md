@@ -4,6 +4,7 @@ permalink: :title/
 title: ユアッサーの法則の画角メーターで学ぶ奥行きの「縮小」と「圧縮」
 description: 透視図法の奥行きの「縮小」と「圧縮」を数学的に定義することで勘違いをなくせます。この記事ではユアッサーの法則の画角メーターの原理を分析することで奥行きや画角の関係を解説しています。
 thumb: /assets/img/2017-12-25/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2017-12-25/00.png"
 
 categories:
 - 透視図法
