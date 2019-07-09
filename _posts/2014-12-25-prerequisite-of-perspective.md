@@ -4,6 +4,7 @@ permalink: :title/
 title: 透視図法の知られざる大前提　〜実は市販のパース理論書の教えは間違っていた〜
 description: 透視図法について調べても曖昧な説明しかされていないサイトばかりなので、ここはひとつ透視図法というものを再定義してパース作画の技法として使いやすいような解説を試みてみます。
 thumb: /assets/img/2014-12-25/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2014-12-25/00.png"
 
 categories:
 - 透視図法
