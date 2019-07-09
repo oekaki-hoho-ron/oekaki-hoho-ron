@@ -14,16 +14,16 @@
 <script src="service_worker.js"></script>
 
   <!-- OGP -->
-  <meta property="og:site_name"  content="サイト名" />
+  <meta property="og:site_name"  content="お絵描きホーホー論" />
   <meta property="og:type" content="ページタイプ" />
   <meta property="og:url" content="{{ page.url }}" />
   <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:description" content="ディスクリプション" />
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:image" content="{{ page.thumb }}" />
   <meta name="twitter:card" content="Summary with Large Image" />
-  <meta name="twitter:site" content="@oekaki-hoho-ron" />
-  <meta property="fb:app_id" content="App ID" />
-  <meta property="article:publisher" content="FacebookページのURL" />
+  <meta name="twitter:site" content="@oekaki_hoho_ron" />
+  <!--<meta property="fb:app_id" content="App ID" />-->
+  <!--<meta property="article:publisher" content="FacebookページのURL" />-->
 
 
   <!-- 外部ファイル -->
