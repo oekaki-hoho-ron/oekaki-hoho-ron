@@ -4,6 +4,7 @@ permalink: :title/
 title: ヘアカットとデッサンを関連づけて考える髪の描き方
 description: ヘアカット理論から髪型の構造を理解し、髪型デッサンの方法を模索します。
 thumb: /assets/img/2013-04-01/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-04-01/00.png"
 
 categories:
 - 人物画
