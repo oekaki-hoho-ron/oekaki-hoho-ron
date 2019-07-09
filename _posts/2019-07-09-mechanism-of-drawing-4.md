@@ -2,7 +2,7 @@
 layout: post
 permalink: :title/
 title: お絵描きのメカニズム　第4巻 〜「知識の検索」と「気分の高揚」の仕方〜
-description: いくら絵の練習をしても、知識が増えるだけで上手く描ける様にはなりません。上手く描くには必要なタイミングで知識を思い出す「想起効率」を向上させる方法を身につけるべきです。
+description: 絵を描く2つのウォームアップは、必要なタイミングで知識を思い出す「記憶の活性化」と、絵を描くモチベーションを高める「高揚」
 thumb: /assets/img/2019-07-09/00.png
 image: "https://www.oekaki-hoho-ron.com/assets/img/2019-07-09/00.png"
 
