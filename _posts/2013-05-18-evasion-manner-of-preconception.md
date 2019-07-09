@@ -4,6 +4,7 @@ permalink: :title/
 title: 正しい記憶の隙間に宿る、誤った先入観の見つけ方
 description: 以前の記事で先入観の原理が分かったので、次は正しい真実と、間違った先入観の見分け方を考える。
 thumb: /assets/img/2013-05-18/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-05-18/00.png"
 
 categories:
 - 精神分析
