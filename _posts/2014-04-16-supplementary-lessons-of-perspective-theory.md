@@ -4,6 +4,7 @@ permalink: :title/
 title: 建築パース理論補講　〜2点透視を2つ重ねると3点透視になる〜
 description: 以前に書いた建築パース理論の記事に質問コメントを頂いたので、それに対する回答として二点透視図法と三点透視図法における立方体の作図方法を動画で説明しています。
 thumb: /assets/img/2014-04-16/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2014-04-16/00.png"
 
 categories:
 - 透視図法
