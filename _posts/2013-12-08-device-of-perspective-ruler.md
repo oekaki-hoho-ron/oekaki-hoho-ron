@@ -4,6 +4,7 @@ permalink: :title/
 title: 一瞬で背景イラストのアングルと画角を決めるパースの描き方
 description: 背景イラストのパース作画を考えるときに、一瞬でアングルや画角を決められるパース作画テンプレート素材を発明しました。
 thumb: /assets/img/2013-12-08/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-12-08/00.png"
 
 categories:
 - 透視図法
