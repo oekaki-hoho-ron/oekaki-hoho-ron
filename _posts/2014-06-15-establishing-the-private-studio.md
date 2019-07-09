@@ -4,6 +4,7 @@ permalink: :title/
 title: 自主制作アニメ「STUDIO hoho」設立のお知らせ
 description: 自主制作アニメの制作日記を書くコーナーを設置しました。制作進捗報告やメイキングなどを公開していきます。
 thumb: /assets/img/2014-06-15/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2014-06-15/00.png"
 
 categories:
 - 日記
