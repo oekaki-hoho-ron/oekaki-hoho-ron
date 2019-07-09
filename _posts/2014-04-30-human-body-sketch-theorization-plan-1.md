@@ -4,6 +4,7 @@ permalink: :title/
 title: 人体デッサン理論化計画・序　〜シルエットで捉える描き方の意味考える〜
 description: 人体デッサンを習得するとき、どのように練習していけばいいか、どのように上達していけばいいか、ということを理論化するための方針を考えます。そしてシルエットで捉えるデッサンという考え方を導入して、お絵描きホーホー論の神髄に1歩踏み出します。
 thumb: /assets/img/2014-04-30/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2014-04-30/00.png"
 
 categories:
 - 人物画
