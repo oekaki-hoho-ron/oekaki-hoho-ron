@@ -2,7 +2,7 @@
 layout: post
 permalink: :title/
 title: パース理論の完全形態「透視図法解剖図」
-description: 透視図法には様々な意味を持つ点や角度があり、それらを分解して理解した後、再度組み立てて一つの投影図にまとめることで透視図法の全貌を完全把握した状態で作図できます。その一つの投影図のことを「透視図法解剖図」と名付けました。
+description: 透視図法の全貌を把握するための全体図を考案。2点透視図法の要素を全て詰め込んでシンプルに理解。
 thumb: /assets/img/2016-11-18/00.png
 image: "https://www.oekaki-hoho-ron.com/assets/img/2016-11-18/00.png"
 
