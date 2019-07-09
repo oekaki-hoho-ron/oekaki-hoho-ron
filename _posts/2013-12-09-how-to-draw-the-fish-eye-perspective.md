@@ -4,6 +4,7 @@ permalink: :title/
 title: 魚でも分かる魚眼パースの描き方講座　〜魚眼レンズのしくみ〜
 description: 魚眼パースの描き方を理論的に解説します。そして誰でも魚眼パースのイラストを描けるテンプレートを作ったので、どうぞ思う存分歪んだ魚眼パースのイラスト描きまくってください。
 thumb: /assets/img/2013-12-09/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-12-09/00.png"
 
 categories:
 - 透視図法
