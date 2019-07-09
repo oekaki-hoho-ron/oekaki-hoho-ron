@@ -4,6 +4,7 @@ permalink: :title/
 title: wacomペンタブレットのスペック解説　〜この数値どういう意味？編〜
 description: Wacomのペンタブを選ぶときのスペックの見方、意味を詳しく解説しています。
 thumb: /assets/img/2014-06-20/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2014-06-20/00.png"
 
 categories:
 - ハードウェア
