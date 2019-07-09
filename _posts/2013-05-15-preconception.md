@@ -4,6 +4,7 @@ permalink: :title/
 title: 先入観と仲良くしながら絵を描こう
 description: 絵を描くときの先入観とは何か、その正体を見つけ出して有効利用しようという試み。
 thumb: /assets/img/2013-05-15/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-05-15/00.png"
 
 categories:
 - 精神分析
