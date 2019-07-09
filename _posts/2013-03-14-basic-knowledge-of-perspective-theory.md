@@ -4,6 +4,7 @@ permalink: :title/
 title: パース理論の予備知識
 description: パースの基礎知識と歴史について簡単に触れて、これから理論を学ぶ準備をします。
 thumb: /assets/img/2013-03-14/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-03-14/00.png"
 
 categories:
 - 透視図法
