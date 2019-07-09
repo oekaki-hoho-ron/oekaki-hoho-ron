@@ -4,6 +4,7 @@ permalink: :title/
 title: 3点透視図法の解剖図　〜なぜ4点ではなく3点なのか〜
 description: 3点透視図法を理解するために必要な情報が詰め込まれた、全貌を把握するための「3点透視図法解剖図」が完成しました。一見複雑に見える3点透視も垂直と水平に分けて考えることでシンプルに理解できます。
 thumb: /assets/img/2016-12-06/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2016-12-06/00.png"
 
 categories:
 - 透視図法
