@@ -2,7 +2,7 @@
 layout: post
 permalink: :title/
 title: お絵描きのメカニズム　第3巻 〜知識のカテゴライズ〜
-description: 絵の記号をカテゴライズして知識体系を整理することで、好きな絵を分析して何を学び取るか、絵を描くときに何を考えるべきかを理論化します
+description: 絵の記号をカテゴライズして知識体系を整理し、好きな絵の分析方法、絵を描くときの思考過程を理論化
 thumb: /assets/img/2019-07-08/00.png
 image: "https://www.oekaki-hoho-ron.com/assets/img/2019-07-08/00.png"
 
