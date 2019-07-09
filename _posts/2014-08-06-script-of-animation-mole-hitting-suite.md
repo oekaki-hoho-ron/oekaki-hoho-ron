@@ -4,6 +4,7 @@ permalink: :title/
 title: 自主制作アニメ『もぐらたたき組曲』のシナリオの変更点
 description: シナリオに重きを置いて自主制作アニメ『もぐらたたき組曲』を作り直す、その構想について書いています。
 thumb: /assets/img/2014-08-06/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2014-08-06/00.png"
 
 categories:
 - シナリオ
