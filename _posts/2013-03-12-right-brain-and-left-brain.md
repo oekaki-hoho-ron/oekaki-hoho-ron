@@ -4,6 +4,7 @@ permalink: :title/
 title: 右脳・左脳で使い分ける人体デッサンのアタリ線の描き方
 description: 人体デッサンのアタリ線について、右脳で描くものと左脳で描くものに分類して使いこなす方法を考えています。
 thumb: /assets/img/2013-03-12/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-03-12/00.png"
 
 categories:
 - お絵描きのメカニズム
