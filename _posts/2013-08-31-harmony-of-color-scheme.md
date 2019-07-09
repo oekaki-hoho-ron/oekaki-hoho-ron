@@ -4,6 +4,7 @@ permalink: :title/
 title: デジタルイラストの色を調和させる配色パターン
 description: 色彩理論における配色の種類の解説と、それらの色補正処理をCGソフトで行う方法について考えています。
 thumb: /assets/img/2013-08-31/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-08-31/00.png"
 
 categories:
 - 色彩理論
