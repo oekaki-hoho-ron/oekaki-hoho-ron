@@ -4,6 +4,7 @@ permalink: :title/
 title: 2つの視円錐を重ねて三点透視パース作画　〜建築パースとリアルパースの違い〜
 description: 二点透視から三点透視に発展させるとき、その縦パースはどういう原理で生まれるのかを、建築パースとリアルパースの比較で説明しています。
 thumb: /assets/img/2014-07-12/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2014-07-12/00.png"
 
 categories:
 - 透視図法
