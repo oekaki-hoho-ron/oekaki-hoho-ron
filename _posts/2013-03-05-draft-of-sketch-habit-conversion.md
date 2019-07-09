@@ -4,6 +4,7 @@ permalink: :title/
 title: 安定して人体デッサンするためのアタリ線の習慣化
 description: 人体デッサンのときに習得しておくべきアタリ線の描き方を模索していきます。
 thumb: /assets/img/2013-03-05/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-03-05/00.png"
 
 categories:
 - お絵描きのメカニズム
