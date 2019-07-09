@@ -4,6 +4,7 @@ permalink: :title/
 title: ある初心者の失敗
 description: お絵描きの初心者がぶち当たる壁、よくある失敗談について。
 thumb: /assets/img/2013-03-04/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-03-04/00.png"
 
 categories:
 - 日記
