@@ -4,6 +4,7 @@ permalink: :title/
 title: 髪の描き方と、美しい髪というクオリアの関連性
 description: 「髪の描き方」と「美しさを考えるクオリア」を関連付けて、髪型デッサンの記号化を模索します。
 thumb: /assets/img/2013-04-07/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2013-04-07/00.png"
 
 categories:
 - 人物画
