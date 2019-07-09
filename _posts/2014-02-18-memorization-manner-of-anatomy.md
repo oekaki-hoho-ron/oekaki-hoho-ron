@@ -4,6 +4,7 @@ permalink: :title/
 title: 解体新書　〜人体デッサンの解剖学における筋肉の暗記術〜
 description: 人体デッサンの完成度を上げるには美術解剖学のマスターは避けられない、ならば手っ取り早く筋肉の名前を覚える方法を考えて、人体デッサンに応用しようという試みです。
 thumb: /assets/img/2014-02-18/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2014-02-18/00.png"
 
 categories:
 - 人物画
