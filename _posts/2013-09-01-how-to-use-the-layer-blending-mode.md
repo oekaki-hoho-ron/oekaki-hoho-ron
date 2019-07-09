@@ -2,7 +2,7 @@
 layout: post
 permalink: :title/
 title: デジタルイラストで使うレイヤーの描画モードの効果を画像で検証
-description: イラストの色を整える調整レイヤーを作るために必要な知識として、レイヤーの描画モードと、色補正ツールの効果を画像を使って解説しています。
+description: デジタルイラストのレイヤー描画モードの仕組みを解説。描画モードの種類と、各モードの合成結果を一覧表にまとめた。
 thumb: /assets/img/2013-09-01/00.png
 image: "https://www.oekaki-hoho-ron.com/assets/img/2013-09-01/00.png"
 
