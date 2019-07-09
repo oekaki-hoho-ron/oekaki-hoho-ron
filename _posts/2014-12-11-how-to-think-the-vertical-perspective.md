@@ -4,6 +4,7 @@ permalink: :title/
 title: 三点透視図法の縦パース講座（1/3） 〜縦パース作図における2つのポイント〜
 description: 三点透視図法の縦パースを作図するときの、パースの傾きの決め方、そして画角の設定の仕方を考えるための準備をしています。
 thumb: /assets/img/2014-12-11/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2014-12-11/00.png"
 
 categories:
 - 透視図法
