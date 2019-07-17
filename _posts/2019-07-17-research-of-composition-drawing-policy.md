@@ -4,6 +4,7 @@ permalink: :title/
 title: 構図デッサン ~お絵描き手順の条件分岐~
 description: 演出意図でなく描画手順で構図を分析。理屈で描くシチュエーションと感覚で描くシチュエーション。
 thumb: /assets/img/2019-07-17/00.png
+image: "https://www.oekaki-hoho-ron.com/assets/img/2019-07-17/00.png"
 
 categories:
 - お絵描きのメカニズム
