@@ -36,8 +36,6 @@ Q：各透視図法の図説では底面までの作図で終わっているの�
 
 この疑問に対しては一言で答えることができます。ズバリ、GL上の距離にある物が原寸となるので、立方体の手前の垂直の辺を描いてから消失点に向かって縮小した奥の垂直の辺を作図すればいいのです。そうすれば手前の3つの垂直の辺はパースに則った寸法で作図できるので、今度はそれら垂直の辺の上側の頂点から消失線を描けば必然的に立方体の上面も作図できます。これで立方体の底面、側面、上面が作図できました。
 
-<video src="/assets/img/2014-04-16/01.mp4" ></video>
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ON-ZD-Z1Ajs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 このとき画角が小さくて消失点が画面外の遠くにあって作図しにくいというときは介線法などを駆使してください。建築パースでは5つの作図方法（レベル法、消失点法、対角消失点法、M点法、介線法）がありましたが、それの使い分けについては記事の中で説明しているので参考にしてください。あと一つ補足しておくと、原寸というのはパースによって縮小や拡大がされていないという意味なので上手いこと解釈してください。
@@ -54,9 +52,7 @@ Q：三点透視図法のGLとGL’が何故あのような位置に作図され
 
 つまりGLとは、上面図におけるある点の、実際の見え方における距離（遠近感）が知りたいときに気軽に作図するものです。建築パースの作図をするときには、まずここの点のGLを描かないといけないとかいうことはありません。知りたい点について、いつでも何度でも作図すればいいのです。ただ、GLを描きまくっても手間がかかるだけで、そもそもGLを多様せずに描く方法があるから1~2本しか作図されていないだけです。
 
-<video src="/assets/img/2014-04-16/02.mp4" ></video>
-
-<iframe class="article-iframe" src="//www.youtube.com/embed/k9WPgVWh7aY" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0I-7bGskTsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 以前書いた[建築パースを徹底研究！パース理論の基礎知識と描き方](/drawing-procedure-of-construction-perspective/index.html){:target="blank"}の記事では、基準にするために「ある点」の実際の見え方を作図しようとすると、偶然視界の下端にある正方形の手前の頂点が分かりやすかったというだけで、別に正方形の奥の点でも、少し手前の地面からでもGLを作図することはできるということです。
 
@@ -78,6 +74,4 @@ Q：三点透視図法のGLとGL’が何故あのような位置に作図され
 
 つまり、GLだろうとGL'だろうと、その方向から立方体を見たときの、三点透視図法の上面図における手前の頂点を基準にしてGLを作図し、そこから立方体の全体を作図していこうとしているだけなのです。このときのGLとGL'の作図の仕方は二点透視図法と全く同じ方法です。だからあまり深く考えずに、三点透視図法は二点透視図法を異なるアングルから見たものを組み合わせたものと理解すればいいと思います。
 
-<video src="/assets/img/2014-04-16/03.mp4" ></video>
-
-<iframe class="article-iframe" src="//www.youtube.com/embed/xn9XuYoKaxY" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Pseymdg6oMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
