@@ -28,8 +28,8 @@ tags:
 
 実は自主制作アニメは過去に2回挑戦したことがあります。しかしどちらも途中で制作は凍結しており、いまだに完成していません。2012年に挑戦したのが初めての自主制作アニメでした。そのときは映像コンペに参加しようと思い立ったのがきっかけで、制作期間10日間で5分弱の作品を作ろうという、全くもって無知と無謀の固まりのような企画でした。当然ですが、制作期間が足りないことに気付いて作品の尺を削って、キャラデザインも簡易化し、カットの構図も難易度を下げて対処しました。それでもタイムリミットが迫ってくるので、とにかく完成だけを目標にしてクオリティを捨てて制作に取り組み、なんとか〆切に間に合う目処はついてました。ただ、その月は31日まであると勘違いしていたのが命取りとなり、2012年9月、敗北しました。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UHJA1SuxL-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ytKSnx_gJRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 2013年にも制作しました。昨年の失敗の未練がそうさせたのか、同じコンペに挑戦しました。今回は制作期間1ヶ月で、昨年と同じ作品です。昨年の教訓もあってか効率的な制作環境を構築できました。しかし、完成までに必要な画力を考えるととても作画できるとは思えず、自主的に制作を凍結しました。とにかく人体デッサンができなかったのです。ちなみにこのときの制作は、お絵描きホーホー論を始めた後のことです。パースの知識はお絵描きホーホー論の[建築パースを徹底研究！パース理論の基礎知識と描き方](/drawing-procedure-of-construction-perspective/index.html){:target="blank"}の記事で身につけていたので、レイアウトはそれなりに描けました。あとは人体デッサンと映像演出のノウハウです。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xijVChyJ7L8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Tb1jMB4fKKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
