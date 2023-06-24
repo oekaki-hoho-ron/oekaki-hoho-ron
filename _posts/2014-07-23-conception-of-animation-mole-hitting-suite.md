@@ -21,7 +21,7 @@ tags:
 
 現在制作中の『もぐらたたき組曲』は2012年、2013年にも制作したものですが、技術的な理由でまだやりたかったことをなに一つ達成できていません。とはいえ、制作環境は万全に整っているので、後は自分次第です。
 
-<iframe class="article-iframe" src="//www.youtube.com/embed/OOKT-GKFE8o" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xijVChyJ7L8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## 制作環境について
 
@@ -63,8 +63,6 @@ tags:
 
 過去の制作ではやりたいことができなかったと言いましたが、具体的にはカメラワークとエフェクト処理に関することです。もぐらの動きを面白くするのは当然として、カメラワークにも迫力を与えたいし、エフェクトや仕上げ処理で作品の質感のクオリティを上げたいですね。一昔前では自主制作アニメというと、とりあえずセル塗り、アニメ塗りのキャラクターが動く映像というイメージでした。ですが最近では撮影環境の質が向上したから、仕上げ行程でクオリティに差が付くようになりました。数多く公開されてる素晴らしい自主制作アニメを参考にいろいろな技術を盛り込みたいもんです。
 
-<iframe class="article-iframe" src="//www.youtube.com/embed/videoseries?list=PLcrAJkbRow5IDFU4WJ4HPr_W3fCuBW6AZ" frameborder="0" allowfullscreen></iframe>
-
 商業アニメのCG技術から学ぶのも大いに参考になるのですが、なかなか情報公開されないから勉強しずらいですね。数少ない教本も絶版ですし、難しいです。
 
 <div><SCRIPT charset="utf-8" type="text/javascript" src="http://ws-fe.amazon-adsystem.com/widgets/q?rt=tf_ssw&ServiceVersion=20070822&MarketPlace=JP&ID=V20070822%2FJP%2Fkoma5109-22%2F8003%2F3eee194b-2adb-45c3-9291-38656183b12a&Operation=GetScriptTemplate"> </SCRIPT> <NOSCRIPT><A HREF="http://ws-fe.amazon-adsystem.com/widgets/q?rt=tf_ssw&ServiceVersion=20070822&MarketPlace=JP&ID=V20070822%2FJP%2Fkoma5109-22%2F8003%2F3eee194b-2adb-45c3-9291-38656183b12a&Operation=NoScript">Amazon.co.jp ウィジェット</A></NOSCRIPT></div>
@@ -84,7 +82,5 @@ tags:
 <span>出典 [DDN JAPAN](http://japan.digitaldj-network.com/archives/51957428.html){:target="blank"}</span>
 
 もぐらがつぶれるアクションがこの作品のキモなので、たったコンマ何秒のアクションですが凝った動きを生み出したいです。もぐらのデザインがとてもシンプルなので、面白さを出すには質感を極端に表現しないといけないと思いますが、なかなかプルンプルンにもボヨンボヨンにもなりません。アニメーターのりょーちも氏の自主制作アニメの『トラボルタ』は面白い動きをしているので参考にしてみようと思います。他にもいろんなアニメ作画MADを見てから良いとこ取りしてみましょうか。
-
-<iframe class="article-iframe" src="//www.youtube.com/embed/JGO2WksUA-0" frameborder="0" allowfullscreen></iframe>
 
 <iframe class="article-iframe" src="//www.youtube.com/embed/mrVRpQJ-88k" frameborder="0" allowfullscreen></iframe>
