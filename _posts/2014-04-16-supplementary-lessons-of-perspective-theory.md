@@ -38,7 +38,7 @@ Q：各透視図法の図説では底面までの作図で終わっているの�
 
 <video src="/assets/img/2014-04-16/01.mp4" ></video>
 
-<iframe class="article-iframe" src="//www.youtube.com/embed/4V1iNvHXR1o" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ON-ZD-Z1Ajs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 このとき画角が小さくて消失点が画面外の遠くにあって作図しにくいというときは介線法などを駆使してください。建築パースでは5つの作図方法（レベル法、消失点法、対角消失点法、M点法、介線法）がありましたが、それの使い分けについては記事の中で説明しているので参考にしてください。あと一つ補足しておくと、原寸というのはパースによって縮小や拡大がされていないという意味なので上手いこと解釈してください。
 
