@@ -41,9 +41,7 @@ tags:
 
 もう一つ小話をば。いつか何かの本で読んだ養老孟司がしていた話です。人間が本を読むときには文字列を目で追いますが、そのときに注目している文字を視界の中心とすると、本の形状の長方形の輪郭と視界の中心点との相対距離は、文字列を追うたびに変化することになります。もし視界の中心に読みたい文字を持ってきたいのであれば、視線を固定した上で本を移動させればいい話です。ですが、実際にやってみれば分かると思いますが、このやり方では目の前で本がガタガタ揺れているような物なので煩わしくて読書どころではありません。それなのに、視線を動かして文字列を追うというごく一般的な読書のやり方だと、本の輪郭は止まって見えていると思います。これも脳が都合のいいように手ぶれ補正をかけているからだと養老孟司は話していました。このように、人間が見ている風景というのはありとあらゆるフィルターを通して認識されているものなのです。
 
-<video src="/assets/img/2014-12-11/01.mp4" ></video>
-
-<iframe class="article-iframe" src="//www.youtube.com/embed/1wKtPYyZnoM" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Xc8jiDYWDTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## 「画角の設定」と「人間が見る」ことの関係性
 
