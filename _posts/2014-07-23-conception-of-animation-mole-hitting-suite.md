@@ -21,7 +21,7 @@ tags:
 
 現在制作中の『もぐらたたき組曲』は2012年、2013年にも制作したものですが、技術的な理由でまだやりたかったことをなに一つ達成できていません。とはいえ、制作環境は万全に整っているので、後は自分次第です。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xijVChyJ7L8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ytKSnx_gJRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## 制作環境について
 
@@ -83,6 +83,6 @@ tags:
 
 もぐらがつぶれるアクションがこの作品のキモなので、たったコンマ何秒のアクションですが凝った動きを生み出したいです。もぐらのデザインがとてもシンプルなので、面白さを出すには質感を極端に表現しないといけないと思いますが、なかなかプルンプルンにもボヨンボヨンにもなりません。アニメーターのりょーちも氏の自主制作アニメの『トラボルタ』は面白い動きをしているので参考にしてみようと思います。他にもいろんなアニメ作画MADを見てから良いとこ取りしてみましょうか。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xijVChyJ7L8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Tb1jMB4fKKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <iframe class="article-iframe" src="//www.youtube.com/embed/mrVRpQJ-88k" frameborder="0" allowfullscreen></iframe>
