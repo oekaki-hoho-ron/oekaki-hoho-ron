@@ -83,4 +83,6 @@ tags:
 
 もぐらがつぶれるアクションがこの作品のキモなので、たったコンマ何秒のアクションですが凝った動きを生み出したいです。もぐらのデザインがとてもシンプルなので、面白さを出すには質感を極端に表現しないといけないと思いますが、なかなかプルンプルンにもボヨンボヨンにもなりません。アニメーターのりょーちも氏の自主制作アニメの『トラボルタ』は面白い動きをしているので参考にしてみようと思います。他にもいろんなアニメ作画MADを見てから良いとこ取りしてみましょうか。
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xijVChyJ7L8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 <iframe class="article-iframe" src="//www.youtube.com/embed/mrVRpQJ-88k" frameborder="0" allowfullscreen></iframe>
