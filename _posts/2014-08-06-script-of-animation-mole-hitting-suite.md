@@ -21,9 +21,9 @@ tags:
 
 現在制作中の『もぐらたたき組曲』は、以前の制作時にはストーリー性はほとんどありませんでした。ただピアノの練習を邪魔された上に挑発されたから逆上してピコピコハンマーで叩いてしまいました、というだけのリズムを楽しむアニメーションにする予定でした。でも今また同じ作品を制作しようというのに、なかなかモチベーションが湧いてきません。やっぱりキャラクター像が薄すぎて、キャラクターの容姿や演技に確信が持てないのが原因かと思いました。もう少しシナリオ段階から見直す必要がありそうです。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UHJA1SuxL-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ytKSnx_gJRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xijVChyJ7L8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Tb1jMB4fKKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## 『もぐらたたき組曲』のシナリオ（Before）
 
